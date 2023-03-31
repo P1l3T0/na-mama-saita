@@ -1,21 +1,113 @@
+@import url("https://fonts.google.com/share?selection.family=Poppins:wght@100");
+
 * {
-    padding: 0;
     margin: 0;
-    outline: 1px solid green;
+    padding: 0;
+    font-family: "Popins", sans-serif;
+    scroll-behavior: smooth !important;
+    /* outline: solid 1px green; */
 }
 
-.header-div {
+header {
     display: flex;
-    justify-content: center;
     align-items: center;
-    
+    justify-content: space-between;
 }
 
-.header-div ul {
+.logo {
+    width: 7rem;
+    height: 7rem;
+    margin: 1rem;
+    display: inline-block;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+nav  {
+    display: inline-block;
     list-style: none;
+    text-align: center;
 }
 
-.header-div ul li {
+nav ul li {
+    display: inline-block;
+    margin: 1rem;
+    transition: 1s ease;
+}
+
+nav ul li a {
     font-size: 2rem;
-    
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: 1s ease;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px black;
+}
+
+nav ul li:hover {
+    transform: translateY(-5px);
+}
+
+nav ul li a:hover {
+    color: rgb(154, 189, 219);
+}
+
+/*!-------------SMALL-SCREEN-------------*/
+
+nav .fa-regular,
+nav .fa-solid {
+    display: none;
+}
+
+@media screen and (width <= 1000px) {
+    nav {
+        justify-content: right;
+    }
+
+    nav .fa-regular,
+    nav .fa-solid {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        background-color: rgb(44, 56, 65);
+        position: fixed;
+        top: 0;
+        right: -13rem;
+        overflow: hidden;
+        width: 13rem;
+        height: 100vh;
+        padding-top: 3rem;
+        z-index: 1;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 1rem;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    nav ul .fa-regular {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        cursor: pointer;
+    }
+
+    .fa-bars {
+        cursor: pointer;
+        margin: 0 2rem;
+        color: rgb(83, 165, 165);;
+    }
+
+    .fa-rectangle-xmark {
+        color: rgb(83, 165, 165);
+    }
 }
