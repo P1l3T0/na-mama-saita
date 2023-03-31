@@ -94,7 +94,7 @@ nav .fa-solid {
     display: none;
 }
 
-@media screen and (width <= 1000px) {
+@media screen and (width <= 875px) {
     /*!-------------HEADER-------------*/
     nav {
         justify-content: right;
