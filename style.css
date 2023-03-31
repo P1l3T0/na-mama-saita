@@ -5,7 +5,15 @@
     padding: 0;
     font-family: "Popins", sans-serif;
     scroll-behavior: smooth !important;
-    /* outline: solid 1px green; */
+    /* outline: solid 1px blue; */
+}
+
+/*!-------------HEADER-------------*/
+
+body {
+    background: url("pictures/home-background.svg");
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -15,8 +23,8 @@ header {
 }
 
 .logo {
-    width: 7rem;
-    height: 7rem;
+    width: 6rem;
+    height: 6rem;
     margin: 1rem;
     display: inline-block;
 }
@@ -51,9 +59,33 @@ nav ul li:hover {
     transform: translateY(-5px);
 }
 
-nav ul li a:hover {
-    color: rgb(154, 189, 219);
+/*!-------------HOME-MAIN-------------*/
+
+.home-main {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
+
+.home-main h1 {
+    font-size: 3rem;
+    margin: 5rem 0;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+footer h1 {
+    color: white;
+}
+
 
 /*!-------------SMALL-SCREEN-------------*/
 
@@ -63,6 +95,7 @@ nav .fa-solid {
 }
 
 @media screen and (width <= 1000px) {
+    /*!-------------HEADER-------------*/
     nav {
         justify-content: right;
     }
@@ -71,10 +104,12 @@ nav .fa-solid {
     nav .fa-solid {
         display: block;
         font-size: 1.5rem;
+        color: white;
     }
 
     nav ul {
-        background-color: rgb(44, 56, 65);
+        background-color: rgb(24,106,59);
+        border-left: 2px solid black;
         position: fixed;
         top: 0;
         right: -13rem;
@@ -89,6 +124,10 @@ nav .fa-solid {
         display: block;
         margin: 1rem;
     }
+    
+    nav ul li:hover {
+        transform: none;
+    } 
 
     nav ul li a {
         font-size: 1.5rem;
@@ -104,10 +143,15 @@ nav .fa-solid {
     .fa-bars {
         cursor: pointer;
         margin: 0 2rem;
-        color: rgb(83, 165, 165);;
     }
+}
 
-    .fa-rectangle-xmark {
-        color: rgb(83, 165, 165);
+@media screen and (width <= 600px) {
+    body {
+        background: url("pictures/home-background-phone.svg");
     }
+    
+    .home-main h1 {
+        font-size: 1.75rem;
+    }   
 }
