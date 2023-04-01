@@ -5,16 +5,10 @@
     padding: 0;
     font-family: "Popins", sans-serif;
     scroll-behavior: smooth !important;
-    /* outline: solid 1px blue; */
+    /* outline: solid 1px red; */
 }
 
 /*!-------------HEADER-------------*/
-
-body {
-    background: url("pictures/home-background.svg");
-    object-fit: cover;
-    background-repeat: no-repeat;
-}
 
 header {
     display: flex;
@@ -23,8 +17,8 @@ header {
 }
 
 .logo {
-    width: 6rem;
-    height: 6rem;
+    width: 7rem;
+    height: 7rem;
     margin: 1rem;
     display: inline-block;
 }
@@ -59,23 +53,56 @@ nav ul li:hover {
     transform: translateY(-5px);
 }
 
-/*!-------------HOME-MAIN-------------*/
+/*!-------------HOME-------------*/
 
 .home-main {
     display: flex;
-    text-align: center;
     justify-content: center;
+    text-align: center;
 }
 
-.home-main h1 {
+.home-text h1 {
+    /* text-shadow: 2px 2px 4px black; */
+    margin: 2rem 0;
     font-size: 3rem;
-    margin: 5rem 0;
-    color: white;
-    text-shadow: 2px 2px 4px black;
 }
+
+.home-section {
+    width: 100%;
+    height: 110vh;
+    background: url("pictures/sketch-bg.webp");
+    /* object-fit: cover; */
+    background-repeat: no-repeat;
+}
+
+
+.home-cards {
+    opacity: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.card {
+    width: auto;
+    margin: 1rem;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 20px;
+    background-color: wheat;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+
+
+/*!-------------FOOTER-------------*/
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     justify-content: center;
@@ -148,10 +175,12 @@ nav .fa-solid {
 
 @media screen and (width <= 600px) {
     body {
-        background: url("pictures/home-background-phone.svg");
+        background: url("pictures/sketch-bg-mobile.webp");
     }
     
     .home-main h1 {
         font-size: 1.75rem;
     }   
+
+
 }
