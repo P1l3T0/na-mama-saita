@@ -5,7 +5,7 @@
     padding: 0;
     font-family: "Popins", sans-serif;
     scroll-behavior: smooth !important;
-    /* outline: solid 1px red; */
+    outline: solid 1px red;
 }
 
 /*!-------------HEADER-------------*/
@@ -19,7 +19,7 @@ header {
 .logo {
     width: 7rem;
     height: 7rem;
-    margin: 1rem;
+    margin: .5rem;
     display: inline-block;
 }
 
@@ -27,26 +27,29 @@ header {
     max-width: 100%;
 }
 
+.links {
+    margin: 0 0 4rem 0;
+}
+
 nav  {
-    display: inline-block;
     list-style: none;
     text-align: center;
+    display: inline-block;
 }
 
 nav ul li {
-    display: inline-block;
     margin: 1rem;
     transition: 1s ease;
+    display: inline-block;
 }
 
 nav ul li a {
     font-size: 2rem;
     font-weight: 700;
-    color: white;
+    color: black;
     cursor: pointer;
     transition: 1s ease;
     text-decoration: none;
-    text-shadow: 2px 2px 4px black;
 }
 
 nav ul li:hover {
@@ -59,20 +62,25 @@ nav ul li:hover {
     display: flex;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
+
+.home-text {
+    flex-basis: 30%;
+}
+
+.home-img {
+    flex-basis: 70%;
+}
+
+.home-img img {
+    max-width: 100%;
+}
+
 
 .home-text h1 {
-    /* text-shadow: 2px 2px 4px black; */
     margin: 2rem 0;
-    font-size: 3rem;
-}
-
-.home-section {
-    width: 100%;
-    height: 110vh;
-    background: url("pictures/sketch-bg.webp");
-    /* object-fit: cover; */
-    background-repeat: no-repeat;
+    font-size: 2.5rem;
 }
 
 
@@ -97,8 +105,6 @@ nav ul li:hover {
     max-width: 100%;
 }
 
-
-
 /*!-------------FOOTER-------------*/
 
 footer {
@@ -109,10 +115,6 @@ footer {
     text-align: center;
 }
 
-footer h1 {
-    color: white;
-}
-
 
 /*!-------------SMALL-SCREEN-------------*/
 
@@ -121,7 +123,25 @@ nav .fa-solid {
     display: none;
 }
 
-@media screen and (width <= 875px) {
+@media screen and (width <= 1300px) {
+    
+    /* ! */
+
+    .home-main {
+        display: block;
+        margin: 2rem 0;
+    }
+
+    .home-text {
+        flex-basis: 100%;
+    }
+    
+    .home-img {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (width <= 900px) {
     /*!-------------HEADER-------------*/
     nav {
         justify-content: right;
@@ -131,7 +151,7 @@ nav .fa-solid {
     nav .fa-solid {
         display: block;
         font-size: 1.5rem;
-        color: white;
+        color: black;
     }
 
     nav ul {
@@ -171,16 +191,14 @@ nav .fa-solid {
         cursor: pointer;
         margin: 0 2rem;
     }
+
+    .links {
+        margin: 1rem;
+    }
 }
 
 @media screen and (width <= 600px) {
-    body {
-        background: url("pictures/sketch-bg-mobile.webp");
-    }
-    
     .home-main h1 {
-        font-size: 1.75rem;
+        font-size: 1.7rem;
     }   
-
-
 }
