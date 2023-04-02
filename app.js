@@ -28,12 +28,6 @@ function hamburgerMenu() {
 
 window.addEventListener("scroll", function () {
     let header = document.querySelector("header");
-
-    if (this.window.scrollY > 0) {
-        header.classList.add("sticky");
-        header.style.transition = "500ms ease";
-    }
-    else {
-        header.classList.remove("sticky");
-    }
+    header.classList.toggle("sticky", window.scrollY > 0);
 });
+
