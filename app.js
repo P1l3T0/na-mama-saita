@@ -2,7 +2,7 @@ hamburgerMenu();
 
 function hamburgerMenu() {
     var sideMenu = document.getElementById("side-menu");
-    var blurEffect = document.getElementById("blur-overlay");
+    var blurEffect = document.querySelector("#blur");
 
     document.getElementById("open-menu").addEventListener("click", function () {
         sideMenu.style.right = "0";
@@ -10,8 +10,8 @@ function hamburgerMenu() {
 
         blurEffect.style.pointerEvents = 'auto';
         setTimeout(() => {
-            blurEffect.style.display = 'block';
-        }, 1);
+            blurEffect.classList.add("blur-overlay");
+        }, 5);
     });
 
     document.getElementById("close-menu").addEventListener("click", function () {
@@ -20,8 +20,8 @@ function hamburgerMenu() {
 
         blurEffect.style.pointerEvents = 'none';
         setTimeout(() => {
-            blurEffect.style.display = 'none';
-        }, 1);
+            blurEffect.classList.remove("blur-overlay");
+        }, 5);
     });
 }
 
