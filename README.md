@@ -24,4 +24,5 @@ Microsoft Visual Studio Code - IDE used for writing the source code
 
 This website was created by P1l3T0 and it uses the following resources: <br>
 
+https://www.freepik.com/free-vector/set-sketches-beautiful-diverse-female-fashion-outfits_20822882.htm#query=fashion%20sketch%20dress&position=0&from_view=keyword&track=ais - clothes sketch
 https://bgjar.com/ - for the background images used for displaying 
