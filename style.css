@@ -5,7 +5,7 @@
     padding: 0;
     font-family: "Popins", sans-serif;
     scroll-behavior: smooth !important;
-    /* outline: solid 1px green; */
+    outline: solid 1px green;
 }
 
 ::-webkit-scrollbar {
@@ -122,7 +122,7 @@ nav ul li:hover {
 }
 
 .card {
-    width: auto;
+    width: 25rem;
     margin: 1rem;
     align-items: center;
     border: 5px solid white;
@@ -135,13 +135,12 @@ nav ul li:hover {
 
 /*!-------------FOOTER-------------*/
 
-#footer {
+footer {
     background-color: black;
     color: white;
     position: relative;
-    height: 5rem;
+    height: 10rem;
     margin: 0 0 -5rem 0;
-    clear: both;
 }
 
 /*!-------------SMALL-SCREEN-------------*/
