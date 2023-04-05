@@ -1,8 +1,8 @@
 hamburgerMenu();
 
 function hamburgerMenu() {
-    var sideMenu = document.getElementById("side-menu");
-    var blurEffect = document.querySelector("#blur");
+    const sideMenu = document.getElementById("side-menu");
+    const blurEffect = document.querySelector("#blur");
 
     document.getElementById("open-menu").addEventListener("click", function () {
         sideMenu.style.right = "0";

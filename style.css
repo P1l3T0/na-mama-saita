@@ -14,7 +14,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(0, 0, 0);
+    background: linear-gradient(#35333d, #141418);
     border-radius: 1rem;
 }
 
@@ -29,10 +29,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid black;
-    background-color: white;
     padding: .5rem 0;
     transition: 750ms ease;
+    background: linear-gradient(#141418, #4e4c55);
 }
 
 .sticky {
@@ -69,7 +68,7 @@ nav ul li {
 nav ul li a {
     font-size: 2rem;
     font-weight: 700;
-    color: black;
+    color: #fff;
     cursor: pointer;
     transition: 1s ease;
     text-decoration: none;
@@ -136,9 +135,9 @@ nav ul li:hover {
 /*!-------------FOOTER-------------*/
 
 footer {
-    background-color: #25242a;
+    background: linear-gradient(#35333d, #141418);
     position: relative;
-    height: 15rem;
+    height: auto;
     margin: 0 0 -5rem 0;
 }
 
@@ -149,8 +148,17 @@ footer {
 }
 
 .column1 {
-    flex-basis: 35%;
-    margin: 2rem 0 0 0;
+    flex-basis: 30%;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.column1 h1,
+.column2 h1,
+.column3 h1 {
+    font-size: 2.25rem;
+    padding: .5rem 0 0 0;
+    font-weight: 800;
 }
 
 .column1 img {
@@ -161,19 +169,16 @@ footer {
 }
 
 .column1 p {
+    margin: .5rem 0;
     font-size: 1.5rem;
-    padding: .5rem 0 0 5.5rem;
+    opacity: 50%;
 }
 
 .column2 {
-    flex-basis: 35%;
+    flex-basis: 40%;
     margin: .35rem 1rem 0 1rem;
     text-align: center;
-    margin: 2rem 0 0 0;
-}
-
-.column2 h1 {
-    font-size: 2.25rem;
+    margin: 1rem 0;
 }
 
 .column2 ul {
@@ -183,29 +188,27 @@ footer {
 
 .column2 ul li a {
     color: white;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     text-decoration: none;
-    transition: 1s ease-in-out;
+    transition: 750ms ease-in-out;
+    opacity: 50%;
 }
 
 .column2 ul li a:hover {
-    color: blueviolet;
+    color: rgb(62, 216, 255);
 }
 
 .column3 {
     flex-basis: 30%;
-    margin: .35rem ;
+    margin: .35rem;
+    margin: 1rem 0;
     text-align: center;
-    margin: 2rem 0 0 0;
-}
-
-.column3 h1 {
-    font-size: 2.25rem;
 }
 
 .column3 p {
     margin: .5rem 0;
     font-size: 1.5rem;
+    opacity: 50%;
 }
 
 .column3 ul li {
@@ -217,12 +220,27 @@ footer {
     color: white;
     font-size: 1.5rem;
     margin: .3rem 0;
+    opacity: 50%;
+    transition: 750ms ease-in-out;
 }
 
 .column3 ul li i span {
     font-size: 1.25rem;
     padding: .5rem;
     font-weight: normal;
+}
+
+.copyright {
+    text-align: center;
+    padding: 1rem;
+}
+
+.copyright h1 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.fa-facebook:hover {
+    color: rgb(55, 55, 247);
 }
 
 /*!-------------SMALL-SCREEN-------------*/
@@ -233,8 +251,6 @@ nav .fa-solid {
 }
 
 @media screen and (width <= 1300px) {
-    /* ! */
-
     .home-main {
         height: auto;
         display: block;
@@ -250,6 +266,22 @@ nav .fa-solid {
     }
 }
 
+@media screen and (width <= 1080px) {
+    .footer-content {
+        display: block;
+        margin: 2rem 0;
+    }
+
+    .column1,
+    .column2,
+    .column3 {
+        text-align: center;
+        flex-basis: 100%;
+        margin: 2rem 0;
+        padding: 1rem;
+    }
+}
+
 @media screen and (width <= 900px) {
     /*!-------------HEADER-------------*/
     nav {
@@ -260,12 +292,11 @@ nav .fa-solid {
     nav .fa-solid {
         display: block;
         font-size: 1.5rem;
-        color: black;
+        color: white;
     }
 
     nav ul {
-        background-color: whitesmoke;
-        border-left: 1px solid black;
+        background: linear-gradient(#141418, #4e4c55);
         position: fixed;
         top: 0;
         right: -13rem;
@@ -292,7 +323,7 @@ nav .fa-solid {
     nav ul .fa-regular {
         position: absolute;
         top: 1.5rem;
-        left: 1.5rem;
+        right: 1.5rem;
         cursor: pointer;
     }
 
@@ -306,7 +337,7 @@ nav .fa-solid {
     }
 
     .blur-overlay {
-        height: 100%;
+        height: 400%;
         width: 100%;
         backdrop-filter: blur(3px);
         position: absolute;
@@ -333,7 +364,18 @@ nav .fa-solid {
         margin: 1rem;
     }
 
-    .column1 {
-        flex-basis: 100%;
+    footer {
+        height: auto;
+    }
+
+    .column1 h1,
+    .column2 h1,
+    .column3 h1 {
+        font-size: 1.75rem;
+        padding: 1rem;
+    }
+
+    .copyright h1 {
+        font-size: 1.75rem;
     }
 }
