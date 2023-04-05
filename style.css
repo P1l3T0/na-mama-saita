@@ -5,7 +5,7 @@
     padding: 0;
     font-family: "Popins", sans-serif;
     scroll-behavior: smooth !important;
-    /* outline: solid 1px green; */
+    outline: solid 1px green;
 }
 
 ::-webkit-scrollbar {
@@ -31,7 +31,8 @@ header {
     justify-content: space-between;
     padding: .5rem 0;
     transition: 750ms ease;
-    background: linear-gradient(#141418, #4e4c55);
+    background: white;
+    border-bottom: 1px solid black;
 }
 
 .sticky {
@@ -43,8 +44,8 @@ header {
 }
 
 .logo {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     margin: .5rem;
     display: inline-block;
 }
@@ -68,7 +69,7 @@ nav ul li {
 nav ul li a {
     font-size: 2rem;
     font-weight: 700;
-    color: #fff;
+    color: black;
     cursor: pointer;
     transition: 1s ease;
     text-decoration: none;
@@ -292,11 +293,11 @@ nav .fa-solid {
     nav .fa-solid {
         display: block;
         font-size: 1.5rem;
-        color: white;
+        color: black;
     }
 
     nav ul {
-        background: linear-gradient(#141418, #4e4c55);
+        background: whitesmoke;
         position: fixed;
         top: 0;
         right: -13rem;
@@ -305,6 +306,7 @@ nav .fa-solid {
         height: 100vh;
         padding-top: 3rem;
         z-index: 999;
+        border-left: 1px solid black;
     }
 
     nav ul li {
@@ -334,14 +336,6 @@ nav .fa-solid {
 
     .links {
         margin: 1rem;
-    }
-
-    .blur-overlay {
-        height: 400%;
-        width: 100%;
-        backdrop-filter: blur(3px);
-        position: absolute;
-        z-index: 1;
     }
     
     .card {
