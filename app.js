@@ -2,15 +2,17 @@ hamburgerMenu();
 
 function hamburgerMenu() {
     const sideMenu = document.getElementById("side-menu");
+    const openMenu = document.getElementById("open-menu");
+    const closeMenu = document.getElementById("close-menu");
 
-    document.getElementById("open-menu").addEventListener("click", function () {
-        sideMenu.style.right = "0";
-        sideMenu.style.transition = "500ms ease";
+    openMenu.addEventListener("click", function () {
+        sideMenu.style.top = "0";
+        sideMenu.style.transition = "1.5s ease";
     });
 
-    document.getElementById("close-menu").addEventListener("click", function () {
-        sideMenu.style.right = "-210px";
-        sideMenu.style.transition = "500ms ease";
+    closeMenu.addEventListener("click", function () {
+        sideMenu.style.top = "-80rem";
+        sideMenu.style.transition = "1.5s ease";
     });
 }
 
