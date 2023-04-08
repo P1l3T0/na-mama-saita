@@ -119,18 +119,25 @@ nav ul li:hover {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    overflow-x: auto;
 }
 
 .card {
     width: 25rem;
     margin: 1rem;
-    align-items: center;
-    border: 5px solid white;
+    padding: .7rem;
+    border: 3px solid black;
     border-radius: 20px;
+    transition: 750ms ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card img {
     max-width: 100%;
+    border-radius: 20px;
 }
 
 /*!-------------FOOTER-------------*/
@@ -329,10 +336,10 @@ nav h1 {
         font-size: 2.5rem;
     }
 
-    nav ul .fa-regular {
+    nav ul .fa-solid  {
         position: absolute;
-        top: 1.5rem;
-        right: 1.5rem;
+        top: 2rem;
+        right: 2rem;
         cursor: pointer;
     }
 
