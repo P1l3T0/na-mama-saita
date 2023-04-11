@@ -5,7 +5,7 @@
     padding: 0;
     font-family: "Popins", sans-serif;
     scroll-behavior: smooth !important;
-    /* outline: solid 1px red; */
+    outline: solid 1px red;
 }
 
 ::-webkit-scrollbar {
@@ -85,7 +85,6 @@ nav ul li:hover {
     display: flex;
     text-align: center;
     align-items: center;
-    height: 90vh;
 }
 
 .home-text {
@@ -120,6 +119,7 @@ nav ul li:hover {
     justify-content: center;
     width: 100%;
     overflow-x: auto;
+    margin: 3rem 0;
 }
 
 .card {
@@ -135,18 +135,73 @@ nav ul li:hover {
     transform: scale(1.05);
 }
 
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
 .card img {
     max-width: 100%;
     border-radius: 20px;
 }
 
+/*!-------------ABOUT-------------*/
+
+.about-main {
+    text-align: center;
+    height: auto;
+}
+
+.about-main h1 {
+    font-size: 3rem;
+    margin: 2rem 0 0 0;
+}
+
+.about-info {
+    margin: 1rem;
+}
+
+.about-info p {
+    font-size: 2rem;
+}
+
+.about-section {
+    display: flex;
+    margin: 5rem 0 7rem 0;
+}
+
+.about-img {
+    flex-basis: 35%;
+}
+
+.about-img img {
+    max-width: 100%;
+    border-radius: 20px;
+    padding: .5rem;
+    border: 3px solid black;
+}
+
+.about-text {
+    flex-basis: 70%;
+    text-align: left;
+}
+
+.about-text h1  {
+    font-size: 2.5rem;
+}
+
+.about-text p{
+    font-size: 2rem;
+}
+
+
 /*!-------------FOOTER-------------*/
 
 footer {
     background: linear-gradient(#35333d, #141418);
-    position: relative;
+    position: absolute;
     height: auto;
-    margin: 0 0 -5rem 0;
+    width: 100%;
 }
 
 .footer-content {
@@ -254,26 +309,31 @@ footer {
 /*!-------------SMALL-SCREEN-------------*/
 
 nav .fa-regular,
-nav .fa-solid,
-nav hr,
-nav h1 {
+nav .fa-solid {
     display: none;
 }
 
 @media screen and (width <= 1300px) {
-    .home-main {
+    .home-main,
+    .about-section {
         height: auto;
         display: block;
         margin: 2rem 0;
     }
 
-    .home-text {
+    .home-text,
+    .about-text {
         flex-basis: 100%;
         padding: 0 .6rem;
     }
     
-    .home-img {
+    .home-img,
+    .about-img {
         flex-basis: 100%;
+    }
+
+    .about-text {
+        text-align: center;
     }
 }
 
@@ -352,12 +412,8 @@ nav h1 {
         margin: 1rem;
     }
     
-    .card {
-        width: 20rem;
-        margin: 1rem;
-        align-items: center;
-        border: 5px solid white;
-        border-radius: 20px;
+    .card h1 {
+        font-size: 1.75rem;
     }
 }
 
@@ -371,6 +427,21 @@ nav h1 {
         font-size: 1.6rem;
         margin: 1rem;
     }
+
+    .about-main h1 {
+        font-size: 2rem;
+    }
+
+    .about-text p,
+    .about-main p {
+        font-size: 1.25rem;
+        margin: 0;
+    }
+
+    .about-img img {
+        max-width: 85%;
+    }
+
 
     footer {
         height: auto;
