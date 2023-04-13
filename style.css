@@ -101,11 +101,12 @@ nav ul li:hover {
 
 .home-text h1 {
     font-size: 2.5rem;
+    padding: 2rem;
 }
 
-/*?-------------HOME-SECTIONS-------------*/
+/*?-------------HOME-SECTION-------------*/
 
-.home-section1 h1 {
+.home-section p {
     text-align: center;
     margin: 5rem;
     font-size: 2.5rem;
@@ -158,11 +159,12 @@ nav ul li:hover {
 }
 
 .about-info {
-    margin: 1rem;
+    padding: 1rem;
 }
 
 .about-info p {
     font-size: 2rem;
+    margin: 1rem;
 }
 
 .about-section {
@@ -171,7 +173,7 @@ nav ul li:hover {
 }
 
 .about-img {
-    flex-basis: 35%;
+    flex-basis: 25%;
 }
 
 .about-img img {
@@ -184,6 +186,7 @@ nav ul li:hover {
 .about-text {
     flex-basis: 70%;
     text-align: left;
+    padding: 1rem;
 }
 
 .about-text h1  {
@@ -324,7 +327,6 @@ nav .fa-solid {
     .home-text,
     .about-text {
         flex-basis: 100%;
-        padding: 0 .6rem;
     }
     
     .home-img,
