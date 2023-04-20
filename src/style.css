@@ -5,7 +5,7 @@
     padding: 0;
     font-family: "Popins", sans-serif;
     scroll-behavior: smooth !important;
-    outline: solid 1px red;
+    /* outline: solid 1px red; */
 }
 
 ::-webkit-scrollbar {
@@ -31,7 +31,7 @@ header {
     justify-content: space-between;
     padding: .5rem 0;
     transition: 750ms ease;
-    background: white;
+    background: transparent;
     border-bottom: 1px solid black;
 }
 
@@ -41,6 +41,7 @@ header {
     width: 100%;
     z-index: 999;
     padding: 0;
+    background: whitesmoke;
 }
 
 .logo {
@@ -281,19 +282,16 @@ footer {
     list-style: none;
 }
 
-.column3 ul li i {
+.column3 ul li .icon {
     text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    margin: .3rem 0;
-    opacity: 50%;
+    font-size: 1.3rem;
     transition: 750ms ease-in-out;
 }
 
-.column3 ul li i span {
-    font-size: 1.25rem;
+.column3 ul li span {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
     padding: .5rem;
-    font-weight: normal;
 }
 
 .copyright {
@@ -305,14 +303,22 @@ footer {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.fa-facebook:hover {
-    color: rgb(55, 55, 247);
+ul li a .icon {
+    margin: .5rem 0;
+}
+
+ul li a .icon > path {
+    transition: 500ms ease-in-out;
+    color: white;
+}
+
+ul li a .icon:hover > path {
+    color: rgb(13, 76, 250);
 }
 
 /*!-------------SMALL-SCREEN-------------*/
 
-nav .fa-regular,
-nav .fa-solid {
+nav .icon {
     display: none;
 }
 
@@ -355,12 +361,9 @@ nav .fa-solid {
     }
 }
 
-@media screen and (width <= 900px) {
-    /*!-------------HEADER-------------*/
-    nav .fa-regular,
-    nav .fa-solid,
-    nav hr,
-    nav h1 {
+@media screen and (width <= 925px) {
+    /*!-------------HEADER-------------*/    
+    nav .icon {
         display: block;
         font-size: 2rem;
         color: black;
@@ -398,20 +401,17 @@ nav .fa-solid {
         font-size: 2.5rem;
     }
 
-    nav ul .fa-solid  {
+    nav ul .icon  {
         position: absolute;
+        font-size: 2.5rem;
         top: 2rem;
         right: 2rem;
         cursor: pointer;
     }
 
     .fa-bars {
-        cursor: pointer;
         margin: 0 2rem;
-    }
-
-    .links {
-        margin: 1rem;
+        cursor: pointer;
     }
     
     .card h1 {
