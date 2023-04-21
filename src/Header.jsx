@@ -1,16 +1,13 @@
 import { useState } from 'react';
+import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmarkSquare } from "@fortawesome/free-solid-svg-icons";
 
 export function Header() {
     const [isMenuOpen, setMenuOpen] = useState(false);
 
-    function openMenu() {
-        setMenuOpen(true);
-    };
-
-    function closeMenu() {
-        setMenuOpen(false);
+    function setMenu() {
+        setMenuOpen(!isMenuOpen);
     };
 
     window.addEventListener("scroll", () => {
@@ -22,7 +19,7 @@ export function Header() {
         <>
             <header>
                 <div className="logo">
-                    <a href="index.html"><img src="./pictures/logo.png" alt="Logo" /></a>
+                    <Link to="/"><img src="./pictures/logo.png" alt="Logo" /></Link>
                 </div>
                 <nav>
                     <ul
@@ -30,24 +27,37 @@ export function Header() {
                         style={{ top: isMenuOpen ? '0' : '-80rem', transition: '1.5s ease' }}
                     >
                         <div className="burger-div">
-                            <li><a href="about.html">За нас</a></li>
-                            <li><a href="#">Галерия</a></li>
-                            <li><a href="#">Контакти</a></li>
-                            <li><a href="#">Бивши възпитаници</a></li>
+                            <CustomLink to="/about">За нас</CustomLink>
+                            <CustomLink to="/gallery">Галерия</CustomLink>
+                            <CustomLink to="/contacts">Контакти</CustomLink>
+                            <CustomLink to="/former-graduates">Бивши възпитаници</CustomLink>
                         </div>
                         <FontAwesomeIcon
                             icon={faXmarkSquare}
-                            onClick={closeMenu}
+                            onClick={setMenu}
                             className='icon'
                         />
                     </ul>
                     <FontAwesomeIcon
                         icon={faBars}
-                        onClick={openMenu}
+                        onClick={setMenu}
                         className='icon'
                     />
                 </nav>
             </header>
+        </>
+    );
+}
+
+function CustomLink({ to, children, ...props }) {
+    const resolvedPath = useResolvedPath(to);
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+
+    return (
+        <>
+            <li className={isActive ? "active" : ""}>
+                <Link to={to} {...props}>{children}</Link>
+            </li>
         </>
     );
 }

@@ -68,11 +68,21 @@ nav ul li a {
     color: black;
     cursor: pointer;
     text-decoration: none;
+    transition: 250ms ease-in-out;
+}
+
+nav ul li.active {
+    background-color: #d3d3d3;
+}
+
+nav ul li:hover {
+    transform: translateY(-5px);
 }
 
 nav ul li a:hover {
     color: red;
 }
+
 
 /*!-------------HOME-------------*/
 /*?-------------HOME-MAIN-------------*/

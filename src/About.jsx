@@ -1,10 +1,8 @@
-import { Header } from "./Header";
 import { Footer } from "./Footer";
 
-export default function About() {
+export function About() {
     return (
         <>
-            <Header />
             <div className="about-main">
                 <h1>За нас</h1>
                 <div className="about-info">
@@ -47,7 +45,6 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     );
 }
