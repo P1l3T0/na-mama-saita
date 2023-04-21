@@ -1,9 +1,9 @@
 import { Header } from "./Header";
-import { Home } from "./Home";
-import { About } from './About';
-import { Gallery } from "./Gallery";
-import { Contacts } from "./Contacts";
-import { FormerGraduates } from "./FormerGraduates";
+import { Home } from "./Home/Home";
+import { About } from './About/About';
+import { Gallery } from "./Gallery/Gallery";
+import { Contacts } from "./Contacts/Contacts";
+import { FormerGraduates } from "./FormerGraduates/FormerGraduates";
 import { Footer } from "./Footer";
 import { Routes, Route } from 'react-router-dom';
 

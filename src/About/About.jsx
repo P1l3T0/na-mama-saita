@@ -1,4 +1,4 @@
-import { Footer } from "./Footer";
+import { Footer } from "../Helpers/Footer";
 
 export function About() {
     return (
