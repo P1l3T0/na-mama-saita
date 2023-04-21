@@ -1,5 +1,3 @@
-import { Footer } from "../Helpers/Footer";
-
 export function About() {
     return (
         <>

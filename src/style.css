@@ -195,7 +195,7 @@ nav ul li a:hover {
     flex-basis: 70%;
     text-align: left;
     padding: .5rem;
-    margin: 0 0 0 2rem;
+    margin: 0 0 2rem 1.5rem;
 }
 
 .about-text h1  {
