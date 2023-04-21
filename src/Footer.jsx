@@ -21,8 +21,8 @@ export function Footer() {
                     </div>
                     <div className="column3">
                         <h1>Контакти:</h1>
-                        <p>гр. Сливен, бул. "Бургаско шосе" 59</p>
                         <ul>
+                            <li><FontAwesomeIcon className='icon' icon={faPaperPlane} /><span>msivova@tu-sofia.bg</span></li>
                             <li><FontAwesomeIcon className='icon' icon={faPaperPlane} /><span>tannna.peneva@tu-sofia.bg</span></li>
                             <li><a href="https://www.facebook.com/TDMMI.PTOT" target="_blank"><FontAwesomeIcon icon={faFacebook} className='icon' /></a></li>
                         </ul>

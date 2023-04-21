@@ -1,4 +1,4 @@
-import { Cards } from "./Cards";
+import { HomeCards } from "./HomeCards";
 
 export function Home() {
     return (
@@ -27,7 +27,7 @@ export function Home() {
                 </div>
             </div>
 
-            <Cards />
+            <HomeCards />
         </>
     );
 }

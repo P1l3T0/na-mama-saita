@@ -9,18 +9,13 @@
 }
 
 ::-webkit-scrollbar {
-    background: rgb(212, 222, 230);
+    background: rgb(255, 255, 255);
     width: .5rem;
 }
 
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(#35333d, #141418);
     border-radius: 1rem;
-}
-
-#main {
-    overflow: auto;
-    padding: 0 0 5rem 0;
 }
 
 /*!-------------HEADER-------------*/
@@ -72,15 +67,15 @@ nav ul li a {
     font-weight: 700;
     color: black;
     cursor: pointer;
-    transition: 1s ease;
     text-decoration: none;
 }
 
-nav ul li:hover {
-    transform: translateY(-5px);
+nav ul li a:hover {
+    color: red;
 }
 
 /*!-------------HOME-------------*/
+/*?-------------HOME-MAIN-------------*/
 
 .home-main {
     display: flex;
@@ -109,7 +104,7 @@ nav ul li:hover {
 
 .home-section p {
     text-align: center;
-    margin: 5rem;
+    margin: 3rem;
     font-size: 2.5rem;
 }
 
@@ -119,10 +114,12 @@ nav ul li:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
     overflow-x: auto;
-    margin: 3rem 0;
+    width: 100%;
+    margin: 1rem 0;
 }
+
+/*?-------------CARD-------------*/
 
 .card {
     width: 25rem;
@@ -170,7 +167,7 @@ nav ul li:hover {
 
 .about-section {
     display: flex;
-    margin: 5rem 0 7rem 0;
+    margin: 2rem 0;
 }
 
 .about-img {
@@ -187,7 +184,8 @@ nav ul li:hover {
 .about-text {
     flex-basis: 70%;
     text-align: left;
-    padding: 1rem;
+    padding: .5rem;
+    margin: 0 0 0 2rem;
 }
 
 .about-text h1  {
@@ -327,7 +325,7 @@ nav .icon {
     .about-section {
         height: auto;
         display: block;
-        margin: 2rem 0;
+        margin: 1rem 0;
     }
 
     .home-text,
@@ -413,7 +411,8 @@ nav .icon {
         margin: 0 2rem;
         cursor: pointer;
     }
-    
+
+    /*?-------------CARD-------------*/  
     .card h1 {
         font-size: 1.75rem;
     }
@@ -421,17 +420,19 @@ nav .icon {
 
 @media screen and (width <= 600px) {
     .home-main h1 {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         margin: .5rem;
+        padding: .5rem;
     }   
 
-    .home-section1 h1 {
+    .home-section p {
         font-size: 1.6rem;
         margin: 1rem;
     }
 
     .about-main h1 {
         font-size: 2rem;
+        margin: 1rem 0;
     }
 
     .about-text p,
@@ -445,6 +446,7 @@ nav .icon {
     }
 
 
+    /*!-------------FOOTER-------------*/  
     footer {
         height: auto;
     }
@@ -453,7 +455,7 @@ nav .icon {
     .column2 h1,
     .column3 h1 {
         font-size: 1.75rem;
-        padding: 1rem;
+        padding: 1rem 0;
     }
 
     .copyright h1 {
