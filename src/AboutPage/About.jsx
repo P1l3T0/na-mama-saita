@@ -1,3 +1,5 @@
+import { Teacher } from "./Teacher";
+
 export function About() {
     return (
         <>
@@ -14,34 +16,18 @@ export function About() {
                     </p>
                 </div>
                 <h1>Ръководители</h1>
-                <div className="about-section">
-                    <div className="about-img">
-                        <img src="https://picsum.photos/400/300?random=1" alt="teacher 1" />
-                    </div>
-                    <div className="about-text">
-                        <h1>Доцент д-р инж. Маргарет Сивова</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates et
-                            perferendis odit ad? Earum reprehenderit repellat veritatis velit
-                            nesciunt praesentium adipisci commodi recusandae laborum illum, nostrum
-                            quisquam voluptas ut possimus!
-                        </p>
-                    </div>
-                </div>
-                <div className="about-section">
-                    <div className="about-img">
-                        <img src="https://picsum.photos/400/300?random=2" alt="teacher 2" />
-                    </div>
-                    <div className="about-text">
-                        <h1>Приятелка на Мама</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates et
-                            perferendis odit ad? Earum reprehenderit repellat veritatis velit
-                            nesciunt praesentium adipisci commodi recusandae laborum illum, nostrum
-                            quisquam voluptas ut possimus!
-                        </p>
-                    </div>
-                </div>
+                <Teacher
+                    src="https://picsum.photos/400/300?random=1"
+                    name="доц. д-р инж. Маргарет Сивова"
+                    aboutTeacher="Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Voluptates et perferendis odit ad?"
+                />
+                <Teacher
+                    src="https://picsum.photos/400/300?random=2"
+                    name="ас. приятелка на мама"
+                    aboutTeacher="Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Voluptates et perferendis odit ad?"
+                />
             </div>
         </>
     );

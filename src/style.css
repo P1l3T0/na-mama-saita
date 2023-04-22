@@ -163,7 +163,7 @@ nav ul li a:hover {
 
 .about-main h1 {
     font-size: 3rem;
-    margin: 2rem 0 0 0;
+    margin: 2rem 0 .5rem 0;
 }
 
 .about-info {
@@ -202,8 +202,93 @@ nav ul li a:hover {
     font-size: 2.5rem;
 }
 
-.about-text p{
+.about-text p {
     font-size: 2rem;
+}
+
+/*!-------------GALLERY-------------*/
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 5rem;
+    margin: 2rem 0;
+    text-transform: uppercase;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.image {
+    width: 20rem;
+    height: 15rem; 
+    border: 5px solid white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 10px 10px 20px;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 20px; 
+    cursor: pointer;
+    object-fit: cover;
+    transition: 250ms ease-in-out;
+}
+
+.image:hover img {
+    transform: scale(1.1);
+}
+
+.popup-image {
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.popup-image .image {
+    border: none;
+    box-shadow: none;
+    width: 0;
+    height: 0;
+    border: 5px solid;
+}
+
+.popup-image span {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50rem;
+    object-fit: cover;
+    border: 5px solid white;
+    transform: translate(-50%, -50%);
+}
+
+.popup-image .image:hover img {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 
@@ -246,7 +331,7 @@ footer {
 .column1 p {
     margin: .5rem 0;
     font-size: 1.5rem;
-    opacity: 50%;
+    opacity: 75%;
 }
 
 .column2 {
@@ -266,7 +351,7 @@ footer {
     font-size: 1.5rem;
     text-decoration: none;
     transition: 750ms ease-in-out;
-    opacity: 50%;
+    opacity: 75%;
 }
 
 .column2 ul li a:hover {
@@ -283,7 +368,7 @@ footer {
 .column3 p {
     margin: .5rem 0;
     font-size: 1.5rem;
-    opacity: 50%;
+    opacity: 75%;
 }
 
 .column3 ul li {
@@ -422,11 +507,32 @@ nav .icon {
         cursor: pointer;
     }
 
+    /*?-------------GALLERY-------------*/
+
+    .popup-image img {
+        width: 90%;
+    }
+
     /*?-------------CARD-------------*/  
     .card h1 {
         font-size: 1.75rem;
     }
 }
+
+@media (width <= 1050px) and (width >= 1000px) {
+    .popup-image img {
+        width: 70%;
+    }
+}
+
+@media (width <= 925px) and (orientation: landscape) {
+    .popup-image img {
+        width: 22rem;
+        width: calc(30rem - 5%);
+    }
+}
+
+
 
 @media screen and (width <= 600px) {
     .home-main h1 {
