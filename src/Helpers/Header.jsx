@@ -24,7 +24,7 @@ export function Header() {
                 <nav>
                     <ul
                         id="side-menu"
-                        style={{ top: isMenuOpen ? '0' : '-80rem', transition: '1.5s ease' }}
+                        style={{ top: isMenuOpen ? '0' : '-90rem', transition: '1.5s ease' }}
                     >
                         <div className="burger-div">
                             <CustomLink to="/about">За нас</CustomLink>

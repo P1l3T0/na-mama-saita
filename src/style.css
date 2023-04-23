@@ -5,7 +5,7 @@
     padding: 0;
     font-family: "Popins", sans-serif;
     scroll-behavior: smooth !important;
-    /* outline: solid 1px red; */
+    outline: solid 1px red;
 }
 
 ::-webkit-scrollbar {
@@ -208,7 +208,6 @@ font-size: 3rem;
 
 .about-text h2  {
     font-size: 2rem;
-    padding: 0 1rem;
     font-weight: 800;
 }
 
@@ -245,7 +244,7 @@ font-size: 3rem;
     height: 15rem;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 5px 5px 20px;
+    box-shadow: 5px 5px 10px;
 }
 
 .image img {
@@ -490,7 +489,7 @@ nav .icon {
     nav ul {
         background: whitesmoke;
         position: fixed;
-        top: -80rem;
+        top: -100rem;
         right: 0;
         overflow: hidden;
         width: 100%;
@@ -581,7 +580,7 @@ nav .icon {
     }
 
     .about-text h2  {
-        font-size: 1.75rem;
+        font-size: 2rem;
 
     }
 
