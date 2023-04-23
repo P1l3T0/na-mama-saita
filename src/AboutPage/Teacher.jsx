@@ -6,7 +6,7 @@ export function Teacher({ src, name, aboutTeacher }) {
                     <img src={src} alt="teacher" />
                 </div>
                 <div className="about-text">
-                    <h1>{name}</h1>
+                    <h2>{name}</h2>
                     <p>{aboutTeacher}</p>
                 </div>
             </div>

@@ -4,7 +4,7 @@ export function About() {
     return (
         <>
             <div className="about-main">
-                <h1>За нас</h1>
+                <h1 className="title">За нас</h1>
                 <div className="about-info">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vero a
@@ -15,7 +15,7 @@ export function About() {
                         Cupiditate voluptatibus aliquid vel sunt.
                     </p>
                 </div>
-                <h1>Ръководители</h1>
+                <h2>Ръководители</h2>
                 <Teacher
                     src="https://picsum.photos/400/300?random=1"
                     name="доц. д-р инж. Маргарет Сивова"
@@ -24,7 +24,7 @@ export function About() {
                 />
                 <Teacher
                     src="https://picsum.photos/400/300?random=2"
-                    name="ас. приятелка на мама"
+                    name="ас. Таня Пенева"
                     aboutTeacher="Lorem ipsum dolor sit amet consectetur 
                     adipisicing elit. Voluptates et perferendis odit ad?"
                 />

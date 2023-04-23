@@ -48,6 +48,7 @@ header {
 
 .logo img {
     max-width: 100%;
+    border-radius: 70%;
 }
 
 nav  {
@@ -156,18 +157,25 @@ nav ul li a:hover {
 
 /*!-------------ABOUT-------------*/
 
+.title {
+    font-size: 5rem;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    text-transform: uppercase;
+}
+
 .about-main {
     text-align: center;
     height: auto;
 }
 
-.about-main h1 {
-    font-size: 3rem;
-    margin: 2rem 0 .5rem 0;
+.about-main h2 {
+font-size: 3rem;
 }
 
 .about-info {
-    padding: 1rem;
+    padding: .5rem;
+    margin: 0 0 2rem 0;
 }
 
 .about-info p {
@@ -198,8 +206,10 @@ nav ul li a:hover {
     margin: 0 0 2rem 1.5rem;
 }
 
-.about-text h1  {
-    font-size: 2.5rem;
+.about-text h2  {
+    font-size: 2rem;
+    padding: 0 1rem;
+    font-weight: 800;
 }
 
 .about-text p {
@@ -215,6 +225,7 @@ nav ul li a:hover {
 .container h1 {
     font-size: 5rem;
     margin: 2rem 0;
+    padding: 0 1rem;
     text-transform: uppercase;
 }
 
@@ -231,18 +242,17 @@ nav ul li a:hover {
 
 .image {
     width: 20rem;
-    height: auto;
-    border: 5px solid white;
+    height: 15rem;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 5px 5px 20px;
 }
 
 .image img {
-    max-width: 100%;
-    border-radius: 10px;
     cursor: pointer;
     object-fit: cover;
+    max-width: 100%;
+    border-radius: 10px;
     transition: 250ms ease-in-out;
 }
 
@@ -289,6 +299,7 @@ nav ul li a:hover {
     cursor: default;
     object-fit: cover;
     border: 5px solid white;
+    border-radius: 25px;
     transform: translate(-50%, -50%);
 }
 
@@ -310,6 +321,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     color: white;
+    border-top: 1px solid black;
 }
 
 .column1 {
@@ -440,10 +452,11 @@ nav .icon {
 
     .about-text {
         text-align: center;
+        margin: 0 0 2rem 0;
     }
 }
 
-@media screen and (width <= 1080px) {
+@media (width <= 1080px) {
     .footer-content {
         display: block;
         margin: 2rem 0;
@@ -459,7 +472,7 @@ nav .icon {
     }
 }
 
-@media screen and (width <= 925px) {
+@media (width <= 985px) {
     /*!-------------HEADER-------------*/
     nav .icon {
         display: block;
@@ -537,9 +550,7 @@ nav .icon {
     }
 }
 
-
-
-@media screen and (width <= 600px) {
+@media (width <= 600px) {
     .home-main h1 {
         font-size: 1.7rem;
         margin: .5rem;
@@ -551,8 +562,15 @@ nav .icon {
         margin: 1rem;
     }
 
+    /*!-------------ABOUT-------------*/
+
     .about-main h1 {
-        font-size: 2rem;
+        font-size: 4rem;
+        margin: 1rem 0;
+    }
+
+    .about-main h2 {
+        font-size: 2.5rem;
         margin: 1rem 0;
     }
 
@@ -562,8 +580,19 @@ nav .icon {
         margin: 0;
     }
 
+    .about-text h2  {
+        font-size: 1.75rem;
+
+    }
+
     .about-img img {
         max-width: 85%;
+    }
+
+    /*!-------------GALLERY-------------*/
+
+    .container h1 {
+        font-size: 4rem;
     }
 
 

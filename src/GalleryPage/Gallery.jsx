@@ -18,7 +18,7 @@ export function Gallery() {
     return (
         <>
             <div className="container">
-                <h1>Галерия</h1>
+                <h1 className="title">Галерия</h1>
                 <div className="image-container">
                     <Image src="https://picsum.photos/400/300?random=1" alt="alt pic 1" handleImageClick={handleImageClick} />
                     <Image src="https://picsum.photos/400/300?random=2" alt="alt pic 1" handleImageClick={handleImageClick} />

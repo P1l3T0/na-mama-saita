@@ -10,7 +10,7 @@ export function Header() {
         setMenuOpen(!isMenuOpen);
     };
 
-    window.addEventListener("scroll", () => {
+    window.addEventListener("scroll", function scroll() {
         let header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
     });
@@ -29,7 +29,7 @@ export function Header() {
                         <div className="burger-div">
                             <CustomLink to="/about">За нас</CustomLink>
                             <CustomLink to="/gallery">Галерия</CustomLink>
-                            <CustomLink to="/contacts">Контакти</CustomLink>
+                            <CustomLink to="/contacts">Връзка с нас</CustomLink>
                             <CustomLink to="/former-graduates">Бивши възпитаници</CustomLink>
                         </div>
                         <FontAwesomeIcon
