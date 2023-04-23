@@ -9,9 +9,11 @@ export function Gallery() {
         setPopupImageSrc(src);
     };
 
-    function handleCloseClick() {
-        setShowPopup(false);
-    };
+    function handleCloseClick(event) {
+        if (event.target.classList.contains("popup-image") && !event.target.classList.contains("image"))
+            setShowPopup(false);
+    }
+
 
     return (
         <>
@@ -31,12 +33,13 @@ export function Gallery() {
                 </div>
             </div>
 
-            <div
-                className="popup-image"
-                style={{ display: showPopup ? "block" : "none" }}
-            >
-                <span onClick={handleCloseClick}>&times;</span>
-                <Image src={popupImageSrc} alt="alt pic 1" />
+            <div className="whole-div" onClick={() => handleCloseClick(event)}>
+                <div
+                    className="popup-image"
+                    style={{ display: showPopup ? "block" : "none" }}
+                >
+                    <Image src={popupImageSrc} alt="alt pic 1" />
+                </div>
             </div>
         </>
     );
@@ -46,7 +49,11 @@ function Image({ src, alt, handleImageClick }) {
     return (
         <>
             <div className="image">
-                <img src={src} alt={alt} onClick={() => handleImageClick(src)} />
+                <img
+                    src={src}
+                    alt={alt}
+                    onClick={() => handleImageClick(src)}
+                />
             </div>
         </>
     );

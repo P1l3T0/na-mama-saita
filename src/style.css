@@ -226,20 +226,21 @@ nav ul li a:hover {
     flex-wrap: wrap;
     gap: 2rem;
     margin: 2rem;
+    padding: 1rem;
 }
 
 .image {
     width: 20rem;
-    height: 15rem; 
+    height: auto;
     border: 5px solid white;
-    border-radius: 25px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 10px 10px 20px;
+    box-shadow: 5px 5px 20px;
 }
 
 .image img {
     max-width: 100%;
-    border-radius: 20px; 
+    border-radius: 10px;
     cursor: pointer;
     object-fit: cover;
     transition: 250ms ease-in-out;
@@ -247,6 +248,10 @@ nav ul li a:hover {
 
 .image:hover img {
     transform: scale(1.1);
+}
+
+.whole-div:not(.popup-image) {
+    cursor: pointer;
 }
 
 .popup-image {
@@ -264,13 +269,12 @@ nav ul li a:hover {
     box-shadow: none;
     width: 0;
     height: 0;
-    border: 5px solid;
 }
 
-.popup-image span {
+.popup-image .icon {
     position: absolute;
-    top: 0;
-    right: 1rem;
+    top: 6rem;
+    right: 3rem;
     font-size: 3rem;
     color: white;
     cursor: pointer;
@@ -282,6 +286,7 @@ nav ul li a:hover {
     top: 50%;
     left: 50%;
     width: 50rem;
+    cursor: default;
     object-fit: cover;
     border: 5px solid white;
     transform: translate(-50%, -50%);
@@ -427,7 +432,7 @@ nav .icon {
     .about-text {
         flex-basis: 100%;
     }
-    
+
     .home-img,
     .about-img {
         flex-basis: 100%;
@@ -455,7 +460,7 @@ nav .icon {
 }
 
 @media screen and (width <= 925px) {
-    /*!-------------HEADER-------------*/    
+    /*!-------------HEADER-------------*/
     nav .icon {
         display: block;
         font-size: 2rem;
@@ -468,7 +473,7 @@ nav .icon {
         flex-direction: column;
         justify-content: center;
     }
-    
+
     nav ul {
         background: whitesmoke;
         position: fixed;
@@ -485,10 +490,10 @@ nav .icon {
         display: block;
         margin: 1rem 0;
     }
-    
+
     nav ul li:hover {
         transform: none;
-    } 
+    }
 
     nav ul li a {
         font-size: 2.5rem;
@@ -513,7 +518,7 @@ nav .icon {
         width: 90%;
     }
 
-    /*?-------------CARD-------------*/  
+    /*?-------------CARD-------------*/
     .card h1 {
         font-size: 1.75rem;
     }
@@ -539,7 +544,7 @@ nav .icon {
         font-size: 1.7rem;
         margin: .5rem;
         padding: .5rem;
-    }   
+    }
 
     .home-section p {
         font-size: 1.6rem;
@@ -562,7 +567,7 @@ nav .icon {
     }
 
 
-    /*!-------------FOOTER-------------*/  
+    /*!-------------FOOTER-------------*/
     footer {
         height: auto;
     }
