@@ -10,7 +10,7 @@ export function Gallery() {
     };
 
     function handleCloseClick(event) {
-        if (event.target.classList.contains("popup-image") && !event.target.classList.contains("image"))
+        if (event.target.classList.contains("popup-image"))
             setShowPopup(false);
     }
 
@@ -20,21 +20,20 @@ export function Gallery() {
             <div className="container">
                 <h1 className="title">Галерия</h1>
                 <div className="image-container">
-                    <Image src="./pictures/galleryPictures/rabotilnica1.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="./pictures/galleryPictures/rabotilnica2.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="./pictures/galleryPictures/rabotilnica3.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="./pictures/galleryPictures/rabotilnica4.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="./pictures/galleryPictures/d3Kolej2017.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="./pictures/galleryPictures/d3Kolej2017(1).webp" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="./pictures/galleryPictures/d3Kolej2022.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="./pictures/galleryPictures/d3Magistri2021.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="./pictures/galleryPictures/d3Magistri2022.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="./pictures/galleryPictures/kurs2004.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="./pictures/galleryPictures/diplomniZashtiti2020-1.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="./pictures/galleryPictures/diplomniZashtiti2020-2.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="./pictures/galleryPictures/diplomniZashtiti2020-3.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="./pictures/galleryPictures/diplomniZashtiti2020-4.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="./pictures/galleryPictures/diplomniZashtiti2020-5.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/rabotilnica1.webp" alt="laboratoriq" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/rabotilnica2.webp" alt="laboratoriq" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/rabotilnica3.webp" alt="laboratoriq" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/rabotilnica4.webp" alt="laboratoriq" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/d3Kolej2017-1.webp" alt="sus stydenti" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/d3Kolej2017-2.webp" alt="sus stydenti" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/d3Kolej2022.webp" alt="sus stydenti" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/d3Magistri2021.webp" alt="magistri2021" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/d3Magistri2022.webp" alt="magistri2022" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/diplomniZashtiti2020-1.webp" alt="diplomni zashtiti 2020" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/diplomniZashtiti2020-2.webp" alt="diplomni zashtiti 2020" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/diplomniZashtiti2020-3.webp" alt="diplomni zashtiti 2020" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/diplomniZashtiti2020-4.webp" alt="diplomni zashtiti 2020" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/diplomniZashtiti2020-5.webp" alt="diplomni zashtiti 2020" handleImageClick={handleImageClick} />
                 </div>
             </div>
 

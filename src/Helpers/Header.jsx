@@ -19,7 +19,7 @@ export function Header() {
         <>
             <header>
                 <div className="logo">
-                    <Link to="/"><img src="./pictures/logo.png" alt="Logo" /></Link>
+                    <CustomLink to="/"><img src="./pictures/logo.png" alt="Logo" /></CustomLink>
                 </div>
                 <nav>
                     <ul

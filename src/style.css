@@ -53,6 +53,7 @@ header {
     height: 4rem;
     margin: .5rem;
     display: inline-block;
+    list-style: none;
 }
 
 .logo img {
@@ -256,6 +257,9 @@ font-size: 3rem;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 5px 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image img {
@@ -536,6 +540,10 @@ nav .icon {
     }
 
     /*?-------------GALLERY-------------*/
+    .image {
+        height: auto;
+    }
+    
 
     .popup-image img {
         width: 90%;
