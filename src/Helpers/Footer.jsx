@@ -9,7 +9,7 @@ export function Footer() {
                 <div className="footer-content">
                     <div className="column1">
                         <img src="./pictures/logo.png" alt="Logo" />
-                        <h1>ТУ София, ИПФ Сливен</h1>
+                        <h1>ТУ София, Колеж Сливен</h1>
                         <p>Технологии, дизайн и мениджмънт на модната индустрия</p>
                     </div>
                     <div className="column2">

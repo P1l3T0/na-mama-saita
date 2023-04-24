@@ -8,7 +8,7 @@ export function Home() {
                     <h1>Технологии, дизайн и мениджмънт на модната индустрия</h1>
                 </div>
                 <div className="home-img">
-                    <img src="./pictures/sketch-bg.webp" alt="sketches of clothes" />
+                    <img src="./pictures/" alt="placeholder text" />
                 </div>
             </div>
             <div className="home-section">
@@ -20,7 +20,7 @@ export function Home() {
             </div>
             <div className="home-main">
                 <div className="home-img">
-                    <img src="./pictures/sketch-bg.webp" alt="sketches of clothes" />
+                    <img src="./pictures/test2.webp" alt="placeholder text" />
                 </div>
                 <div className="home-text">
                     <h1>Lorem ipsum dolor sit amet.</h1>

@@ -20,16 +20,21 @@ export function Gallery() {
             <div className="container">
                 <h1 className="title">Галерия</h1>
                 <div className="image-container">
-                    <Image src="https://picsum.photos/400/300?random=1" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="https://picsum.photos/400/300?random=2" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="https://picsum.photos/400/300?random=3" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="https://picsum.photos/400/300?random=4" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="https://picsum.photos/400/300?random=5" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="https://picsum.photos/400/300?random=6" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="https://picsum.photos/400/300?random=7" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="https://picsum.photos/400/300?random=8" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="https://picsum.photos/400/300?random=9" alt="alt pic 1" handleImageClick={handleImageClick} />
-                    <Image src="https://picsum.photos/400/300?random=10" alt="alt pic 1" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/rabotilnica1.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/rabotilnica2.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/rabotilnica3.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/rabotilnica4.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/d3Kolej2017.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/d3Kolej2017(1).webp" alt="alt pic 1" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/d3Kolej2022.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/d3Magistri2021.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/d3Magistri2022.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/kurs2004.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/diplomniZashtiti2020-1.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/diplomniZashtiti2020-2.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/diplomniZashtiti2020-3.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/diplomniZashtiti2020-4.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
+                    <Image src="./pictures/galleryPictures/diplomniZashtiti2020-5.webp" alt="alt pic 1" handleImageClick={handleImageClick} />
                 </div>
             </div>
 
