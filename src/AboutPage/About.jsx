@@ -48,7 +48,7 @@ export function About() {
                     <div className="contacts-form">
                         <form action="https://formsubmit.co/vgan3v@gmail.com" method="POST">
                             <select id="person-type" name="Курс" required>
-                                <option value="">Аз съм...</option>
+                                <option value="">--Аз съм--</option>
                                 <option value="първи курс">Първи курс</option>
                                 <option value="втори курс">Втори курс</option>
                                 <option value="трети курс">Трети курс</option>

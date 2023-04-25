@@ -8,7 +8,7 @@ export function Footer() {
             <footer id="footer">
                 <div className="footer-content">
                     <div className="column1">
-                        <img src="./pictures/logo.png" alt="Logo" />
+                        <img src="./pictures/logo.webp" alt="Logo" />
                         <h1>ТУ София, Колеж Сливен</h1>
                         <p>Технологии, дизайн и мениджмънт на модната индустрия</p>
                     </div>

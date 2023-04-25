@@ -5,7 +5,7 @@
     padding: 0;
     font-family: "Popins", sans-serif;
     scroll-behavior: smooth !important;
-    /* outline: solid 1px green; */
+    /* outline: solid 2px rgb(74, 189, 255); */
 }
 
 ::-webkit-scrollbar {
@@ -34,7 +34,7 @@ header {
     justify-content: space-between;
     padding: .5rem 0;
     transition: 750ms ease;
-    background: transparent;
+    background: whitesmoke;
     border-bottom: 1px solid black;
 }
 
@@ -101,26 +101,24 @@ nav ul li a:hover {
     display: flex;
     text-align: center;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    background: url("../pictures/bg.webp") no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-bottom: 2px solid black;
 }
 
-.home-text {
-    flex-basis: 30%;
+.home-main h1 {
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    text-transform: uppercase;
+    font-size: 2.85rem;
+    font-weight: 800;
 }
 
-.home-img {
-    flex-basis: 70%;
-    padding: 1rem;
-}
-
-.home-img img {
-    max-width: 100%;
-    border-radius: 15px;
-}
-
-.home-text h1 {
-    font-size: 2.5rem;
-    padding: 2rem;
-}
 
 /*?-------------HOME-SECTION-------------*/
 
@@ -147,8 +145,8 @@ nav ul li a:hover {
     width: 25rem;
     margin: 1rem;
     padding: .7rem;
-    border: 3px solid black;
     border-radius: 20px;
+    box-shadow: 3px 3px 5px;
     transition: 750ms ease-in-out;
 }
 
@@ -170,14 +168,19 @@ nav ul li a:hover {
 
 .title {
     font-size: 5rem;
-    margin: 2rem 0;
-    padding: 0 1rem;
+    padding: 1rem;
     text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 3px black;
 }
 
 .about-main {
     text-align: center;
-    height: auto;
+    height: 100%;
+    background: url("../pictures/bg-about.svg") no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }
 
 .about-main h2 {
@@ -192,6 +195,7 @@ nav ul li a:hover {
 .about-info p {
     font-size: 2rem;
     margin: 1rem;
+    font-weight: 700;
 }
 
 .about-section {
@@ -206,7 +210,7 @@ nav ul li a:hover {
 .about-img img {
     max-width: 100%;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px;
+    box-shadow: 5px 5px 10px black;
 }
 
 .about-text {
@@ -217,19 +221,20 @@ nav ul li a:hover {
 }
 
 .about-text h2  {
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 800;
 }
 
 .about-text p {
     font-size: 2rem;
+    font-weight: 700;    
 }
 
 /*?-------------ABOUT-FORM-------------*/
 
 .contacts {
     display: flex;
-    margin: 1rem 0;
+    padding: 1rem 0;
 }
 
 .contacts-questions {
@@ -245,7 +250,9 @@ nav ul li a:hover {
 
 .contacts-questions p {
     font-size: 2rem;
+
     padding: 1rem;
+    font-weight: 700;
 }
 
 .contacts-form {
@@ -267,7 +274,6 @@ input[data-autocompleted] {
 
 form select {
     width: 83%;
-    border: 0;
     padding: 1rem;
     margin: .5rem 0 1.5rem 0;
     background: rgb(207, 207, 207);
@@ -279,7 +285,6 @@ form select {
 form input {
     width: 80%;
     height: 1.5rem;
-    border: 0;
     padding: 1rem;
     margin: 0 0 1.5rem 0;
     background: rgb(207, 207, 207);
@@ -291,7 +296,6 @@ form input {
 form textarea {
     width: 80%;
     height: 5.5rem;
-    border: 0;
     padding: 1rem;
     margin: 0 0 1.5rem 0;
     background: rgb(207, 207, 207);
@@ -307,11 +311,10 @@ button {
     font-weight: 800;
     padding: .3em;
     border-radius: 15px;
-    text-shadow: rgb(255, 255, 255) 5px 5px 3px;
     width: fit-content;
     text-transform: uppercase;
     transition: 750ms ease-in-out;
-    background-color: transparent;
+    background-color: rgb(207, 207, 207);
 }
 
 button a {
@@ -320,20 +323,16 @@ button a {
 }
 
 button:hover {
-    background: rgb(207, 207, 207);
+    background-color: rgb(151, 151, 151);
 }
 
 /*!-------------GALLERY-------------*/
 
-.container {
+.gallery-container {
     text-align: center;
-}
-
-.container h1 {
-    font-size: 5rem;
-    margin: 2rem 0;
-    padding: 0 1rem;
-    text-transform: uppercase;
+    height: 100%;
+    background: url("../pictures/bg1.svg") no-repeat;
+    background-size: cover;
 }
 
 .image-container {
@@ -343,8 +342,7 @@ button:hover {
     text-align: center;
     flex-wrap: wrap;
     gap: 2rem;
-    margin: 2rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .image {
@@ -527,19 +525,12 @@ nav .icon {
 }
 
 @media screen and (width <= 1300px) {
-    .home-main,
     .about-section {
         height: auto;
         display: block;
         margin: 1rem 0;
     }
 
-    .home-text,
-    .about-text {
-        flex-basis: 100%;
-    }
-
-    .home-img,
     .about-img {
         flex-basis: 100%;
     }
@@ -657,6 +648,28 @@ nav .icon {
 }
 
 @media (width <= 600px) {
+    .home-main {
+        background: url("../pictures/mobile-bg.webp") no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    .gallery-container {
+        text-align: center;
+        height: 100%;
+        background: url("../pictures/bg1-mobile.svg") no-repeat;
+        background-size: cover;
+    }
+
+    .about-main {
+        text-align: center;
+        height: 100%;
+        background: url("../pictures/bg-about-mobile.svg") no-repeat;
+        background-size: cover;
+    }
+    
+    
     .home-main h1 {
         font-size: 1.7rem;
         margin: .5rem;
@@ -670,9 +683,8 @@ nav .icon {
 
     /*!-------------ABOUT-------------*/
 
-    .about-main h1 {
+    .title {
         font-size: 4rem;
-        margin: 1rem 0;
     }
 
     .about-main h2 {
@@ -697,7 +709,7 @@ nav .icon {
 
     /*!-------------GALLERY-------------*/
 
-    .container h1 {
+    .gallery-container h1 {
         font-size: 4rem;
     }
 
@@ -722,7 +734,7 @@ nav .icon {
 /* !byklyk galaxy fold */
 
 @media screen and (width <= 300px) {
-    .container h1 {
+    .gallery-container h1 {
         font-size: 3rem;
     }
 

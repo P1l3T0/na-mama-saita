@@ -18,7 +18,7 @@ export function Gallery() {
 
     return (
         <>
-            <div className="container">
+            <div className="gallery-container">
                 <h1 className="title">Галерия</h1>
                 <div className="image-container">
                     <Image src="./pictures/galleryPictures/rabotilnica1.webp" alt="laboratoriq" handleImageClick={handleImageClick} />
