@@ -19,7 +19,7 @@ export function Header() {
         <>
             <header>
                 <div className="logo">
-                    <CustomLink to="/"><img src="./pictures/logo.png" alt="Logo" /></CustomLink>
+                    <CustomLink to="/"><img src="./pictures/logo.webp" alt="Logo" /></CustomLink>
                 </div>
                 <nav>
                     <ul
@@ -29,7 +29,7 @@ export function Header() {
                         <div className="burger-div">
                             <CustomLink to="/about">За нас</CustomLink>
                             <CustomLink to="/gallery">Галерия</CustomLink>
-                            <CustomLink to="/contacts">Връзка с нас</CustomLink>
+                            <CustomLink to="/contacts">Кандидат-студенти</CustomLink>
                             <CustomLink to="/former-graduates">Бивши възпитаници</CustomLink>
                         </div>
                         <FontAwesomeIcon

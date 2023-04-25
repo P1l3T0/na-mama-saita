@@ -1,3 +1,3 @@
 export function Contacts() {
-    return <h1>Contacts</h1>;
+    return <h1>Кандидат-студенти </h1>;
 }

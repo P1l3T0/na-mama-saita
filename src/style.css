@@ -5,7 +5,7 @@
     padding: 0;
     font-family: "Popins", sans-serif;
     scroll-behavior: smooth !important;
-    /* outline: solid 1px red; */
+    outline: solid 1px green;
 }
 
 ::-webkit-scrollbar {
@@ -20,7 +20,6 @@
 
 #preloader {
     background: rgb(50,50,58) url("./pictures/preloader.gif") no-repeat center;
-
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -182,7 +181,7 @@ nav ul li a:hover {
 }
 
 .about-main h2 {
-font-size: 3rem;
+    font-size: 3rem;
 }
 
 .about-info {
@@ -201,14 +200,13 @@ font-size: 3rem;
 }
 
 .about-img {
-    flex-basis: 25%;
+    flex-basis: 23%;
 }
 
 .about-img img {
     max-width: 100%;
     border-radius: 20px;
-    padding: .5rem;
-    border: 3px solid black;
+    box-shadow: 5px 5px 10px;
 }
 
 .about-text {
@@ -225,6 +223,104 @@ font-size: 3rem;
 
 .about-text p {
     font-size: 2rem;
+}
+
+/*?-------------ABOUT-FORM-------------*/
+
+.contacts {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.contacts-questions {
+    flex-basis: 60%;
+    text-align: left;
+    margin: 0 0 1rem 0;
+}
+
+.contacts-questions h2 {
+    font-weight: 800;
+    padding: 0 1rem;
+}
+
+.contacts-questions p {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.contacts-form {
+    flex-basis: 45%;
+}
+
+.contacts-form form {
+    width: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+input[data-autocompleted] {
+    background-color: transparent !important;
+}
+
+form select {
+    width: 83%;
+    border: 0;
+    padding: 1rem;
+    margin: .5rem 0 1.5rem 0;
+    background: rgb(207, 207, 207);
+    color: rgb(5, 5, 5);
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+form input {
+    width: 80%;
+    height: 1.5rem;
+    border: 0;
+    padding: 1rem;
+    margin: 0 0 1.5rem 0;
+    background: rgb(207, 207, 207);
+    color: rgb(5, 5, 5);
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+form textarea {
+    width: 80%;
+    height: 5.5rem;
+    border: 0;
+    padding: 1rem;
+    margin: 0 0 1.5rem 0;
+    background: rgb(207, 207, 207);
+    color: rgb(5, 5, 5);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    resize: none;
+}
+
+button {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: .3em;
+    border-radius: 15px;
+    text-shadow: rgb(255, 255, 255) 5px 5px 3px;
+    width: fit-content;
+    text-transform: uppercase;
+    transition: 750ms ease-in-out;
+    background-color: transparent;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background: rgb(207, 207, 207);
 }
 
 /*!-------------GALLERY-------------*/
@@ -252,22 +348,14 @@ font-size: 3rem;
 }
 
 .image {
-    width: 20rem;
-    height: 15rem;
+    width: 30rem;
+    height: 20rem;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 5px 5px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.image img {
-    cursor: pointer;
-    object-fit: cover;
-    max-width: 100%;
-    border-radius: 10px;
-    transition: 250ms ease-in-out;
 }
 
 .image:hover img {
@@ -277,6 +365,8 @@ font-size: 3rem;
 .whole-div:not(.popup-image) {
     cursor: pointer;
 }
+
+/*?-------------POPUP-IMAGE-------------*/
 
 .popup-image {
     top: 0;
@@ -349,7 +439,7 @@ footer {
 .column3 h1 {
     font-size: 2.25rem;
     padding: .5rem 0 0 0;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .column1 img {
@@ -486,7 +576,7 @@ nav .icon {
     }
 }
 
-@media (width <= 985px) {
+@media (width <= 1080px) {
     /*!-------------HEADER-------------*/
     nav .icon {
         display: block;
@@ -515,7 +605,7 @@ nav .icon {
 
     nav ul li {
         display: block;
-        margin: 1rem 0;
+        padding: .5rem 1rem;
     }
 
     nav ul li:hover {
@@ -552,6 +642,16 @@ nav .icon {
     /*?-------------CARD-------------*/
     .card h1 {
         font-size: 1.75rem;
+    }
+
+    .contacts {
+        display: block;
+    }
+
+    .contacts-questions,
+    .contacts-form {
+        flex-basis: 100%;
+        text-align: center;
     }
 }
 

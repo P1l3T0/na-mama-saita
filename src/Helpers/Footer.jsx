@@ -13,14 +13,14 @@ export function Footer() {
                         <p>Технологии, дизайн и мениджмънт на модната индустрия</p>
                     </div>
                     <div className="column2">
-                        <h1>"Полезни" линкове:</h1>
+                        <h1>"Полезни" линкове</h1>
                         <ul>
                             <li><a href="http://www.tu-sliven.com/" target="_blank">ТУ София, Колеж Сливен</a></li>
                             <li><a href="http://www.tu-sliven.com/" target="_blank">ТУ София</a></li>
                         </ul>
                     </div>
                     <div className="column3">
-                        <h1>Контакти:</h1>
+                        <h1>Контакти</h1>
                         <ul>
                             <li><FontAwesomeIcon className='icon' icon={faPaperPlane} /><span>msivova@tu-sofia.bg</span></li>
                             <li><FontAwesomeIcon className='icon' icon={faPaperPlane} /><span>tannna.peneva@tu-sofia.bg</span></li>

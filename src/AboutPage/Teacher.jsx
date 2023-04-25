@@ -1,4 +1,4 @@
-export function Teacher({ src, name, aboutTeacher }) {
+export function Teacher({ src, name, children }) {
     return (
         <>
             <div className="about-section">
@@ -7,7 +7,7 @@ export function Teacher({ src, name, aboutTeacher }) {
                 </div>
                 <div className="about-text">
                     <h2>{name}</h2>
-                    <p>{aboutTeacher}</p>
+                    <p>{children}</p>
                 </div>
             </div>
         </>

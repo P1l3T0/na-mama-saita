@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export function Gallery() {
     const [showPopup, setShowPopup] = useState(false);
@@ -13,7 +15,6 @@ export function Gallery() {
         if (event.target.classList.contains("popup-image"))
             setShowPopup(false);
     }
-
 
     return (
         <>
@@ -42,7 +43,7 @@ export function Gallery() {
                     className="popup-image"
                     style={{ display: showPopup ? "block" : "none" }}
                 >
-                    <Image src={popupImageSrc} alt="alt pic 1" />
+                    <LazyLoadImage src={popupImageSrc} />
                 </div>
             </div>
         </>
@@ -53,11 +54,17 @@ function Image({ src, alt, handleImageClick }) {
     return (
         <>
             <div className="image">
-                <img
+                <LazyLoadImage
                     src={src}
                     alt={alt}
-                    onClick={() => handleImageClick(src)}
-                />
+                    effect="blur"
+                    style={{
+                        transition: "350ms ease-in-out",
+                        objectFit: "cover",
+                        maxWidth: "100%",
+                        cursor: "pointer"
+                    }}
+                    onClick={() => handleImageClick(src)} />
             </div>
         </>
     );
