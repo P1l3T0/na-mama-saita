@@ -5,7 +5,7 @@
     padding: 0;
     font-family: "Popins", sans-serif;
     scroll-behavior: smooth !important;
-    outline: solid 1px green;
+    /* outline: solid 1px green; */
 }
 
 ::-webkit-scrollbar {
@@ -385,21 +385,11 @@ button:hover {
     height: 0;
 }
 
-.popup-image .icon {
-    position: absolute;
-    top: 6rem;
-    right: 3rem;
-    font-size: 3rem;
-    color: white;
-    cursor: pointer;
-    z-index: 100;
-}
-
 .popup-image img {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 50rem;
+    width: 63rem;
     cursor: default;
     object-fit: cover;
     border: 5px solid white;
@@ -633,7 +623,6 @@ nav .icon {
     .image {
         height: auto;
     }
-    
 
     .popup-image img {
         width: 90%;
@@ -657,13 +646,12 @@ nav .icon {
 
 @media (width <= 1050px) and (width >= 1000px) {
     .popup-image img {
-        width: 70%;
+        width: 48rem;
     }
 }
 
 @media (width <= 925px) and (orientation: landscape) {
     .popup-image img {
-        width: 22rem;
         width: calc(30rem - 5%);
     }
 }
@@ -728,5 +716,23 @@ nav .icon {
 
     .copyright h1 {
         font-size: 1.75rem;
+    }
+}
+
+/* !byklyk galaxy fold */
+
+@media screen and (width <= 300px) {
+    .container h1 {
+        font-size: 3rem;
+    }
+
+    .about-main h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (height <= 300px) {
+    .popup-image img {
+        width: calc(25rem - 7%);
     }
 }
