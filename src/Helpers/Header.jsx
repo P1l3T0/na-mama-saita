@@ -25,11 +25,6 @@ export function Header() {
         setMenuOpen(!isMenuOpen);
     };
 
-    window.addEventListener("scroll", () => {
-        let header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0);
-    });
-
     return (
         <>
             <header style={{
@@ -41,7 +36,7 @@ export function Header() {
                     className='header-div'
                     style={{
                         backdropFilter: isBlur ? 'blur(5px)' : 'blur(0)',
-                        padding: isBlur ? "0" : ".5rem",
+                        padding: isBlur ? "0" : ".5rem 0",
                     }}
                 >
                     <div className="logo">
