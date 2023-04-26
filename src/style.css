@@ -8,6 +8,10 @@
     /* outline: solid 2px rgb(74, 189, 255); */
 }
 
+body {
+    background-color: rgb(106,119,120);
+}
+
 ::-webkit-scrollbar {
     background: rgb(255, 255, 255);
     width: .5rem;
@@ -28,22 +32,14 @@
 
 /*!-------------HEADER-------------*/
 
-header {
+.header-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: .5rem 0;
     transition: 750ms ease;
-    background: rgb(154,154,154);
     border-bottom: 1px solid black;
-}
-
-.sticky {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-    padding: 0;
+    /* z-index: 999999; */
 }
 
 .logo {
@@ -74,7 +70,8 @@ nav ul li {
 nav ul li a {
     font-size: 2rem;
     font-weight: 700;
-    color: black;
+    color: whitesmoke;
+    text-shadow: 3px 3px 1px black;
     cursor: pointer;
     text-decoration: none;
     transition: 250ms ease-in-out;
@@ -89,7 +86,7 @@ nav ul li:hover {
 }
 
 nav ul li a:hover {
-    color: red;
+    color: rgb(235, 235, 235);
 }
 
 
@@ -103,7 +100,7 @@ nav ul li a:hover {
     justify-content: center;
     width: 100%;
     height: 90vh;
-    background: url("../pictures/bg.webp") no-repeat;
+    background: url("../pictures/bg-home.webp") no-repeat;
     background-size: cover;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.15);
@@ -114,10 +111,10 @@ nav ul li a:hover {
     color: white;
     text-shadow: 3px 3px 5px black;
     text-transform: uppercase;
-    font-size: 2.85rem;
+    font-size: 3rem;
     font-weight: 800;
+    padding: 0 2rem;
 }
-
 
 /*?-------------HOME-SECTION-------------*/
 
@@ -203,7 +200,8 @@ nav ul li a:hover {
 }
 
 .about-img {
-    flex-basis: 23%;
+    flex-basis: 20%;
+    padding:  0 0 0 1rem;
 }
 
 .about-img img {
@@ -222,6 +220,13 @@ nav ul li a:hover {
 .about-text h2  {
     font-size: 3rem;
     font-weight: 800;
+    margin: .5rem 0;
+}
+
+.about-text h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: .5rem 0;
 }
 
 .about-text p {
@@ -229,14 +234,8 @@ nav ul li a:hover {
     font-weight: 500;    
 }
 
-.about-text ul {
-    list-style: none;
-    font-size: 2.25rem;
-    font-weight: 700;
-}
-
-.about-text ul li {
-    font-size: .7em;
+.about-text p span {
+    font-size: 1em;
     font-weight: 500;
 }
 
@@ -286,7 +285,7 @@ form select {
     width: 83%;
     padding: 1rem;
     margin: .5rem 0 1.5rem 0;
-    background: rgb(207, 207, 207);
+    background: white;
     color: rgb(5, 5, 5);
     font-size: 1.5rem;
     border-radius: 10px;
@@ -297,7 +296,7 @@ form input {
     height: 1.5rem;
     padding: 1rem;
     margin: 0 0 1.5rem 0;
-    background: rgb(207, 207, 207);
+    background: white;
     color: rgb(5, 5, 5);
     font-size: 1.5rem;
     border-radius: 10px;
@@ -308,7 +307,7 @@ form textarea {
     height: 5.5rem;
     padding: 1rem;
     margin: 0 0 1.5rem 0;
-    background: rgb(207, 207, 207);
+    background: white;
     color: rgb(5, 5, 5);
     font-size: 1.5rem;
     border-radius: 10px;
@@ -324,16 +323,11 @@ button {
     width: fit-content;
     text-transform: uppercase;
     transition: 750ms ease-in-out;
-    background-color: rgb(207, 207, 207);
-}
-
-button a {
-    text-decoration: none;
-    color: white;
+    background-color: white;
 }
 
 button:hover {
-    background-color: rgb(151, 151, 151);
+    background-color: rgb(184, 184, 184);
 }
 
 /*!-------------GALLERY-------------*/
@@ -341,7 +335,7 @@ button:hover {
 .gallery-container {
     text-align: center;
     height: 100%;
-    background: url("../pictures/bg1.svg") no-repeat;
+    background: url("../pictures/bg-gallery.svg") no-repeat;
     background-size: cover;
 }
 
@@ -360,7 +354,7 @@ button:hover {
     height: 20rem;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 5px 5px 10px;
+    box-shadow: 2px 2px 10px black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -552,27 +546,15 @@ nav .icon {
 }
 
 @media (width <= 1080px) {
-    .footer-content {
-        display: block;
-        margin: 2rem 0;
-    }
-
-    .column1,
-    .column2,
-    .column3 {
-        text-align: center;
-        flex-basis: 100%;
-        margin: 2rem 0;
-        padding: 1rem;
-    }
-}
-
-@media (width <= 1080px) {
     /*!-------------HEADER-------------*/
+    header {
+        padding: 0;
+    }
+    
     nav .icon {
         display: block;
         font-size: 2rem;
-        color: black;
+        color: whitesmoke;
     }
 
     .burger-div {
@@ -583,7 +565,7 @@ nav .icon {
     }
 
     nav ul {
-        background: whitesmoke;
+        background: rgb(154,154,154);;
         position: fixed;
         top: -100rem;
         right: 0;
@@ -604,7 +586,7 @@ nav .icon {
     }
 
     nav ul li a {
-        font-size: 2.5rem;
+        font-size: 4rem;  /* !ZA TABLETI */
     }
 
     nav ul .icon  {
@@ -643,6 +625,21 @@ nav .icon {
         flex-basis: 100%;
         text-align: center;
     }
+
+    /*?-------------FOOTER-------------*/
+    .footer-content {
+        display: block;
+        margin: 2rem 0;
+    }
+
+    .column1,
+    .column2,
+    .column3 {
+        text-align: center;
+        flex-basis: 100%;
+        margin: 2rem 0;
+        padding: 1rem;
+    }
 }
 
 @media (width <= 1050px) and (width >= 1000px) {
@@ -658,8 +655,12 @@ nav .icon {
 }
 
 @media (width <= 600px) {
+    nav ul li a {
+        font-size: 2.5rem;
+    }
+    
     .home-main {
-        background: url("../pictures/mobile-bg.webp") no-repeat;
+        background: url("../pictures/bg-home-mobile.webp") no-repeat;
         background-size: cover;
         background-blend-mode: darken;
         background-color: rgba(0, 0, 0, 0.15);
@@ -668,7 +669,7 @@ nav .icon {
     .gallery-container {
         text-align: center;
         height: 100%;
-        background: url("../pictures/bg1-mobile.svg") no-repeat;
+        background: url("../pictures/bg-gallery-mobile.svg") no-repeat;
         background-size: cover;
     }
 
@@ -709,7 +710,6 @@ nav .icon {
 
     .about-text h2  {
         font-size: 2rem;
-
     }
 
     .about-img img {
@@ -721,7 +721,6 @@ nav .icon {
     .gallery-container h1 {
         font-size: 4rem;
     }
-
 
     /*!-------------FOOTER-------------*/
     footer {
@@ -743,6 +742,10 @@ nav .icon {
 /* !byklyk galaxy fold */
 
 @media screen and (width <= 300px) {
+    nav ul li a {
+        font-size: 2rem;
+    }
+    
     .gallery-container h1 {
         font-size: 3rem;
     }
@@ -752,8 +755,19 @@ nav .icon {
     }
 }
 
+@media screen and (height <= 500px) {
+    nav ul li a {
+        font-size: 2rem;
+    }
+}
+
 @media screen and (height <= 300px) {
+    nav ul li a {
+        font-size: 1.25rem;
+    }
+    
     .popup-image img {
         width: calc(25rem - 7%);
     }
 }
+
