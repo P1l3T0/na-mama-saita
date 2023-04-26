@@ -10,13 +10,16 @@ export function Header() {
         setMenuOpen(!isMenuOpen);
     };
 
-    window.addEventListener("scroll", function scroll() {
+    window.addEventListener("scroll", () => {
+        let blured = document.querySelector("#blured");
         let header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
+        blured.classList.toggle("blured", window.scrollY > 0);
     });
 
     return (
         <>
+            <div id='blured'></div>
             <header>
                 <div className="logo">
                     <CustomLink to="/"><img src="./pictures/logo.webp" alt="Logo" /></CustomLink>

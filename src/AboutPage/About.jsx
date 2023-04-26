@@ -1,4 +1,4 @@
-import { Teacher } from "./Teacher";
+import { Teachers } from "./Teachers";
 
 export function About() {
     return (
@@ -15,25 +15,8 @@ export function About() {
                         molestiae dolor inventore. Cupiditate voluptatibus aliquid vel sunt.
                     </p>
                 </div>
-                <h2>Ръководители</h2>
-                <Teacher
-                    src="https://picsum.photos/400/300?random=1"
-                    name="доц. д-р инж. Маргарет Сивова"
-                >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-                    deserunt explicabo, omnis obcaecati voluptatibus quae iste iure
-                    tempora dolor qui aspernatur minus tempore debitis accusamus aperiam
-                    voluptatum quidem est harum?
-                </Teacher>
-                <Teacher
-                    src="https://picsum.photos/400/300?random=2"
-                    name="ас. инж приятелка на мама"
-                >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat
-                    consectetur incidunt quaerat aliquid rerum saepe doloremque debitis
-                    illo ad, doloribus explicabo quasi. Asperiores fugit porro in
-                    accusamus provident aperiam.
-                </Teacher>
+
+                <Teachers />
 
                 <div className="contacts">
                     <div className="contacts-questions">
@@ -47,7 +30,7 @@ export function About() {
                     </div>
                     <div className="contacts-form">
                         <form action="https://formsubmit.co/vgan3v@gmail.com" method="POST">
-                            <select id="person-type" name="Курс" required>
+                            <select name="Курс" id="person-type" required>
                                 <option value="">--Аз съм--</option>
                                 <option value="първи курс">Първи курс</option>
                                 <option value="втори курс">Втори курс</option>

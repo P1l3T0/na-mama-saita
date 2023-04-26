@@ -34,7 +34,7 @@ header {
     justify-content: space-between;
     padding: .5rem 0;
     transition: 750ms ease;
-    background: whitesmoke;
+    background: rgb(154,154,154);
     border-bottom: 1px solid black;
 }
 
@@ -44,7 +44,6 @@ header {
     width: 100%;
     z-index: 999;
     padding: 0;
-    background: whitesmoke;
 }
 
 .logo {
@@ -221,13 +220,24 @@ nav ul li a:hover {
 }
 
 .about-text h2  {
-    font-size: 2.25rem;
+    font-size: 3rem;
     font-weight: 800;
 }
 
 .about-text p {
     font-size: 2rem;
-    font-weight: 700;    
+    font-weight: 500;    
+}
+
+.about-text ul {
+    list-style: none;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.about-text ul li {
+    font-size: .7em;
+    font-weight: 500;
 }
 
 /*?-------------ABOUT-FORM-------------*/
@@ -668,7 +678,6 @@ nav .icon {
         background: url("../pictures/bg-about-mobile.svg") no-repeat;
         background-size: cover;
     }
-    
     
     .home-main h1 {
         font-size: 1.7rem;
