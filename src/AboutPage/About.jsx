@@ -29,7 +29,10 @@ export function About() {
                         </p>
                     </div>
                     <div className="contacts-form">
-                        <form action="https://formsubmit.co/vgan3v@gmail.com" method="POST">
+                        <form
+                            action="https://formsubmit.co/vgan3v@gmail.com"
+                            method="POST"
+                        >
                             <select name="Курс" id="person-type" required>
                                 <option value="">--Аз съм--</option>
                                 <option value="първи курс">Първи курс</option>
