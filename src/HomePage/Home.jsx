@@ -1,4 +1,4 @@
-import { HomeCards } from "./HomeCards";
+import { Cards } from "./Cards";
 
 export function Home() {
     return (
@@ -13,7 +13,7 @@ export function Home() {
                     autem magni asperiores vero alias a, illo pariatur quis, doloribus sequi?
                 </p>
             </div>
-            <HomeCards />
+            <Cards />
         </>
     );
 }

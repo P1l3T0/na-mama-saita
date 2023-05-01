@@ -8,13 +8,10 @@
     /* outline: solid 2px rgb(74, 189, 255); */
 }
 
-body {
-    background-color: rgb(106,119,120);
-}
-
 ::-webkit-scrollbar {
     background: rgb(255, 255, 255);
-    width: .5rem;
+    width: .25rem;
+    height: .75rem;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -127,11 +124,9 @@ nav ul li a:hover {
 
 .home-cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow-x: auto;
+    overflow-x: scroll;
     width: 100%;
-    margin: 1rem 0;
+    margin: 0 0 1rem 0;
 }
 
 /*?-------------CARD-------------*/
@@ -143,6 +138,7 @@ nav ul li a:hover {
     border-radius: 20px;
     box-shadow: 3px 3px 5px;
     transition: 750ms ease-in-out;
+    position: relative;
 }
 
 .card:hover {
@@ -159,11 +155,34 @@ nav ul li a:hover {
     border-radius: 20px;
 }
 
+.card h1, 
+.card p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card h1 {
+    margin: .5rem 0;
+}
+
+.card p {
+    font-size: 1.1rem;
+    max-width: calc(100% - 5rem);
+}
+
+.card span {
+    position: absolute;
+    right: 1rem;
+    bottom: .7rem;
+}
+
 /*!-------------ABOUT-------------*/
 
 .title {
     font-size: 5rem;
     padding: 1rem;
+    text-align: center;
     text-transform: uppercase;
     color: white;
     text-shadow: 2px 2px 3px black;
@@ -616,8 +635,22 @@ nav .icon {
     }
 
     /*?-------------CARD-------------*/
+    .home-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+    .card {
+        /* width: 85%; */
+    }
+
+    .card img {
+        max-width: 100%;
+    }
+    
     .card h1 {
-        font-size: 1.75rem;
+        font-size: 1.6rem;
     }
 
     .contacts {
@@ -747,6 +780,11 @@ nav .icon {
 @media screen and (width <= 300px) {
     nav ul li a {
         font-size: 2rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        padding: 0 1rem;
     }
     
     .gallery-container h1 {

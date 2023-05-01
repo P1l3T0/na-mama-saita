@@ -1,5 +1,5 @@
 export function Teachers() {
-    const data = [{
+    const teachers = [{
         id: 0,
         picture: "./pictures/Диплом доцент 2022.jpg",
         title: "доц. д-р инж.",
@@ -15,7 +15,7 @@ export function Teachers() {
     return (
         <>
             <h2>Ръководители</h2>
-            {data.map(person =>
+            {teachers.map(person =>
                 <div key={person.id} className="about-section">
                     <div className="about-img">
                         <img src={person.picture} alt="teacher" />
