@@ -20,20 +20,6 @@ export function Cards() {
         heading: "Иновативни нови начини за чертаене",
         paragraph: "placeholder paragraph sadasdasdasdsdfijfsd",
         date: "1.5.2023"
-    }, {
-        id: 4,
-        picture: "../pictures/gromp.webp",
-        src: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        heading: "Иновативни нови начини за чертаене",
-        paragraph: "placeholder paragraph sadasdasdasdsdfijfsd",
-        date: "1.5.2023"
-    }, {
-        id: 5,
-        picture: "../pictures/gromp.webp",
-        src: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        heading: "Иновативни нови начини за чертаене",
-        paragraph: "placeholder paragraph sadasdasdasdsdfijfsd",
-        date: "1.5.2023"
     }];
 
     return (

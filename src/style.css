@@ -20,7 +20,7 @@
 }
 
 #preloader {
-    background: rgb(50,50,58) url("./pictures/preloader.gif") no-repeat center;
+    background: rgb(50, 50, 58) url("./pictures/preloader.gif") no-repeat center;
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -51,7 +51,7 @@
     border-radius: 70%;
 }
 
-nav  {
+nav {
     list-style: none;
     text-align: center;
     display: inline-block;
@@ -132,7 +132,7 @@ nav ul li a:hover {
 /*?-------------CARD-------------*/
 
 .card {
-    width: 25rem;
+    width: 26rem;
     margin: 1rem;
     padding: .7rem;
     border-radius: 20px;
@@ -142,7 +142,7 @@ nav ul li a:hover {
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
 .card a {
@@ -155,7 +155,7 @@ nav ul li a:hover {
     border-radius: 20px;
 }
 
-.card h1, 
+.card h1,
 .card p {
     overflow: hidden;
     white-space: nowrap;
@@ -219,7 +219,7 @@ nav ul li a:hover {
 
 .about-img {
     flex-basis: 20%;
-    padding:  0 0 0 1rem;
+    padding: 0 0 0 1rem;
 }
 
 .about-img img {
@@ -235,7 +235,7 @@ nav ul li a:hover {
     margin: 0 0 2rem 1.5rem;
 }
 
-.about-text h2  {
+.about-text h2 {
     font-size: 3rem;
     font-weight: 800;
     margin: .5rem 0;
@@ -244,12 +244,12 @@ nav ul li a:hover {
 .about-text h3 {
     font-size: 2.5rem;
     font-weight: 700;
-    margin: .5rem 0;
+    margin: 1rem 0;
 }
 
 .about-text p {
     font-size: 2rem;
-    font-weight: 500;    
+    font-weight: 500;
 }
 
 .about-text p span {
@@ -531,12 +531,12 @@ ul li a .icon {
     margin: .5rem 0;
 }
 
-ul li a .icon > path {
+ul li a .icon>path {
     transition: 500ms ease-in-out;
     color: white;
 }
 
-ul li a .icon:hover > path {
+ul li a .icon:hover>path {
     color: rgb(13, 76, 250);
 }
 
@@ -546,7 +546,7 @@ nav .icon {
     display: none;
 }
 
-@media screen and (width <= 1300px) {
+@media screen and (width <=1300px) {
     .about-section {
         height: auto;
         display: block;
@@ -564,16 +564,16 @@ nav .icon {
     }
 }
 
-@media (width <= 1080px) {
+@media (width <=1080px) {
     .about-img img {
         max-width: 85%;
     }
-    
+
     /*!-------------HEADER-------------*/
     header {
         padding: 0;
     }
-    
+
     nav .icon {
         display: block;
         font-size: 2rem;
@@ -588,7 +588,8 @@ nav .icon {
     }
 
     nav ul {
-        background: rgb(154,154,154);;
+        background: rgb(154, 154, 154);
+        ;
         position: fixed;
         top: -100rem;
         right: 0;
@@ -609,10 +610,11 @@ nav .icon {
     }
 
     nav ul li a {
-        font-size: 4rem;  /* !ZA TABLETI */
+        font-size: 4rem;
+        /* !ZA TABLETI */
     }
 
-    nav ul .icon  {
+    nav ul .icon {
         position: absolute;
         font-size: 2.5rem;
         top: 2rem;
@@ -632,25 +634,6 @@ nav .icon {
 
     .popup-image img {
         width: 90%;
-    }
-
-    /*?-------------CARD-------------*/
-    .home-cards {
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 1rem 0;
-    }
-
-    .card {
-        /* width: 85%; */
-    }
-
-    .card img {
-        max-width: 100%;
-    }
-    
-    .card h1 {
-        font-size: 1.6rem;
     }
 
     .contacts {
@@ -678,23 +661,57 @@ nav .icon {
     }
 }
 
-@media (width <= 1050px) and (width >= 1000px) {
+@media (width <=1050px) and (width >=1000px) {
     .popup-image img {
         width: 48rem;
     }
 }
 
-@media (width <= 925px) and (orientation: landscape) {
+@media (width <=925px) and (orientation: landscape) {
     .popup-image img {
         width: calc(30rem - 5%);
     }
+
+    /*?-------------CARD-------------*/
+    .home-cards {
+        margin: 1rem 0;
+    }
+
+    .card {
+        max-width: 25%;
+    }
+
+    .card h1 {
+        font-size: 1.6rem;
+    }
 }
 
-@media (width <= 600px) {
+@media (width <= 650px) and (orientation: portrait) {
+    /*?-------------CARD-------------*/
+    .home-cards {
+        flex-wrap: wrap;
+        margin: 1rem 0;
+        justify-content: center;
+    }
+
+    .card {
+        max-width: 85%;
+    }
+
+    .card img {
+        max-width: 100%;
+    }
+
+    .card h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (width <=600px) {
     nav ul li a {
         font-size: 2.5rem;
     }
-    
+
     .home-main {
         background: url("../pictures/bg-home-mobile.webp") no-repeat;
         background-size: cover;
@@ -715,7 +732,7 @@ nav .icon {
         background: url("../pictures/bg-about-mobile.svg") no-repeat;
         background-size: cover;
     }
-    
+
     .home-main h1 {
         font-size: 1.7rem;
         margin: .5rem;
@@ -744,7 +761,7 @@ nav .icon {
         margin: 0;
     }
 
-    .about-text h2  {
+    .about-text h2 {
         font-size: 2rem;
     }
 
@@ -777,7 +794,7 @@ nav .icon {
 
 /* !byklyk galaxy fold */
 
-@media screen and (width <= 300px) {
+@media screen and (width <=300px) {
     nav ul li a {
         font-size: 2rem;
     }
@@ -786,7 +803,7 @@ nav .icon {
         font-size: 2.5rem;
         padding: 0 1rem;
     }
-    
+
     .gallery-container h1 {
         font-size: 3rem;
     }
@@ -796,19 +813,18 @@ nav .icon {
     }
 }
 
-@media screen and (height <= 500px) {
+@media screen and (height <=500px) {
     nav ul li a {
         font-size: 2rem;
     }
 }
 
-@media screen and (height <= 300px) {
+@media screen and (height <=300px) {
     nav ul li a {
         font-size: 1.25rem;
     }
-    
+
     .popup-image img {
         width: calc(25rem - 7%);
     }
 }
-
