@@ -63,7 +63,7 @@ function Image({ src, alt, handleImageClick }) {
                         objectFit: "cover",
                         maxWidth: "100%",
                         cursor: "pointer",
-                        display: "flex"
+                        display: "flex",
                     }}
                     onClick={() => handleImageClick(src)} />
             </div>

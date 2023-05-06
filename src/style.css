@@ -8,9 +8,14 @@
     /* outline: solid 2px rgb(74, 189, 255); */
 }
 
+body {
+    background: url("/pictures/bg-about.svg") no-repeat center;
+    background-size: cover;
+}
+
 ::-webkit-scrollbar {
-    background: rgb(255, 255, 255);
-    width: .25rem;
+    background: transparent;
+    width: .5rem;
     height: .75rem;
 }
 
@@ -28,7 +33,6 @@
 }
 
 /*!-------------HEADER-------------*/
-
 .header-div {
     display: flex;
     align-items: center;
@@ -113,10 +117,9 @@ nav ul li a:hover {
 }
 
 /*?-------------HOME-SECTION-------------*/
-
 .home-section p {
     text-align: center;
-    margin: 3rem;
+    padding: 3rem;
     font-size: 2.5rem;
 }
 
@@ -124,7 +127,7 @@ nav ul li a:hover {
 
 .home-cards {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto;
     width: 100%;
     margin: 0 0 1rem 0;
 }
@@ -199,6 +202,7 @@ nav ul li a:hover {
 
 .about-main h2 {
     font-size: 3rem;
+    font-weight: 800;
 }
 
 .about-info {
@@ -237,7 +241,7 @@ nav ul li a:hover {
 
 .about-text h2 {
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: 700;
     margin: .5rem 0;
 }
 
@@ -271,13 +275,11 @@ nav ul li a:hover {
 }
 
 .contacts-questions h2 {
-    font-weight: 800;
     padding: 0 1rem;
 }
 
 .contacts-questions p {
     font-size: 2rem;
-
     padding: 1rem;
     font-weight: 700;
 }
@@ -564,7 +566,7 @@ nav .icon {
     }
 }
 
-@media (width <=1080px) {
+@media (width <= 1080px) {
     .about-img img {
         max-width: 85%;
     }
@@ -589,7 +591,6 @@ nav .icon {
 
     nav ul {
         background: rgb(154, 154, 154);
-        ;
         position: fixed;
         top: -100rem;
         right: 0;
@@ -597,7 +598,7 @@ nav .icon {
         width: 100%;
         height: 100vh;
         padding-top: 3rem;
-        z-index: 999;
+        z-index: 1001;
     }
 
     nav ul li {
@@ -610,8 +611,7 @@ nav .icon {
     }
 
     nav ul li a {
-        font-size: 4rem;
-        /* !ZA TABLETI */
+        font-size: 4rem; /* !ZA TABLETI */
     }
 
     nav ul .icon {
@@ -712,6 +712,12 @@ nav .icon {
         font-size: 2.5rem;
     }
 
+    body {
+        background: url("/pictures/bg-about-mobile.svg") no-repeat center;
+        background-size: cover;
+        text-align: center;
+    }
+
     .home-main {
         background: url("../pictures/bg-home-mobile.webp") no-repeat;
         background-size: cover;
@@ -720,14 +726,12 @@ nav .icon {
     }
 
     .gallery-container {
-        text-align: center;
         height: 100%;
         background: url("../pictures/bg-gallery-mobile.svg") no-repeat;
         background-size: cover;
     }
 
     .about-main {
-        text-align: center;
         height: 100%;
         background: url("../pictures/bg-about-mobile.svg") no-repeat;
         background-size: cover;
@@ -751,8 +755,11 @@ nav .icon {
     }
 
     .about-main h2 {
-        font-size: 2.5rem;
-        margin: 1rem 0;
+        font-size: 2rem;
+    }
+
+    .contacts-questions h2 {
+        font-size: 1.75rem;
     }
 
     .about-text p,

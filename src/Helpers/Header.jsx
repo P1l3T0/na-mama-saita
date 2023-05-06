@@ -29,8 +29,8 @@ export function Header() {
         <>
             <header style={{
                 top: isBlur ? "0" : "static",
-                position: isBlur ? "sticky" : "static",
-                zIndex: "999"
+                position: isBlur ? "sticky" : "relative",
+                zIndex: "10000"
             }}>
                 <div
                     className='header-div'
@@ -46,7 +46,10 @@ export function Header() {
                         <ul
                             id="side-menu"
                             style={
-                                { top: isMenuOpen ? '0' : '-90rem', transition: '1.5s ease' }
+                                {
+                                    top: isMenuOpen ? '0' : '-90rem',
+                                    transition: '1.5s ease',
+                                }
                             }
                         >
                             <div className="burger-div">
