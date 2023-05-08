@@ -423,6 +423,30 @@ button:hover {
     transform: translate(-50%, -50%) scale(1);
 }
 
+/*!-------------CANDIDATE-STUDENTS-------------*/
+
+.semesters {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.semesters div {
+    margin: 0rem 1rem;
+}
+
+.semesters div h3 {
+    margin: 1rem 0 0 0;
+}
+
+.semesters div ul {
+    list-style: none;
+    text-align: center;
+}
+
+.semesters div ul li {
+    margin: .5rem 0;
+}
+
 
 /*!-------------FOOTER-------------*/
 

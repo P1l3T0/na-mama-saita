@@ -11,6 +11,7 @@ export function Image({ handleImageClick }) {
                         src={image.src}
                         alt={image.alt}
                         effect="blur"
+                        onClick={() => handleImageClick(image.src)}
                         style={{
                             transition: "350ms ease-in-out",
                             objectFit: "cover",
@@ -18,7 +19,7 @@ export function Image({ handleImageClick }) {
                             cursor: "pointer",
                             display: "flex",
                         }}
-                        onClick={() => handleImageClick(image.src)} />
+                    />
                 </div>
             )}
         </>

@@ -1,3 +1,3 @@
 export function FormerGraduates() {
-    return <h1>Former Graduates</h1>;
+    return <h1 className="title">Бивши възпитаници</h1>;
 }

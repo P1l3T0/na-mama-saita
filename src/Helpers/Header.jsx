@@ -8,7 +8,7 @@ export function Header() {
     const [isBlur, setBlur] = useState(false);
 
     useEffect(() => {
-        const handleScroll = () => {
+        function handleScroll() {
             const scrollPosition = window.scrollY;
             const threshold = 1;
             setBlur(scrollPosition > threshold);
@@ -35,7 +35,7 @@ export function Header() {
                 <div
                     className='header-div'
                     style={{
-                        backdropFilter: isBlur ? 'blur(5px)' : 'blur(0)',
+                        backdropFilter: isBlur ? 'blur(8px)' : 'blur(0)',
                         padding: isBlur ? "0" : ".5rem 0",
                     }}
                 >
@@ -45,17 +45,15 @@ export function Header() {
                     <nav>
                         <ul
                             id="side-menu"
-                            style={
-                                {
-                                    top: isMenuOpen ? '0' : '-90rem',
-                                    transition: '1.5s ease',
-                                }
-                            }
+                            style={{
+                                top: isMenuOpen ? '0' : '-90rem',
+                                transition: '1.5s ease',
+                            }}
                         >
                             <div className="burger-div">
                                 <CustomLink to="/about">За нас</CustomLink>
                                 <CustomLink to="/gallery">Галерия</CustomLink>
-                                <CustomLink to="/contacts">Кандидат-студенти</CustomLink>
+                                <CustomLink to="/candidate-students">Кандидат-студенти</CustomLink>
                                 <CustomLink to="/former-graduates">Бивши възпитаници</CustomLink>
                             </div>
                             <FontAwesomeIcon

@@ -9,7 +9,7 @@ export function Gallery() {
     function handleImageClick(src) {
         setShowPopup(true);
         setPopupImageSrc(src);
-    };
+    }
 
     function handleCloseClick(event) {
         if (event.target.classList.contains("popup-image"))
