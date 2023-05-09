@@ -1,7 +1,7 @@
 export function CandidateStudents() {
     return (
         <>
-            <h1 className="title">Кандидат-студенти</h1>
+            <h1 className="title">Студенти</h1>
 
             <h2>Учебен план</h2>
             <p>

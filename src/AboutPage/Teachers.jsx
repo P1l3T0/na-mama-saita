@@ -3,7 +3,7 @@ import { teacherslist } from "./TeachersList";
 export function Teachers() {
     return (
         <>
-            <h2>Ръководители</h2>
+            <h2 className="about-teachers-headeing">Ръководители</h2>
             {teacherslist.map(person =>
                 <div key={person.id} className="about-section">
                     <div className="about-img">

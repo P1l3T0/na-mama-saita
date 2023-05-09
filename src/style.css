@@ -205,15 +205,11 @@ nav ul li a:hover {
     font-weight: 800;
 }
 
-.about-info {
-    padding: .5rem;
-    margin: 0 0 2rem 0;
-}
-
 .about-info p {
     font-size: 2rem;
     margin: 1rem;
     font-weight: 700;
+    text-align: justify; /*! OBURNI VNIMANIE KATO IMASH VECHE POVECHE TEKST ZA PISANE */
 }
 
 .about-section {
@@ -233,7 +229,7 @@ nav ul li a:hover {
 }
 
 .about-text {
-    flex-basis: 70%;
+    flex-basis: 80%;
     text-align: left;
     padding: .5rem;
     margin: 0 0 2rem 1.5rem;
@@ -254,6 +250,7 @@ nav ul li a:hover {
 .about-text p {
     font-size: 2rem;
     font-weight: 500;
+    text-align: justify; /*! OBURNI VNIMANIE KATO IMASH VECHE POVECHE TEKST ZA PISANE */
 }
 
 .about-text p span {
@@ -353,8 +350,6 @@ button:hover {
 /*!-------------GALLERY-------------*/
 
 .gallery-container {
-    text-align: center;
-    height: 100%;
     background: url("../pictures/bg-gallery.svg") no-repeat;
     background-size: cover;
 }
@@ -363,7 +358,6 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem;
@@ -428,23 +422,33 @@ button:hover {
 .semesters {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .semesters div {
-    margin: 0rem 1rem;
+    padding: 1rem;
+    margin: 2rem;
+    width: 25rem;
+    text-align: center;
+    justify-content: center;
+    color: black;
+    background: whitesmoke;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 4px #333;
 }
 
 .semesters div h3 {
-    margin: 1rem 0 0 0;
+    padding: 1rem;
+    font-size: 3rem;
 }
 
 .semesters div ul {
     list-style: none;
-    text-align: center;
 }
 
 .semesters div ul li {
     margin: .5rem 0;
+    font-size: 1.75rem;
 }
 
 
@@ -572,7 +576,7 @@ nav .icon {
     display: none;
 }
 
-@media screen and (width <=1300px) {
+@media screen and (width <= 1300px) {
     .about-section {
         height: auto;
         display: block;
@@ -584,9 +588,42 @@ nav .icon {
         padding: 0;
     }
 
-    .about-text {
-        text-align: center;
+    .about-text  {
         margin: 0 0 2rem 0;
+    }
+
+    .about-text h2,
+    .about-text h3 {
+        text-align: center;
+    }
+
+    .about-text {
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-text p,
+    .about-main p {
+        margin: 0;
+        padding: .5rem 1rem;
+        text-align: justify;
+    }
+
+    .about-info p {
+        padding: 1rem;
+    }
+
+    .about-text h2,
+    .about-text h3 {
+        padding: 0 1rem;
+    }
+
+    .about-text h3 {
+        margin: 0.5rem 0;
+    }
+
+    .contacts {
+        padding: 0 0 1rem 0;
     }
 }
 
@@ -667,6 +704,9 @@ nav .icon {
     .contacts-questions,
     .contacts-form {
         flex-basis: 100%;
+    }
+
+    .contacts-questions h2 {
         text-align: center;
     }
 
@@ -731,7 +771,7 @@ nav .icon {
     }
 }
 
-@media (width <=600px) {
+@media (width <= 600px) {
     nav ul li a {
         font-size: 2.5rem;
     }
@@ -739,7 +779,6 @@ nav .icon {
     body {
         background: url("/pictures/bg-about-mobile.svg") no-repeat center;
         background-size: cover;
-        text-align: center;
     }
 
     .home-main {
@@ -789,10 +828,10 @@ nav .icon {
     .about-text p,
     .about-main p {
         font-size: 1.25rem;
-        margin: 0;
     }
 
-    .about-text h2 {
+    .about-text h2,
+    .about-text h3 {
         font-size: 2rem;
     }
 
@@ -800,6 +839,11 @@ nav .icon {
 
     .gallery-container h1 {
         font-size: 4rem;
+    }
+
+    /*!-------------CANDIDATE-STUDENTS-------------*/
+    .semesters div h3 {
+        font-size: 2.5rem;
     }
 
     /*!-------------FOOTER-------------*/
@@ -819,7 +863,7 @@ nav .icon {
     }
 
     .copyright h1 {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
     }
 }
 
@@ -841,6 +885,15 @@ nav .icon {
 
     .about-main h2 {
         font-size: 2rem;
+    }
+
+    /*!-------------CANDIDATE-STUDENTS-------------*/
+    .semesters div h3 {
+        font-size: 1.5rem;
+    }
+
+    .semesters div ul li {
+        font-size: 1.35rem;
     }
 }
 

@@ -53,7 +53,7 @@ export function Header() {
                             <div className="burger-div">
                                 <CustomLink to="/about">За нас</CustomLink>
                                 <CustomLink to="/gallery">Галерия</CustomLink>
-                                <CustomLink to="/candidate-students">Кандидат-студенти</CustomLink>
+                                <CustomLink to="/candidate-students">Студенти</CustomLink>
                                 <CustomLink to="/former-graduates">Бивши възпитаници</CustomLink>
                             </div>
                             <FontAwesomeIcon

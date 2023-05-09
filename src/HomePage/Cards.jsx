@@ -3,7 +3,15 @@ import { cardsList } from "./CardsList";
 export function Cards() {
     return (
         <>
-            <h2 className="title">Актуални новини</h2>
+            <h2
+                style={{
+                    fontSize: "3.25rem",
+                    textAlign: "center",
+                    color: "white",
+                    textShadow: "2px 2px 4px black",
+                    textTransform: "uppercase"
+                }}
+            >Актуални новини</h2>
             <div className="home-cards">
                 {cardsList.map(card =>
                     <div className="card" key={card.id}>

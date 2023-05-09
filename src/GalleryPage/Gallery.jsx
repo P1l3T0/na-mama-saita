@@ -20,9 +20,7 @@ export function Gallery() {
         <>
             <div className="gallery-container">
                 <h1 className="title">Галерия</h1>
-                <div className="image-container">
-                    <Image handleImageClick={handleImageClick} />
-                </div>
+                <Image handleImageClick={handleImageClick} />
             </div>
 
             <div className="whole-div" onClick={() => handleCloseClick(event)}>

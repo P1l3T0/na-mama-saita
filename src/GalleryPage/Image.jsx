@@ -5,23 +5,25 @@ import { imageList } from "./ImageList";
 export function Image({ handleImageClick }) {
     return (
         <>
-            {imageList.map(image =>
-                <div className="image" key={image.id}>
-                    <LazyLoadImage
-                        src={image.src}
-                        alt={image.alt}
-                        effect="blur"
-                        onClick={() => handleImageClick(image.src)}
-                        style={{
-                            transition: "350ms ease-in-out",
-                            objectFit: "cover",
-                            maxWidth: "100%",
-                            cursor: "pointer",
-                            display: "flex",
-                        }}
-                    />
-                </div>
-            )}
+            <div className="image-container">
+                {imageList.map(image =>
+                    <div className="image" key={image.id}>
+                        <LazyLoadImage
+                            src={image.src}
+                            alt={image.alt}
+                            effect="blur"
+                            onClick={() => handleImageClick(image.src)}
+                            style={{
+                                transition: "350ms ease-in-out",
+                                objectFit: "cover",
+                                maxWidth: "100%",
+                                cursor: "pointer",
+                                display: "flex",
+                            }}
+                        />
+                    </div>
+                )}
+            </div>
         </>
     );
 }
