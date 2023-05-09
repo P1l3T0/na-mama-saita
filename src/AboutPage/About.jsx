@@ -7,12 +7,6 @@ export function About() {
                 <h1 className="title">За нас</h1>
                 <div className="about-info">
                     <p>
-                        {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-                        vero a quam omnis officiis ea, provident maxime exercitationem eos
-                        consequatur nulla sit eligendi commodi, quia quis sequi laboriosam
-                        voluptatum obcaecati consectetur quasi perspiciatis! Dolorem
-                        doloremque magnam dolore culpa repellendus distinctio in commodi,
-                        molestiae dolor inventore. Cupiditate voluptatibus aliquid vel sunt. */}
                         ТДМФИ е специалност, насочваща младите студенти към сфертата и технологиите
                         на модната индустрия. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         Itaque atque voluptate expedita nemo dolor aperiam provident illum nesciunt non sed?
