@@ -54,7 +54,7 @@ export function Header() {
                                 <CustomLink to="/about">За нас</CustomLink>
                                 <CustomLink to="/gallery">Галерия</CustomLink>
                                 <CustomLink to="/students">Студенти</CustomLink>
-                                <CustomLink to="/former-graduates">Бивши възпитаници</CustomLink>
+                                <CustomLink to="/former-graduates">Възпитаници</CustomLink>
                             </div>
                             <FontAwesomeIcon
                                 icon={faXmarkSquare}
