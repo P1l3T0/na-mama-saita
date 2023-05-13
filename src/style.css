@@ -5,7 +5,7 @@
     padding: 0;
     font-family: "Popins", sans-serif;
     scroll-behavior: smooth !important;
-    /* outline: solid 2px rgb(74, 189, 255); */
+    /* outline: solid 2px crimson; */
 }
 
 body {
@@ -55,10 +55,6 @@ body {
     border-radius: 70%;
 }
 
-header {
-    /* background: url("./pictures/bg-pictures/bg-header.svg"); */
-}
-
 nav {
     list-style: none;
     text-align: center;
@@ -78,7 +74,7 @@ nav ul li a {
     text-shadow: 3px 3px 1px black;
     cursor: pointer;
     text-decoration: none;
-    transition: 250ms ease-in-out;
+    transition: 500ms ease-in-out;
 }
 
 nav ul li a::after {
@@ -97,14 +93,12 @@ nav ul li a:hover::after {
 }
 
 nav ul li.active {
-    background-color: #4d86f02c;
-    padding: .2rem;
+    background: #4d86f02a
 }
 
 nav ul li:hover {
     transform: translateY(0);
 }
-
 
 /*!-------------HOME-------------*/
 /*?-------------HOME-MAIN-------------*/
@@ -229,7 +223,7 @@ nav ul li:hover {
 
 .about-section {
     display: flex;
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .about-img {
@@ -350,19 +344,19 @@ form button {
     cursor: pointer;
     font-size: 2rem;
     font-weight: 800;
-    padding: .3em;
-    border-radius: 15px;
+    padding: .5em;
     color: white;
+    border-radius: 15px;
+    border: 3px solid #4d86f0;
+    text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+    width: fit-content;
     text-transform: uppercase;
-    background-color: transparent;
-    text-shadow: 2px 2px 2px black;
     transition: 750ms ease-in-out;
+    background-color: transparent;
 }
 
-button:hover {
-    background-color: white;
-    color: black;
-    text-shadow: none;
+form button:hover {
+    background-color:  #4d86f0;
 }
 
 /*!-------------GALLERY-------------*/
@@ -439,16 +433,17 @@ button:hover {
 .students-main {
     background: url("./pictures/bg-pictures/bg-students.svg") no-repeat;
     background-size: cover;
+    color: white;
 }
 
 .students-info {
-    color: white;
-    text-shadow: 2px 2px 1px black;
     padding: 1rem;
 }
 
-.students-info h2 {
+.students-semesters h2 {
     font-size: 3rem;
+    text-shadow: 2px 2px 1px black;
+    text-align: center;
 }
 
 .students-info p {
@@ -457,7 +452,6 @@ button:hover {
     margin: 1rem 0;
     text-align: justify;
 }
-
 
 .semesters {
     display: flex;
@@ -501,7 +495,7 @@ footer {
     position: absolute;
     height: auto;
     width: 100%;
-    border-top: 2px solid black;
+    border-top: 1px solid black;
 }
 
 .footer-content {
@@ -920,7 +914,7 @@ nav .icon {
 
 /* !byklyk galaxy fold */
 
-@media screen and (width <=300px) {
+@media screen and (width <= 300px) {
     nav ul li a {
         font-size: 2rem;
     }
@@ -947,13 +941,13 @@ nav .icon {
     }
 }
 
-@media screen and (height <=500px) {
+@media screen and (height <= 500px) {
     nav ul li a {
         font-size: 2rem;
     }
 }
 
-@media screen and (height <=300px) {
+@media screen and (height <= 300px) {
     nav ul li a {
         font-size: 1.25rem;
     }
