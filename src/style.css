@@ -668,6 +668,7 @@ nav .icon,
     }
 
     .preloader {
+        display: none;
         z-index: 0;
     }
 
