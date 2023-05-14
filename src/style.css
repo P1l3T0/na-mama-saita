@@ -9,18 +9,17 @@
 }
 
 body {
-    background: url("/pictures/bg-pictures/bg-home.svg") no-repeat center;
-    background-size: cover;
+    background: rgb(28,43,73);
 }
 
 ::-webkit-scrollbar {
-    background: transparent;
-    width: .5rem;
+    background: rgb(28,43,73);
+    width: .75rem;
     height: .75rem;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(#35333d, #141418);
+    background: #071329;
     border-radius: 1rem;
 }
 
@@ -31,6 +30,16 @@ body {
     position: fixed;
     z-index: 1000;
 }
+
+.title {
+    font-size: 5rem;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
 
 /*!-------------HEADER-------------*/
 .header-div {
@@ -93,7 +102,7 @@ nav ul li a:hover::after {
 }
 
 nav ul li.active {
-    background: #4d86f02a
+    background: #4d86f05d
 }
 
 nav ul li:hover {
@@ -103,6 +112,11 @@ nav ul li:hover {
 /*!-------------HOME-------------*/
 /*?-------------HOME-MAIN-------------*/
 .home-main {
+    background: url("./pictures/bg-pictures/bg-home.svg") no-repeat;
+    background-size: cover;
+}
+
+.home-main-picture {
     display: flex;
     text-align: center;
     align-items: center;
@@ -116,7 +130,7 @@ nav ul li:hover {
     border-bottom: 2px solid black;
 }
 
-.home-main h1 {
+.home-main-picture h1 {
     color: white;
     text-shadow: 3px 3px 5px black;
     text-transform: uppercase;
@@ -127,7 +141,7 @@ nav ul li:hover {
 
 /*?-------------HOME-SECTION-------------*/
 .home-section p {
-    padding: 1rem;
+    padding: 2rem;
     font-size: 2.5rem;
     color: white;
 }
@@ -190,16 +204,6 @@ nav ul li:hover {
 }
 
 /*!-------------ABOUT-------------*/
-
-.title {
-    font-size: 5rem;
-    padding: 1rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    text-shadow: 2px 2px 3px black;
-}
-
 .about-main {
     text-align: center;
     height: 100%;
@@ -216,14 +220,14 @@ nav ul li:hover {
 
 .about-info p {
     font-size: 2rem;
-    margin: 1rem;
+    padding: 2rem;
     font-weight: 700;
     text-align: justify; /*! OBURNI VNIMANIE KATO IMASH VECHE POVECHE TEKST ZA PISANE */
 }
 
 .about-section {
     display: flex;
-    margin: 1rem 0;
+    padding: 1rem 0;
 }
 
 .about-img {
@@ -241,22 +245,24 @@ nav ul li:hover {
     flex-basis: 80%;
     text-align: left;
     padding: .5rem;
-    margin: 0 0 2rem 1.5rem;
+    padding: 0 0 2rem 1.5rem;
 }
 
-.about-text h2 {
+/* .about-text h2 {
     font-size: 3rem;
     font-weight: 700;
-    margin: .5rem 0;
-}
+    padding: .5rem 0;
+} */
 
+.about-text h2,
 .about-text h3 {
     font-size: 2.5rem;
     font-weight: 700;
-    margin: 1rem 0;
+    padding: 1rem 0;
 }
 
 .about-text p {
+    padding: 1rem 0;
     font-size: 2rem;
     font-weight: 500;
     text-align: justify; /*! OBURNI VNIMANIE KATO IMASH VECHE POVECHE TEKST ZA PISANE */
@@ -265,6 +271,10 @@ nav ul li:hover {
 .about-text p span {
     font-size: 1em;
     font-weight: 500;
+}
+
+.teachers-h2 {
+    padding: 0 0 1rem 0;
 }
 
 /*?-------------ABOUT-FORM-------------*/
@@ -277,7 +287,7 @@ nav ul li:hover {
 .contacts-questions {
     flex-basis: 60%;
     text-align: left;
-    margin: 0 0 1rem 0;
+    /* margin: 0 0 1rem 0; */
 }
 
 .contacts-questions h2 {
@@ -347,7 +357,7 @@ form button {
     padding: .5em;
     color: white;
     border-radius: 15px;
-    border: 3px solid #4d86f0;
+    border: 3px solid #2d5194;
     text-shadow: rgb(0, 0, 0) 3px 3px 5px;
     width: fit-content;
     text-transform: uppercase;
@@ -372,7 +382,7 @@ form button:hover {
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
 }
 
 .image {
@@ -436,21 +446,18 @@ form button:hover {
     color: white;
 }
 
-.students-info {
-    padding: 1rem;
+.students-info p {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 2rem;
+    text-align: justify;
 }
 
 .students-semesters h2 {
     font-size: 3rem;
     text-shadow: 2px 2px 1px black;
     text-align: center;
-}
-
-.students-info p {
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 1rem 0;
-    text-align: justify;
+    font-weight: 800;
 }
 
 .semesters {
@@ -476,7 +483,7 @@ form button:hover {
 
 .semesters div h3 {
     padding: 1rem;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .semesters div ul {
@@ -485,14 +492,13 @@ form button:hover {
 
 .semesters div ul li {
     margin: .5rem 0;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 
 /*!-------------FOOTER-------------*/
 
 footer {
     background: linear-gradient(#1C2B49, #071329);
-    position: absolute;
     height: auto;
     width: 100%;
     border-top: 1px solid black;
@@ -608,7 +614,8 @@ ul li a .icon:hover>path {
 
 /*!-------------SMALL-SCREEN-------------*/
 
-nav .icon {
+nav .icon,
+.tu-logo {
     display: none;
 }
 
@@ -616,7 +623,6 @@ nav .icon {
     .about-section {
         height: auto;
         display: block;
-        margin: 1rem 0;
     }
 
     .about-img {
@@ -641,21 +647,14 @@ nav .icon {
     .about-text p,
     .about-main p {
         margin: 0;
-        padding: .5rem 1rem;
+        padding: 1rem 2rem;
         text-align: justify;
     }
 
-    .about-info p {
-        padding: 1rem;
-    }
 
     .about-text h2,
     .about-text h3 {
         padding: 0 1rem;
-    }
-
-    .about-text h3 {
-        margin: 0.5rem 0;
     }
 
     .contacts {
@@ -676,11 +675,11 @@ nav .icon {
     nav .icon {
         display: block;
         font-size: 2rem;
-        color: whitesmoke;
+        color: white;
     }
 
     .burger-div {
-        height: 90%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -761,7 +760,22 @@ nav .icon {
     }
 }
 
-@media (width <=1050px) and (width >=1000px) {
+@media (width <= 1080px) and (orientation: portrait) {
+    .tu-logo-div {
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tu-logo {
+        max-width: 30%;
+        display: block;
+    }
+}
+
+@media (width <= 1050px) and (width >= 1000px) {
     .popup-image img {
         width: 48rem;
     }
@@ -813,6 +827,11 @@ nav .icon {
     }
 
     .home-main {
+        background: url("./pictures/bg-pictures/bg-home-mobile.svg") no-repeat;
+        background-size: cover;
+    }
+
+    .home-main-picture {
         background: url("./pictures/bg-pictures/bg-home-mobile.webp") no-repeat;
         background-size: cover;
         background-blend-mode: darken;
@@ -836,7 +855,7 @@ nav .icon {
         background-size: cover;
     }
 
-    .home-main h1 {
+    .home-main-picture h1 {
         font-size: 1.7rem;
         margin: .5rem;
         padding: .5rem;
@@ -844,7 +863,6 @@ nav .icon {
 
     .home-section p {
         font-size: 1.6rem;
-        margin: 1rem;
     }
 
     /*!-------------ABOUT-------------*/
@@ -861,6 +879,10 @@ nav .icon {
         font-size: 1.75rem;
     }
 
+    .about-section {
+        padding: 1rem 0 0 0;
+    }
+
     .about-text p,
     .about-main p {
         font-size: 1.25rem;
@@ -871,6 +893,10 @@ nav .icon {
         font-size: 2rem;
     }
 
+    .teachers-h2 {
+        padding: 0;
+    }
+
     /*!-------------GALLERY-------------*/
 
     .gallery-container h1 {
@@ -878,8 +904,8 @@ nav .icon {
     }
 
     /*!-------------CANDIDATE-STUDENTS-------------*/
-    .students-info h2 {
-        font-size: 2.5rem;
+    .students-semesters h2 {
+        font-size: 2rem;
         text-align: center;
     }
 
@@ -888,7 +914,7 @@ nav .icon {
     }
 
     .semesters div h3 {
-        font-size: 2.25rem;
+        font-size: 1.75rem;
     }
 
     /*!-------------FOOTER-------------*/

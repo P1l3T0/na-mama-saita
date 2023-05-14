@@ -30,12 +30,13 @@ export function Header() {
             <header style={{
                 top: isBlur ? "0" : "static",
                 position: isBlur ? "sticky" : "relative",
-                zIndex: "10000"
+                zIndex: "10000",
+                backgroundColor: isBlur ? "transparent" : "none"
             }}>
                 <div
                     className='header-div'
                     style={{
-                        backdropFilter: isBlur ? 'blur(8px)' : 'blur(0)',
+                        backdropFilter: isBlur ? 'blur(10px)' : 'blur(0)',
                         padding: isBlur ? "0" : ".5rem 0",
                     }}
                 >
@@ -55,6 +56,9 @@ export function Header() {
                                 <CustomLink to="/gallery">Галерия</CustomLink>
                                 <CustomLink to="/students">Студенти</CustomLink>
                                 <CustomLink to="/former-graduates">Възпитаници</CustomLink>
+                                <div className="tu-logo-div">
+                                    <img src="/pictures/tu-sofia.png" className='tu-logo' />
+                                </div>
                             </div>
                             <FontAwesomeIcon
                                 icon={faXmarkSquare}
