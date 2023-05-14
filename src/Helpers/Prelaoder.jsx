@@ -11,7 +11,7 @@ export function Preloader() {
 
     return (
         <div>
-            {isLoading && <div id="preloader"></div>}
+            {isLoading && <div className="preloader"></div>}
         </div>
     );
 }
