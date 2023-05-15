@@ -139,6 +139,14 @@ nav ul li:hover {
     padding: 0 2rem;
 }
 
+.home-main h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    text-transform: uppercase;
+}
+
 /*?-------------HOME-SECTION-------------*/
 .home-section p {
     padding: 2rem;
@@ -190,6 +198,7 @@ nav ul li:hover {
 
 .card h1 {
     margin: .5rem 0;
+    font-size: 1.7rem;
 }
 
 .card p {
@@ -248,12 +257,6 @@ nav ul li:hover {
     padding: 0 0 2rem 1.5rem;
 }
 
-/* .about-text h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    padding: .5rem 0;
-} */
-
 .about-text h2,
 .about-text h3 {
     font-size: 2.5rem;
@@ -287,7 +290,6 @@ nav ul li:hover {
 .contacts-questions {
     flex-basis: 60%;
     text-align: left;
-    /* margin: 0 0 1rem 0; */
 }
 
 .contacts-questions h2 {
@@ -469,7 +471,7 @@ form button:hover {
 .semesters div {
     padding: 1rem;
     margin: 2rem;
-    width: 25rem;
+    width: 33rem;
     text-align: center;
     background: rgba(245, 245, 245, 0.85);
     border-radius: 1rem;
@@ -662,7 +664,7 @@ nav .icon,
     }
 }
 
-@media (width <= 1080px) {
+@media (width <= 950px) {
     .about-img img {
         max-width: 85%;
     }
@@ -765,7 +767,7 @@ nav .icon,
     }
 }
 
-@media (width <= 1080px) and (orientation: portrait) {
+@media (width <= 950px) and (orientation: portrait) {
     .tu-logo-div {
         width: 100vw;
         height: 20vh;
@@ -786,7 +788,7 @@ nav .icon,
     }
 }
 
-@media (width <=925px) and (orientation: landscape) {
+@media (width <= 925px) and (orientation: landscape) {
     .popup-image img {
         width: calc(30rem - 5%);
     }
@@ -916,10 +918,15 @@ nav .icon,
 
     .students-info p {
         font-size: 1.25rem;
+        padding: 1rem 2rem 2rem 2rem;
     }
 
     .semesters div h3 {
         font-size: 1.75rem;
+    }
+
+    .semesters div ul li {
+        font-size: 1.25rem;
     }
 
     /*!-------------FOOTER-------------*/
@@ -945,7 +952,7 @@ nav .icon,
 
 /* !byklyk galaxy fold */
 
-@media screen and (width <= 300px) {
+@media (width <= 300px) {
     nav ul li a {
         font-size: 2rem;
     }
@@ -954,12 +961,16 @@ nav .icon,
         font-size: 2rem;
     }
 
+    .home-text h2 {
+        font-size: 2rem;
+    }
+
     .gallery-container h1 {
         font-size: 3rem;
     }
 
     .about-main h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     /*!-------------CANDIDATE-STUDENTS-------------*/
@@ -972,13 +983,13 @@ nav .icon,
     }
 }
 
-@media screen and (height <= 500px) {
+@media (height <= 500px) {
     nav ul li a {
         font-size: 2rem;
     }
 }
 
-@media screen and (height <= 300px) {
+@media (height <= 300px) {
     nav ul li a {
         font-size: 1.25rem;
     }

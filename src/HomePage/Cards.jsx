@@ -1,19 +1,13 @@
 import { cardsList } from "./CardsList";
 
 export function Cards() {
+    const reversedCardsList = [...cardsList].reverse();
+
     return (
         <>
-            <h2
-                style={{
-                    fontSize: "3.25rem",
-                    textAlign: "center",
-                    color: "white",
-                    textShadow: "2px 2px 4px black",
-                    textTransform: "uppercase"
-                }}
-            >Актуални новини</h2>
+            <h2>Актуални новини</h2>
             <div className="home-cards">
-                {cardsList.map(card =>
+                {reversedCardsList.map(card =>
                     <div className="card" key={card.id}>
                         <a href={card.src} target="_blank">
                             <img src={card.picture} alt="news card 1" />

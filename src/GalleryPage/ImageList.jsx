@@ -54,4 +54,8 @@ export const imageList = [{
     id: 14,
     src: "./pictures/galleryPictures/diplomniZashtiti2020-5.webp",
     alt: "diplomni zashtiti"
+}, {
+    id: 15,
+    src: "./pictures/galleryPictures/kurs2004.webp",
+    alt: "diplomni zashtiti"
 }];

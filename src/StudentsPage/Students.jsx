@@ -11,6 +11,7 @@ export function Students() {
                         labore autem quod nobis, porro pariatur et illo voluptatem error
                         similique distinctio voluptatum mollitia, necessitatibus nesciunt! Nemo
                         suscipit voluptas itaque harum.
+                        za cqlata y4ebna programa kliknete <a href="https://shorturl.at/dmyAJ" target="_blank">tyk</a>
                     </p>
                 </div>
                 <div className="students-semesters">
