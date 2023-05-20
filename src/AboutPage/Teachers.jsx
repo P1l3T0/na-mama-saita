@@ -1,3 +1,5 @@
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { teachersData } from "../Data";
 
 export function Teachers() {
@@ -7,7 +9,11 @@ export function Teachers() {
             {teachersData.map(teacher =>
                 <div key={teacher.id} className="about-section">
                     <div className="about-img">
-                        <img src={teacher.picture} alt="teacher" />
+                        <LazyLoadImage
+                            src={teacher.picture}
+                            alt={teacher.title + teacher.name}
+                            effect="blur"
+                        />
                     </div>
                     <div className="about-text">
                         <h2>{teacher.title + " " + teacher.name}</h2>

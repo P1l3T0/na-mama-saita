@@ -4,7 +4,7 @@ export const cardData = [{
     picture: "./pictures/gromp.webp",
     src: "https://shorturl.at/fgnGX",
     heading: "Кандидат-студенти 2023г",
-    paragraph: "Критерии за кандидатсване в специалността",
+    paragraph: "Критерии за кандидатсване в специалността+",
     date: "1.5.2023"
 }, {
     id: 2,
@@ -148,7 +148,7 @@ export const imageData = [{
 
 export const teachersData = [{
     id: 0,
-    picture: "./pictures/Диплом доцент 2022.jpg",
+    picture: "./pictures/docent-Sivova.webp",
     title: "доц. д-р инж.",
     name: "Маргарет Сивова",
     about: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quisquam commod" +

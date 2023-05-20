@@ -57,7 +57,7 @@ export function Header() {
                                 <CustomLink to="/students">Студенти</CustomLink>
                                 <CustomLink to="/former-graduates">Възпитаници</CustomLink>
                                 <div className="tu-logo-div">
-                                    <img src="/pictures/tu-sofia.png" className='tu-logo' />
+                                    <img src="/pictures/tu-sofia.webp" className='tu-logo' />
                                 </div>
                             </div>
                             <FontAwesomeIcon
