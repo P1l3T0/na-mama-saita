@@ -1,4 +1,4 @@
-import { Contatcs } from "./Contavts";
+import { Contatcs } from "./Contacts";
 import { Teachers } from "./Teachers";
 
 export function About() {

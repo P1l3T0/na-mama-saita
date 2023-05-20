@@ -1,13 +1,13 @@
-import { cardsList } from "./CardsList";
+import { cardData } from "../Data";
 
 export function Cards() {
-    const reversedCardsList = [...cardsList].reverse();
+    const reversedCardData = [...cardData].reverse();
 
     return (
         <>
             <h2>Актуални новини</h2>
             <div className="home-cards">
-                {reversedCardsList.map(card =>
+                {reversedCardData.map(card =>
                     <div className="card" key={card.id}>
                         <a href={card.src} target="_blank">
                             <img src={card.picture} alt="news card 1" />

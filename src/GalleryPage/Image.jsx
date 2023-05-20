@@ -1,12 +1,12 @@
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { imageList } from "./ImageList";
+import { imageData } from '../Data';
 
 export function Image({ handleImageClick }) {
     return (
         <>
             <div className="image-container">
-                {imageList.map(image =>
+                {imageData.map(image =>
                     <div className="image" key={image.id}>
                         <LazyLoadImage
                             src={image.src}

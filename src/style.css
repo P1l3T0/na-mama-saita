@@ -14,7 +14,7 @@ body {
 
 ::-webkit-scrollbar {
     background: rgb(28,43,73);
-    width: .75rem;
+    width: .6rem;
     height: .75rem;
 }
 
@@ -136,7 +136,7 @@ nav ul li:hover {
     text-transform: uppercase;
     font-size: 3rem;
     font-weight: 800;
-    padding: 0 2rem;
+    padding: 0 23rem;
 }
 
 .home-main h2 {
@@ -160,13 +160,14 @@ nav ul li:hover {
     display: flex;
     overflow-x: auto;
     width: 100%;
-    margin: 0 0 1rem 0;
 }
 
 /*?-------------CARD-------------*/
 
 .card {
-    width: 26rem;
+    width: 25rem;
+    /* flex: 0; */
+    flex-wrap: wrap;
     margin: 1rem;
     padding: .7rem;
     border-radius: 20px;
@@ -622,6 +623,10 @@ nav .icon,
 }
 
 @media screen and (width <= 1300px) {
+    .home-main-picture h1 {
+        padding: 0 2rem;
+    }
+    
     .about-section {
         height: auto;
         display: block;
@@ -730,6 +735,10 @@ nav .icon,
         cursor: pointer;
     }
 
+    .home-main-picture h1 {
+        font-size: 2.25rem;
+    }
+
     /*!-------------GALLERY-------------*/
     .image {
         height: auto;
@@ -794,10 +803,6 @@ nav .icon,
     }
 
     /*?-------------CARD-------------*/
-    .home-cards {
-        margin: 1rem 0;
-    }
-
     .card {
         max-width: 25%;
     }
@@ -811,7 +816,6 @@ nav .icon,
     /*?-------------CARD-------------*/
     .home-cards {
         flex-wrap: wrap;
-        margin: 1rem 0;
         justify-content: center;
     }
 
@@ -863,9 +867,8 @@ nav .icon,
     }
 
     .home-main-picture h1 {
-        font-size: 1.7rem;
-        margin: .5rem;
-        padding: .5rem;
+        font-size: 1.5rem;
+        padding: 1rem;
     }
 
     .home-section p {

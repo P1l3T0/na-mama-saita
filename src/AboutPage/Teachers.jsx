@@ -1,23 +1,23 @@
-import { teacherslist } from "./TeachersList";
+import { teachersData } from "../Data";
 
 export function Teachers() {
     return (
         <>
             <h2 className="teachers-h2">Ръководители</h2>
-            {teacherslist.map(person =>
-                <div key={person.id} className="about-section">
+            {teachersData.map(teacher =>
+                <div key={teacher.id} className="about-section">
                     <div className="about-img">
-                        <img src={person.picture} alt="teacher" />
+                        <img src={teacher.picture} alt="teacher" />
                     </div>
                     <div className="about-text">
-                        <h2>{person.title + " " + person.name}</h2>
-                        <p>{person.about}</p>
+                        <h2>{teacher.title + " " + teacher.name}</h2>
+                        <p>{teacher.about}</p>
                         <h3>Водени дисциплини: </h3>
                         <p>
-                            {person.subjects.map((subject, index) =>
+                            {teacher.subjects.map((subject, index) =>
                                 <span key={subject}>
                                     {subject}
-                                    {index !== person.subjects.length - 1 && ", "}
+                                    {index !== teacher.subjects.length - 1 && ", "}
                                 </span>
                             )}
                         </p>

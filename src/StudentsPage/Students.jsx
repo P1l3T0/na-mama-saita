@@ -1,4 +1,4 @@
-import { items } from "./SubjectsList";
+import { subjectsData } from "../Data";
 
 export function Students() {
     return (
@@ -17,7 +17,7 @@ export function Students() {
                 <div className="students-semesters">
                     <h2>Учебен план</h2>
                     <div className="semesters">
-                        {items.map(subject =>
+                        {subjectsData.map(subject =>
                             <div key={subject.id}>
                                 <a href={subject.url} download>
                                     <h3>{subject.semester}</h3>
