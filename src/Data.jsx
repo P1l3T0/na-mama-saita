@@ -1,27 +1,27 @@
 //!-------------HOME-CARDS-------------!//
+
 export const cardData = [{
     id: 1,
-    picture: "./pictures/gromp.webp",
+    picture: "./pictures/cardPictures/kandidat-stydenti.webp",
     src: "https://shorturl.at/fgnGX",
     heading: "Кандидат-студенти 2023г",
     paragraph: "Критерии за кандидатсване в специалността+",
     date: "1.5.2023"
 }, {
     id: 2,
-    picture: "./pictures/gromp.webp",
+    picture: "./pictures/cardPictures/karieren-centur.webp",
     src: "https://shorturl.at/nACEO",
     heading: "Кариерен център за студентите",
     paragraph: "Обяви за стаж или работа по време на обучение",
     date: "15.5.2023"
 }, {
     id: 3,
-    picture: "./pictures/gromp.webp",
+    picture: "",
     src: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     heading: "Иновативни нови начини за чертаене",
     paragraph: "placeholder paragraph sadasdasdasdsdfijfsd",
     date: "1.5.2023"
 }];
-
 
 //!-------------STUDENTS-SUBJECTS-------------!//
 
@@ -78,6 +78,21 @@ export const subjectsData = [{
         "Избираема дисциплина - списък II",
         "Подготовка за държавен изпит или дипломна работа"
     ]
+}];
+
+//!-------------ABOUT-TEACHERS-------------!//
+
+export const teachersData = [{
+    id: 0,
+    picture: "./pictures/docent-Sivova.webp",
+    title: "доц. д-р инж.",
+    name: "Маргарет Сивова",
+    about: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quisquam commod" +
+        "maiores quia quibusdam quidem cumque aspernatur enim magnam consequuntur, ullam," +
+        "officiis sequi temporibus consectetur aliquid porro natus harum rem error optio? Quod" +
+        "beatae, natus nulla perspiciatis exercitationem reiciendis rerum, assumenda, odit nisi vitae modi iusto ab! Odit optio ipsum officia?",
+    subjects: ["subject 1", "subject 2", "subject 3", "subject 4", "subject 5",
+        "subject 6", "subject 7", "subject 8", "subject 9", "subject 10"]
 }];
 
 //!-------------GALLERY-PICTURES-------------!//
@@ -144,17 +159,3 @@ export const imageData = [{
     alt: "diplomni zashtiti"
 }];
 
-//!-------------ABOUT-TEACHERS-------------!//
-
-export const teachersData = [{
-    id: 0,
-    picture: "./pictures/docent-Sivova.webp",
-    title: "доц. д-р инж.",
-    name: "Маргарет Сивова",
-    about: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quisquam commod" +
-        "maiores quia quibusdam quidem cumque aspernatur enim magnam consequuntur, ullam," +
-        "officiis sequi temporibus consectetur aliquid porro natus harum rem error optio? Quod" +
-        "beatae, natus nulla perspiciatis exercitationem reiciendis rerum, assumenda, odit nisi vitae modi iusto ab! Odit optio ipsum officia?",
-    subjects: ["subject 1", "subject 2", "subject 3", "subject 4", "subject 5",
-        "subject 6", "subject 7", "subject 8", "subject 9", "subject 10"]
-}];

@@ -478,7 +478,7 @@ form button:hover {
     margin: 2rem;
     width: 33rem;
     text-align: center;
-    background: rgba(245, 245, 245, 0.85);
+    background: rgba(245, 245, 245, 0.75);
     border-radius: 1rem;
     box-shadow: 2px 2px 4px #333;
 }
@@ -808,7 +808,7 @@ nav .icon,
 
     /*?-------------CARD-------------*/
     .card {
-        max-width: 25%;
+        max-width: 40%;
     }
 
     .card h1 {
@@ -832,7 +832,7 @@ nav .icon,
     }
 
     .card h1 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -986,7 +986,7 @@ nav .icon,
     }
 
     .semesters div ul li {
-        font-size: 1.35rem;
+        font-size: 1.2rem;
     }
 }
 
