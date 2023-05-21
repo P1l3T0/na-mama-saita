@@ -16,7 +16,7 @@ export const cardData = [{
     date: "15.5.2023"
 }, {
     id: 3,
-    picture: "",
+    picture: "/pictures/cardPictures/shiene.webp",
     src: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     heading: "Иновативни нови начини за чертаене",
     paragraph: "placeholder paragraph sadasdasdasdsdfijfsd",
