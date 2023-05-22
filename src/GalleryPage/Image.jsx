@@ -1,6 +1,6 @@
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { imageData } from '../Data';
+import { imageData } from '../Helpers/Data';
 
 export function Image({ handleImageClick }) {
     return (

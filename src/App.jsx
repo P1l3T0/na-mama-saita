@@ -8,7 +8,6 @@ import { FormerGraduates } from "./FormerGraduatesPage/FormerGraduates";
 import { Preloader } from "./Helpers/Prelaoder";
 import { Routes, Route } from 'react-router-dom';
 
-
 export default function App() {
     return (
         <>

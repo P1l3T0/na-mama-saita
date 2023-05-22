@@ -1,4 +1,4 @@
-import { subjectsData } from "../Data";
+import { subjectsData } from '../Helpers/Data';
 
 export function Students() {
     return (

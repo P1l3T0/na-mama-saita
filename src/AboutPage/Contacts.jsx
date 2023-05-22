@@ -22,7 +22,7 @@ export function Contatcs() {
                         <option value="трети курс">Трети курс</option>
                         <option value="първи курс магистър">Първи курс магистър</option>
                         <option value="втори курс магистър">Втори курс магистър</option>
-                        <option value="кандидат-студент">Кандидат-сТУдент</option>
+                        <option value="кандидат-сТУдент">Кандидат-сТУдент</option>
                     </select>
                     <input name="Име" type="text" placeholder="Име" required />
                     <input name="Имейл" type="email" placeholder="Имейл" required />

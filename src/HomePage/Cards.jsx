@@ -1,5 +1,5 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { cardData } from "../Data";
+import { cardData } from '../Helpers/Data';
 
 export function Cards() {
     const reversedCardData = [...cardData].reverse();
