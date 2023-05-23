@@ -1,4 +1,3 @@
-import { Contatcs } from "./Contacts";
 import { Teachers } from "./Teachers";
 
 export function About() {
@@ -14,7 +13,6 @@ export function About() {
                     </p>
                 </div>
                 <Teachers />
-                <Contatcs />
             </div >
         </>
     );

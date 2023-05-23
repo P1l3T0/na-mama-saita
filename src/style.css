@@ -262,8 +262,7 @@ nav ul li:hover {
     padding: 0 0 2rem 1.5rem;
 }
 
-.about-text h2,
-.about-text h3 {
+.about-text h2 {
     font-size: 2.5rem;
     font-weight: 700;
     padding: 1rem 0;
@@ -276,8 +275,9 @@ nav ul li:hover {
     text-align: justify; /*! OBURNI VNIMANIE KATO IMASH VECHE POVECHE TEKST ZA PISANE */
 }
 
-.about-text p span {
-    font-size: 1em;
+.about-text ul {
+    list-style: none;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -299,6 +299,8 @@ nav ul li:hover {
 
 .contacts-questions h2 {
     padding: 0 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .contacts-questions p {
@@ -364,7 +366,7 @@ form button {
     padding: .5em;
     color: white;
     border-radius: 15px;
-    border: 3px solid #2d5194;
+    border: 3px solid rgb(27, 99, 133);
     text-shadow: rgb(0, 0, 0) 3px 3px 5px;
     width: fit-content;
     text-transform: uppercase;
@@ -373,7 +375,7 @@ form button {
 }
 
 form button:hover {
-    background-color:  #4d86f0;
+    background-color:  rgb(49, 162, 214);
 }
 
 /*!-------------GALLERY-------------*/
@@ -385,7 +387,6 @@ form button:hover {
 
 .image-container {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
@@ -451,6 +452,7 @@ form button:hover {
     background: url("./pictures/bg-pictures/bg-students.svg") no-repeat;
     background-size: cover;
     color: white;
+    text-align: center;
 }
 
 .students-info p {
@@ -645,8 +647,7 @@ nav .icon,
         margin: 0 0 2rem 0;
     }
 
-    .about-text h2,
-    .about-text h3 {
+    .about-text h2 {
         text-align: center;
     }
 
@@ -656,16 +657,12 @@ nav .icon,
     }
 
     .about-text p,
-    .about-main p {
-        margin: 0;
+    .about-text ul {
         padding: 1rem 2rem;
-        text-align: justify;
     }
 
-
-    .about-text h2,
-    .about-text h3 {
-        padding: 0 1rem;
+    .about-text h2 {
+        padding: 0 2rem;
     }
 
     .contacts {
@@ -763,6 +760,10 @@ nav .icon,
 
     .contacts-questions h2 {
         text-align: center;
+    }
+
+    .contacts-questions p {
+        padding: 1rem 2rem;
     }
 
     /*!-------------FOOTER-------------*/
@@ -897,13 +898,21 @@ nav .icon,
         padding: 1rem 0 0 0;
     }
 
+    .about-info p {
+        padding: 0 2rem 1rem 2rem;
+    }
+
     .about-text p,
-    .about-main p {
+    .about-main p, 
+    .contacts-questions p  {
         font-size: 1.25rem;
     }
 
-    .about-text h2,
-    .about-text h3 {
+    .about-text ul li {
+        font-size: 1.25rem;
+    }
+
+    .about-text h2 {
         font-size: 2rem;
     }
 
@@ -978,6 +987,10 @@ nav .icon,
 
     .about-main h2 {
         font-size: 1.5rem;
+    }
+
+    .about-text ul li {
+        font-size: 1.1rem;
     }
 
     /*!-------------CANDIDATE-STUDENTS-------------*/

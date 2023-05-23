@@ -85,14 +85,21 @@ export const subjectsData = [{
 export const teachersData = [{
     id: 0,
     picture: "./pictures/docent-Sivova.webp",
-    title: "доц. д-р инж.",
+    title: "доцент д-р инж.",
     name: "Маргарет Сивова",
     about: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quisquam commod" +
-        "maiores quia quibusdam quidem cumque aspernatur enim magnam consequuntur, ullam," +
-        "officiis sequi temporibus consectetur aliquid porro natus harum rem error optio? Quod" +
-        "beatae, natus nulla perspiciatis exercitationem reiciendis rerum, assumenda, odit nisi vitae modi iusto ab! Odit optio ipsum officia?",
-    subjects: ["subject 1", "subject 2", "subject 3", "subject 4", "subject 5",
-        "subject 6", "subject 7", "subject 8", "subject 9", "subject 10"]
+        "maiores quia quibusdam quidem cumque aspernatur enim magnam consequuntur, ullam,",
+    subjects: ["Проектиране на облекло", "Конструиране на облекло", "Моден дизайн и цветознание", "Конструктивно моделиране на облекло",
+        "Конструиране и моделиране на облекло с CAD системи", "Разработка и представяне на дизайнерски проекти по облекло"]
+}, {
+    id: 1,
+    picture: "./pictures/docent-Sivova.webp",
+    title: "асистент д-р инж.",
+    name: "Таня Пенева",
+    about: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quisquam commod" +
+        "maiores quia quibusdam quidem cumque aspernatur enim magnam consequuntur, ullam,",
+    subjects: ["Текстилни изпитвания", "Проектиране на тъкани", "Текстилно материалознание", "Технологии в текстилното производство",
+        "Технологии в текстилното облагородяване", "Анализ и проектиране на плетачни структури", "Проектиране и дизайн на трикотажни изделия"]
 }];
 
 //!-------------GALLERY-PICTURES-------------!//

@@ -1,5 +1,3 @@
-import 'react-lazy-load-image-component/src/effects/blur.css';
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { teachersData } from '../Helpers/Data';
 
 export function Teachers() {
@@ -17,15 +15,12 @@ export function Teachers() {
                     <div className="about-text">
                         <h2>{teacher.title + " " + teacher.name}</h2>
                         <p>{teacher.about}</p>
-                        <h3>Водени дисциплини: </h3>
-                        <p>
+                        <h2>Водени дисциплини: </h2>
+                        <ul>
                             {teacher.subjects.map((subject, index) =>
-                                <span key={subject}>
-                                    {subject}
-                                    {index !== teacher.subjects.length - 1 && ", "}
-                                </span>
+                                <li key={index}> {subject}</li>
                             )}
-                        </p>
+                        </ul>
                     </div>
                 </div>
             )}
