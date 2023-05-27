@@ -7,6 +7,10 @@
     scroll-behavior: smooth !important;
     color: white;
     /* outline: solid 2px crimson; */
+    --my-padding: 2rem;
+    --font-weight-small: 500;
+    --font-weight-medium: 700;
+    --font-weight-big: 800;
 }
 
 body {
@@ -41,9 +45,9 @@ body {
 }
 
 .paragraph {
-    padding: 2rem;
+    padding: var(--my-padding);
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: var(--font-weight-medium);
     text-shadow: 1px 1px 2px black;
 }
 
@@ -82,7 +86,7 @@ nav ul li {
 
 nav ul li a {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: var(--font-weight-medium);;
     text-decoration: none;
     text-shadow: 3px 3px 1px black;
 }
@@ -133,7 +137,7 @@ nav ul li:hover {
     text-shadow: 3px 3px 5px black;
     text-transform: uppercase;
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: var(--font-weight-big);;
     padding: 0 23rem;
 }
 
@@ -211,7 +215,7 @@ nav ul li:hover {
 
 .about-main h2 {
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: var(--font-weight-big);;
     text-align: center;
 }
 
@@ -241,20 +245,20 @@ nav ul li:hover {
 
 .about-text h2 {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: var(--font-weight-medium);
     text-align: left;
 }
 
 .about-text p {
     padding: 1rem 0;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: var(--font-weight-small);
 }
 
 .about-text ul {
     list-style: none;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: var(--font-weight-small);
     padding: 1rem 0;
 }
 
@@ -331,7 +335,7 @@ nav ul li:hover {
     font-size: 3rem;
     text-shadow: 2px 2px 1px black;
     text-align: center;
-    font-weight: 800;
+    font-weight: var(--font-weight-big);
 }
 
 .semesters {
@@ -389,7 +393,7 @@ nav ul li:hover {
 .contacts-questions p {
     padding: 1rem 0;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: var(--font-weight-medium);
 }
 
 .contacts-form {
@@ -418,6 +422,10 @@ form textarea {
     border-radius: 10px;
 }
 
+form select option {
+    color: black;
+}
+
 form textarea {
     height: 5.5rem;
 }
@@ -425,7 +433,7 @@ form textarea {
 form button {
     cursor: pointer;
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: var(--font-weight-big);
     padding: .5em;
     border-radius: 1rem;
     border: 3px solid rgb(27, 99, 133);
