@@ -13,9 +13,9 @@ export function Teachers() {
                         />
                     </div>
                     <div className="about-text">
-                        <h2>{teacher.title + " " + teacher.name}</h2>
+                        <h2 className='about-teacher'>{teacher.title + " " + teacher.name}</h2>
                         <p>{teacher.about}</p>
-                        <h2>Водени дисциплини: </h2>
+                        <h2>Водени дисциплини:</h2>
                         <ul>
                             {teacher.subjects.map((subject, index) =>
                                 <li key={index}> {subject}</li>

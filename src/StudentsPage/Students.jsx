@@ -7,7 +7,7 @@ export function Students() {
             <div className="students-main">
                 <h1 className="title">Студенти</h1>
                 <div className="students-info">
-                    <p>
+                    <p className="paragraph">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
                         labore autem quod nobis, porro pariatur et illo voluptatem error
                         similique distinctio voluptatum mollitia, necessitatibus nesciunt! Nemo
