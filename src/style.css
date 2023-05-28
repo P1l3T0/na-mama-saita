@@ -99,7 +99,7 @@ nav ul li a::after {
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: 500ms ease-in-out;
+    transition: 400ms ease-in-out;
 }
 
 nav ul li a:hover::after {
