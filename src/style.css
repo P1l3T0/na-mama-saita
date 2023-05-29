@@ -14,11 +14,11 @@
 }
 
 body {
-    background: rgb(28,43,73);
+    background: rgb(28, 43, 73);
 }
 
 ::-webkit-scrollbar {
-    background: rgb(28,43,73);
+    background: rgb(28, 43, 73);
     width: .6rem;
     height: .75rem;
 }
@@ -79,7 +79,7 @@ nav {
 
 nav ul li {
     margin: .5rem 1rem;
-    transition: 750ms ease-in-out;
+    transition: 750ms;
     display: inline-block;
     cursor: pointer;
 }
@@ -137,7 +137,8 @@ nav ul li:hover {
     text-shadow: 3px 3px 5px black;
     text-transform: uppercase;
     font-size: 3rem;
-    font-weight: var(--font-weight-big);;
+    font-weight: var(--font-weight-big);
+    ;
     padding: 0 23rem;
 }
 
@@ -164,11 +165,11 @@ nav ul li:hover {
     padding: .7rem;
     border-radius: 20px;
     box-shadow: 3px 3px 5px black;
-    transition: 750ms ease-in-out;
+    transition: 250ms ease-in-out;
 }
 
 .card:hover {
-    transform: scale(1.04);
+    transform: scale(1.02);
 }
 
 .card a {
@@ -215,7 +216,8 @@ nav ul li:hover {
 
 .about-main h2 {
     font-size: 3rem;
-    font-weight: var(--font-weight-big);;
+    font-weight: var(--font-weight-big);
+    ;
     text-align: center;
 }
 
@@ -410,8 +412,8 @@ input[data-autocompleted] {
     background-color: transparent !important;
 }
 
-form select, 
-form input, 
+form select,
+form input,
 form textarea {
     font-size: 1.5rem;
     padding: 1rem;
@@ -436,16 +438,29 @@ form button {
     font-weight: var(--font-weight-big);
     padding: .5em;
     border-radius: 1rem;
-    border: 3px solid rgb(27, 99, 133);
-    text-shadow: black  3px 3px 3px;
+    border: 1px solid rgb(28, 43, 73);
+    text-shadow: black 3px 3px 3px;
     text-transform: uppercase;
-    transition: 750ms ease-in-out;
     background-color: transparent;
+
+    --c: rgb(28, 43, 73);
+    box-shadow: 0 0 0 .1em inset var(--c);
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background:
+        var(--_g) calc(var(--_p, 0%) - 100%) 0%,
+        var(--_g) calc(200% - var(--_p, 0%)) 0%,
+        var(--_g) calc(var(--_p, 0%) - 100%) 100%,
+        var(--_g) calc(200% - var(--_p, 0%)) 100%;
+    background-size: 50.5% calc(var(--_p, 0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
 }
 
 form button:hover {
-    background-color:  rgb(27, 99, 133);
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
 }
+
 
 /*!-------------FOOTER-------------*/
 
@@ -515,12 +530,22 @@ footer {
     margin: .5rem 0;
 }
 
-.column3 ul li a .icon > path {
+.column3 ul li a .icon>path {
     transition: 500ms ease-in-out;
 }
 
-.column3 ul li a .icon:hover > path {
-    color: rgb(13, 76, 250);
+.column3 ul div {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.icons li:nth-child(1) .icon:hover>path {
+    color: blue;
+}
+
+.icons li:nth-child(2) .icon:hover>path {
+    color: red;
 }
 
 .copyright {
@@ -539,11 +564,11 @@ nav .icon,
     display: none;
 }
 
-@media screen and (width <= 1300px) {
+@media screen and (width <=1300px) {
     .home-main-picture h1 {
         padding: 0 2rem;
     }
-    
+
     .about-section {
         height: auto;
         display: block;
@@ -572,7 +597,7 @@ nav .icon,
     }
 }
 
-@media (width <= 1050px) {
+@media (width <=1050px) {
     .preloader {
         display: none;
         z-index: 0;
@@ -614,7 +639,8 @@ nav .icon,
     }
 
     nav ul li a {
-        font-size: 4rem /* !ZA TABLETI */
+        font-size: 4rem
+            /* !ZA TABLETI */
     }
 
     nav ul .icon {
@@ -665,7 +691,7 @@ nav .icon,
     }
 }
 
-@media (width <= 950px) and (orientation: portrait) {
+@media (width <=950px) and (orientation: portrait) {
     .tu-logo-div {
         width: 100vw;
         height: 20vh;
@@ -680,19 +706,20 @@ nav .icon,
     }
 }
 
-@media (width <= 1050px) and (width >= 1000px) {
+@media (width <=1050px) and (width >=1000px) {
     .popup-image img {
         width: 48rem;
     }
 }
 
-@media (width <= 925px) and (orientation: landscape) {
+@media (width <=925px) and (orientation: landscape) {
     .popup-image img {
         width: calc(30rem - 5%);
     }
 }
 
-@media (width <= 650px) and (orientation: portrait) {
+@media (width <=650px) and (orientation: portrait) {
+
     /*?-------------CARD-------------*/
     .home-cards {
         flex-wrap: wrap;
@@ -708,7 +735,7 @@ nav .icon,
     }
 }
 
-@media (width <= 600px) {
+@media (width <=600px) {
     nav ul li a {
         font-size: 2.75rem;
     }
@@ -731,7 +758,7 @@ nav .icon,
         background: url("./pictures/bg-pictures/bg-home-mobile.webp") no-repeat;
         background-size: cover;
         background-blend-mode: darken;
-        background-color: rgba(0, 0, 0, 0.25);    
+        background-color: rgba(0, 0, 0, 0.25);
         margin: 0 0 1rem 0;
     }
 
@@ -762,8 +789,8 @@ nav .icon,
         font-size: 2rem;
     }
 
-    .about-main p, 
-    .contacts-questions p  {
+    .about-main p,
+    .contacts-questions p {
         font-size: 1.25rem;
     }
 
@@ -788,7 +815,7 @@ nav .icon,
     .semesters div ul li {
         font-size: 1.25rem;
     }
-    
+
     .contacts-questions h2 {
         font-size: 1.75rem;
     }
@@ -812,7 +839,7 @@ nav .icon,
 
 /* !byklyk galaxy fold */
 
-@media (width <= 300px) {
+@media (width <=300px) {
     nav ul li a {
         font-size: 2rem;
     }
@@ -847,13 +874,13 @@ nav .icon,
     }
 }
 
-@media (height <= 500px) {
+@media (height <=500px) {
     nav ul li a {
         font-size: 2rem;
     }
 }
 
-@media (height <= 300px) {
+@media (height <=300px) {
     .popup-image img {
         width: calc(25rem - 7%);
     }

@@ -3,9 +3,9 @@
 export const cardData = [{
     id: 1,
     picture: "./pictures/cardPictures/kandidat-stydenti.webp",
-    src: "https://shorturl.at/fgnGX",
+    src: "https://youtu.be/Nj3smRGS-LY",
     heading: "Кандидат-студенти 2023г",
-    paragraph: "Критерии за кандидатсване в специалността+",
+    paragraph: "Информация за кандидатсване в специалността",
     date: "1.5.2023"
 }, {
     id: 2,
@@ -17,10 +17,10 @@ export const cardData = [{
 }, {
     id: 3,
     picture: "/pictures/cardPictures/shiene.webp",
-    src: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    heading: "Иновативни нови начини за чертаене",
-    paragraph: "placeholder paragraph sadasdasdasdsdfijfsd",
-    date: "1.5.2023"
+    src: "https://youtu.be/h0Mn6p5L_hs",
+    heading: "Клас „Тихият лукс",
+    paragraph: "Изработка на облеклото от наш студент",
+    date: "29.5.2023"
 }];
 
 //!-------------STUDENTS-SUBJECTS-------------!//

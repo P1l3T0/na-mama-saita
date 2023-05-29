@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 export function Footer() {
     return (
@@ -24,8 +25,16 @@ export function Footer() {
                         <ul>
                             <li><FontAwesomeIcon className='icon' icon={faPaperPlane} /><span>msivova@tu-sofia.bg</span></li>
                             <li><FontAwesomeIcon className='icon' icon={faPaperPlane} /><span>tannna.peneva@tu-sofia.bg</span></li>
-                            <li><a href="https://www.facebook.com/TDMMI.PTOT" target="_blank">
-                                <FontAwesomeIcon icon={faFacebook} className='icon' /></a></li>
+                            <div className="icons">
+                                <li>
+                                    <a href="https://www.facebook.com/TDMMI.PTOT" target="_blank">
+                                        <FontAwesomeIcon icon={faFacebook} className='icon' /></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/@-tdmmi/featured" target="_blank">
+                                        <FontAwesomeIcon icon={faYoutube} className='icon' /></a>
+                                </li>
+                            </div>
                         </ul>
                     </div>
                 </div>
