@@ -7,7 +7,9 @@
     scroll-behavior: smooth !important;
     color: white;
     /* outline: solid 2px crimson; */
-    --my-padding: 2rem;
+    --title-padding: 1rem 1rem 0 1rem;;
+    --parapraph-padding: 2rem;
+    --parapraph-padding-mobile: 1rem;
     --font-weight-small: 500;
     --font-weight-medium: 700;
     --font-weight-big: 800;
@@ -38,14 +40,14 @@ body {
 
 .title {
     font-size: 5rem;
-    padding: 1rem;
+    padding: var(--title-padding);
     text-align: center;
     text-transform: uppercase;
     text-shadow: 2px 2px 3px black;
 }
 
 .paragraph {
-    padding: var(--my-padding);
+    padding: var(--parapraph-padding);
     font-size: 2rem;
     font-weight: var(--font-weight-medium);
     text-shadow: 1px 1px 2px black;
@@ -138,7 +140,6 @@ nav ul li:hover {
     text-transform: uppercase;
     font-size: 3rem;
     font-weight: var(--font-weight-big);
-    ;
     padding: 0 23rem;
 }
 
@@ -217,7 +218,6 @@ nav ul li:hover {
 .about-main h2 {
     font-size: 3rem;
     font-weight: var(--font-weight-big);
-    ;
     text-align: center;
 }
 
@@ -280,7 +280,7 @@ nav ul li:hover {
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 0 2rem 2rem 2rem;
+    padding: 2rem;
 }
 
 .image {
@@ -334,6 +334,7 @@ nav ul li:hover {
 }
 
 .students-semesters h2 {
+    padding: 0 3rem;
     font-size: 3rem;
     text-shadow: 2px 2px 1px black;
     text-align: center;
@@ -443,7 +444,7 @@ form button {
     text-transform: uppercase;
     background-color: transparent;
 
-    --c: rgb(28, 43, 73);
+    --c: rgb(52, 80, 136);
     box-shadow: 0 0 0 .1em inset var(--c);
     --_g: linear-gradient(var(--c) 0 0) no-repeat;
     background:
@@ -564,7 +565,7 @@ nav .icon,
     display: none;
 }
 
-@media screen and (width <=1300px) {
+@media screen and (width <= 1300px) {
     .home-main-picture h1 {
         padding: 0 2rem;
     }
@@ -589,7 +590,7 @@ nav .icon,
     .about-text p,
     .about-text h2,
     .about-text ul {
-        padding: .5rem 2rem;
+        padding: .5rem 1rem;
     }
 
     .contacts {
@@ -661,6 +662,10 @@ nav .icon,
     }
 
     /*!-------------GALLERY-------------*/
+    .image-container {
+        padding: 1rem 2rem;
+    }    
+    
     .popup-image img {
         width: 90%;
     }
@@ -669,6 +674,10 @@ nav .icon,
 
     .contacts {
         display: block;
+    }
+
+    .contacts-questions {
+        padding: 0 1rem;
     }
 
     .contacts-questions h2 {
@@ -735,7 +744,7 @@ nav .icon,
     }
 }
 
-@media (width <=600px) {
+@media (width <= 600px) {
     nav ul li a {
         font-size: 2.75rem;
     }
@@ -746,7 +755,7 @@ nav .icon,
 
     .paragraph {
         font-size: 1.25rem;
-        padding: 0 2rem 1rem 2rem;
+        padding: var(--parapraph-padding-mobile);
     }
 
     .home-main {
@@ -759,7 +768,6 @@ nav .icon,
         background-size: cover;
         background-blend-mode: darken;
         background-color: rgba(0, 0, 0, 0.25);
-        margin: 0 0 1rem 0;
     }
 
     .gallery-container {
@@ -775,13 +783,17 @@ nav .icon,
     }
 
     .students-main {
-        background: url("./pictures/bg-pictures/bg-students-mobile.svg") no-repeat;
+        background: url("./pictures/bg-pictures/bg-about-mobile.svg") no-repeat;
         background-size: cover;
     }
 
     .home-main-picture h1 {
         font-size: 1.5rem;
         padding: 1rem;
+    }
+
+    .home-main h2 {
+        font-size: 2rem;
     }
 
     /*!-------------ABOUT-------------*/
@@ -874,13 +886,13 @@ nav .icon,
     }
 }
 
-@media (height <=500px) {
+@media (height <= 500px) {
     nav ul li a {
         font-size: 2rem;
     }
 }
 
-@media (height <=300px) {
+@media (height <= 300px) {
     .popup-image img {
         width: calc(25rem - 7%);
     }

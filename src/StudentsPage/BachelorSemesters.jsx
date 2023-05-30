@@ -1,14 +1,14 @@
-import { subjectsData } from '../Helpers/Data';
+import { bachelorSubjectsData } from '../Helpers/Data';
 
-export function Semesters() {
+export function BachelorSemesters() {
     return (
         <>
             <div className="students-semesters">
-                <h2>Учебен план</h2>
+                <h2>Учебен план - ОКС "Бакалавър"</h2>
                 <div className="semesters">
-                    {subjectsData.map(subject =>
+                    {bachelorSubjectsData.map(subject =>
                         <div key={subject.id}>
-                            <a href={subject.url} download>
+                            <a href={subject.url} target='_blank'>
                                 <h3>{subject.semester}</h3>
                                 <ul>
                                     {subject.subjects.map((item, index) =>
