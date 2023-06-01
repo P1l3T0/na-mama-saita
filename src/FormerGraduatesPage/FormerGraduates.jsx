@@ -1,3 +1,5 @@
+import { Graduates } from "./Graduates";
+
 export function FormerGraduates() {
     return (
         <>
@@ -14,6 +16,7 @@ export function FormerGraduates() {
                         и реални предизвикателства в модния бизнес.
                     </p>
                 </div>
+                <Graduates />
             </div>
         </>
     );

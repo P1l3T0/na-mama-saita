@@ -23,6 +23,92 @@ export const cardData = [{
     date: "29.5.2023"
 }];
 
+//!-------------ABOUT-TEACHERS-------------!//
+
+export const teachersData = [{
+    id: 0,
+    picture: "./pictures/docent-Sivova.webp",
+    title: "доцент д-р инж.",
+    name: "Маргарет Сивова",
+    about: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quisquam commod" +
+        "maiores quia quibusdam quidem cumque aspernatur enim magnam consequuntur, ullam,",
+    subjects: ["Проектиране на облекло", "Конструиране на облекло", "Моден дизайн и цветознание", "Конструктивно моделиране на облекло",
+        "Конструиране и моделиране на облекло с CAD системи", "Разработка и представяне на дизайнерски проекти по облекло"]
+}, {
+    id: 1,
+    picture: "./pictures/docent-Sivova.webp",
+    title: "асистент д-р инж.",
+    name: "Таня Пенева",
+    about: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quisquam commod" +
+        "maiores quia quibusdam quidem cumque aspernatur enim magnam consequuntur, ullam,",
+    subjects: ["Текстилни изпитвания", "Проектиране на тъкани", "Текстилно материалознание", "Технологии в текстилното производство",
+        "Технологии в текстилното облагородяване", "Анализ и проектиране на плетачни структури", "Проектиране и дизайн на трикотажни изделия"]
+}];
+
+//!-------------GALLERY-PICTURES-------------!//
+
+export const imageData = [{
+    id: 1,
+    src: "./pictures/galleryPictures/rabotilnica1.webp",
+    alt: "laboratoriq"
+}, {
+    id: 2,
+    src: "./pictures/galleryPictures/rabotilnica2.webp",
+    alt: "laboratoriq"
+}, {
+    id: 3,
+    src: "./pictures/galleryPictures/rabotilnica3.webp",
+    alt: "laboratoriq"
+}, {
+    id: 4,
+    src: "./pictures/galleryPictures/rabotilnica4.webp",
+    alt: "laboratoriq"
+}, {
+    id: 5,
+    src: "./pictures/galleryPictures/d3Kolej2017-1.webp",
+    alt: "sus stydenti"
+}, {
+    id: 6,
+    src: "./pictures/galleryPictures/d3Kolej2017-2.webp",
+    alt: "sus stydenti"
+}, {
+    id: 7,
+    src: "./pictures/galleryPictures/d3Kolej2022.webp",
+    alt: "sus stydenti"
+}, {
+    id: 8,
+    src: "./pictures/galleryPictures/d3magistri2021.webp",
+    alt: "sus stydenti"
+}, {
+    id: 9,
+    src: "./pictures/galleryPictures/d3magistri2022.webp",
+    alt: "sus stydenti"
+}, {
+    id: 10,
+    src: "./pictures/galleryPictures/diplomniZashtiti2020-1.webp",
+    alt: "diplomni zashtiti"
+}, {
+    id: 11,
+    src: "./pictures/galleryPictures/diplomniZashtiti2020-2.webp",
+    alt: "diplomni zashtiti"
+}, {
+    id: 12,
+    src: "./pictures/galleryPictures/diplomniZashtiti2020-3.webp",
+    alt: "diplomni zashtiti"
+}, {
+    id: 13,
+    src: "./pictures/galleryPictures/diplomniZashtiti2020-4.webp",
+    alt: "diplomni zashtiti"
+}, {
+    id: 14,
+    src: "./pictures/galleryPictures/diplomniZashtiti2020-5.webp",
+    alt: "diplomni zashtiti"
+}, {
+    id: 15,
+    src: "./pictures/galleryPictures/kurs2004.webp",
+    alt: "diplomni zashtiti"
+}];
+
 //!-------------STUDENTS-SUBJECTS-------------!//
 
 export const bachelorSubjectsData = [{
@@ -111,94 +197,20 @@ export const mastersSubjectData = [{
     semester: "Семестър IV",
     url: "./pictures/gromp.webp",
     subjects: [
-        "Управление на качеството", "Избираема дисциплина от списък 1",
-        "Избираема дисциплина от списък 3", "Избираема дисциплина от списък 3", "Дипломно проектиране"
+        "Дипломно проектиране", "Управление на качеството", "Избираема дисциплина от списък 1",
+        "Избираема дисциплина от списък 3", "Избираема дисциплина от списък 3"
     ]
 }];
 
-//!-------------ABOUT-TEACHERS-------------!//
+//!-------------FORMER-GRADUATES-------------!//
 
-export const teachersData = [{
+export const formerGraduates = [{
     id: 0,
     picture: "./pictures/docent-Sivova.webp",
     title: "доцент д-р инж.",
     name: "Маргарет Сивова",
     about: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quisquam commod" +
         "maiores quia quibusdam quidem cumque aspernatur enim magnam consequuntur, ullam,",
-    subjects: ["Проектиране на облекло", "Конструиране на облекло", "Моден дизайн и цветознание", "Конструктивно моделиране на облекло",
+    projects: ["Проектиране на облекло", "Конструиране на облекло", "Моден дизайн и цветознание", "Конструктивно моделиране на облекло",
         "Конструиране и моделиране на облекло с CAD системи", "Разработка и представяне на дизайнерски проекти по облекло"]
-}, {
-    id: 1,
-    picture: "./pictures/docent-Sivova.webp",
-    title: "асистент д-р инж.",
-    name: "Таня Пенева",
-    about: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quisquam commod" +
-        "maiores quia quibusdam quidem cumque aspernatur enim magnam consequuntur, ullam,",
-    subjects: ["Текстилни изпитвания", "Проектиране на тъкани", "Текстилно материалознание", "Технологии в текстилното производство",
-        "Технологии в текстилното облагородяване", "Анализ и проектиране на плетачни структури", "Проектиране и дизайн на трикотажни изделия"]
-}];
-
-//!-------------GALLERY-PICTURES-------------!//
-
-export const imageData = [{
-    id: 1,
-    src: "./pictures/galleryPictures/rabotilnica1.webp",
-    alt: "laboratoriq"
-}, {
-    id: 2,
-    src: "./pictures/galleryPictures/rabotilnica2.webp",
-    alt: "laboratoriq"
-}, {
-    id: 3,
-    src: "./pictures/galleryPictures/rabotilnica3.webp",
-    alt: "laboratoriq"
-}, {
-    id: 4,
-    src: "./pictures/galleryPictures/rabotilnica4.webp",
-    alt: "laboratoriq"
-}, {
-    id: 5,
-    src: "./pictures/galleryPictures/d3Kolej2017-1.webp",
-    alt: "sus stydenti"
-}, {
-    id: 6,
-    src: "./pictures/galleryPictures/d3Kolej2017-2.webp",
-    alt: "sus stydenti"
-}, {
-    id: 7,
-    src: "./pictures/galleryPictures/d3Kolej2022.webp",
-    alt: "sus stydenti"
-}, {
-    id: 8,
-    src: "./pictures/galleryPictures/d3magistri2021.webp",
-    alt: "sus stydenti"
-}, {
-    id: 9,
-    src: "./pictures/galleryPictures/d3magistri2022.webp",
-    alt: "sus stydenti"
-}, {
-    id: 10,
-    src: "./pictures/galleryPictures/diplomniZashtiti2020-1.webp",
-    alt: "diplomni zashtiti"
-}, {
-    id: 11,
-    src: "./pictures/galleryPictures/diplomniZashtiti2020-2.webp",
-    alt: "diplomni zashtiti"
-}, {
-    id: 12,
-    src: "./pictures/galleryPictures/diplomniZashtiti2020-3.webp",
-    alt: "diplomni zashtiti"
-}, {
-    id: 13,
-    src: "./pictures/galleryPictures/diplomniZashtiti2020-4.webp",
-    alt: "diplomni zashtiti"
-}, {
-    id: 14,
-    src: "./pictures/galleryPictures/diplomniZashtiti2020-5.webp",
-    alt: "diplomni zashtiti"
-}, {
-    id: 15,
-    src: "./pictures/galleryPictures/kurs2004.webp",
-    alt: "diplomni zashtiti"
-}];
-
+}];     

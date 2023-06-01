@@ -166,11 +166,11 @@ nav ul li:hover {
     padding: .7rem;
     border-radius: 20px;
     box-shadow: 3px 3px 5px black;
-    transition: 250ms ease-in-out;
+    transition: 400ms ease-in-out;
 }
 
 .card:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 .card a {
@@ -378,7 +378,6 @@ nav ul li:hover {
 }
 
 /*?-------------STUDENTS-FORM-------------*/
-
 .contacts {
     display: flex;
     padding: 2rem 0;
