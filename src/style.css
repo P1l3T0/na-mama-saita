@@ -31,7 +31,7 @@ body {
 }
 
 .preloader {
-    background: rgb(50, 50, 58) url("./pictures/preloader.gif") no-repeat center;
+    background: rgb(28,43,73);
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -219,6 +219,12 @@ nav ul li:hover {
     font-size: 3rem;
     font-weight: var(--font-weight-big);
     text-align: center;
+}
+
+.about-video {
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem 2rem 1rem;
 }
 
 .about-section {
