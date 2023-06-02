@@ -1,5 +1,5 @@
 import { Teachers } from "./Teachers";
-import ReactPlayer from 'react-player';
+import { Video } from "./Video";
 
 export function About() {
     return (
@@ -16,13 +16,7 @@ export function About() {
                         дизайнери, технолози, мениджъри на модни марки и други професии в модния бизнес.
                     </p>
                 </div>
-                <h2 className="teachers-h2">Кои сме ние?</h2>
-                <div className="about-video">
-                    <ReactPlayer
-                        url="https://www.youtube.com/watch?v=Nj3smRGS-LY"
-                        controls muted
-                    />
-                </div>
+                <Video />
                 <Teachers />
             </div>
         </>
