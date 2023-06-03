@@ -27,11 +27,11 @@ export function Footer() {
                             <li><FontAwesomeIcon className='icon' icon={faPaperPlane} /><span>tannna.peneva@tu-sofia.bg</span></li>
                             <div className="icons">
                                 <li>
-                                    <a href="https://www.facebook.com/TDMMI.PTOT" target="_blank">
+                                    <a href="https://www.facebook.com/TDMMI.PTOT" alt="facebook" target="_blank">
                                         <FontAwesomeIcon icon={faFacebook} className='icon' /></a>
                                 </li>
                                 <li>
-                                    <a href="https://www.youtube.com/@-tdmmi/featured" target="_blank">
+                                    <a href="https://www.youtube.com/@-tdmmi/featured" alt="youtube" target="_blank">
                                         <FontAwesomeIcon icon={faYoutube} className='icon' /></a>
                                 </li>
                             </div>
