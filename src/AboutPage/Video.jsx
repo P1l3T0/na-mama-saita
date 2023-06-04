@@ -1,8 +1,13 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 export function Video() {
     const [width, setWidth] = useState(1000);
     const [height, setHeight] = useState(500);
+    const [muted, setMuted] = useState(true);
+
+    const handleVideoClick = () => {
+        setMuted(!muted);
+    };
 
     window.addEventListener("resize", () => {
         if (window.innerWidth <= 1000) {
@@ -21,14 +26,16 @@ export function Video() {
                 <iframe
                     width={width}
                     height={height}
-                    src="https://www.youtube.com/embed/Nj3smRGS-LY"
+                    src={`https://www.youtube.com/embed/Nj3smRGS-LY?mute=${muted ? "1" : "0"}`}
                     title="За вас, кандидат-студенти"
                     loading="lazy"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
+                    onClick={handleVideoClick}
                 />
             </div>
         </>
     );
 }
+
