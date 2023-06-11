@@ -16,7 +16,7 @@ export function Footer() {
                     <div className="column2">
                         <h1>Полезни линкове</h1>
                         <ul>
-                            <li><a href="http://www.tu-sliven.com/" target="_blank">ТУ София, Колеж Сливен</a></li>
+                            <li><a href="http://tu-sliven.com/" target="_blank">ТУ София, Колеж Сливен</a></li>
                             <li><a href="https://www.tu-sofia.bg/" target="_blank">ТУ София</a></li>
                         </ul>
                     </div>
