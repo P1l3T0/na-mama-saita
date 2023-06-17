@@ -392,6 +392,8 @@ nav ul li:hover {
 .contacts-questions {
     flex-basis: 60%;
     padding: 1rem;
+    text-shadow: 2px 2px 2px black;
+    font-weight: var(--font-weight-medium);
 }
 
 .contacts-questions h2 {
@@ -400,8 +402,7 @@ nav ul li:hover {
 
 .contacts-questions p {
     padding: 1rem 0;
-    font-size: 2rem;
-    font-weight: var(--font-weight-medium);
+    font-size: 1.75rem;
 }
 
 .contacts-form {
