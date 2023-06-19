@@ -537,7 +537,7 @@ footer {
     margin: .5rem 0;
 }
 
-.column3 ul li a .icon>path {
+.column3 ul li a .icon > path {
     transition: 500ms ease-in-out;
 }
 
@@ -547,11 +547,11 @@ footer {
     gap: 1rem;
 }
 
-.icons li:nth-child(1) .icon:hover>path {
+.icons li:nth-child(1) .icon:hover > path {
     color: blue;
 }
 
-.icons li:nth-child(2) .icon:hover>path {
+.icons li:nth-child(2) .icon:hover > path {
     color: red;
 }
 
