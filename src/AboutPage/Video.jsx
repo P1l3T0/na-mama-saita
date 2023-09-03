@@ -29,8 +29,6 @@ export function Video() {
                     src={`https://www.youtube.com/embed/Nj3smRGS-LY?mute=${muted ? "1" : "0"}`}
                     title="За вас, кандидат-студенти"
                     loading="lazy"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                     onClick={handleVideoClick}
                 />

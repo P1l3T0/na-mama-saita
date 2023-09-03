@@ -49,62 +49,98 @@ export const teachersData = [{
 
 export const imageData = [{
     id: 1,
+    src: "./pictures/galleryPictures/noshtNaMyzeite1.webp",
+    alt: "myzei"
+}, {
+    id: 2,
+    src: "./pictures/galleryPictures/noshtNaMyzeite2.webp",
+    alt: "myzei"
+}, {
+    id: 3,
+    src: "./pictures/galleryPictures/noshtNaMyzeite3.webp",
+    alt: "myzei"
+}, {
+    id: 4,
+    src: "./pictures/galleryPictures/noshtNaMyzeite4.webp",
+    alt: "myzei"
+}, {
+    id: 5,
+    src: "./pictures/galleryPictures/noshtNaMyzeite5.webp",
+    alt: "myzei"
+}, {
+    id: 6,
+    src: "./pictures/galleryPictures/noshtNaMyzeite6.webp",
+    alt: "myzei"
+}, {
+    id: 7,
+    src: "./pictures/galleryPictures/noshtNaMyzeite7.webp",
+    alt: "myzei"
+}, {
+    id: 8,
+    src: "./pictures/galleryPictures/noshtNaMyzeite8.webp",
+    alt: "myzei"
+}, {
+    id: 9,
+    src: "./pictures/galleryPictures/noshtNaMyzeite9.webp",
+    alt: "myzei"
+}, {
+    id: 10,
     src: "./pictures/galleryPictures/rabotilnica1.webp",
     alt: "laboratoriq"
 }, {
-    id: 2,
+    id: 11,
     src: "./pictures/galleryPictures/rabotilnica2.webp",
     alt: "laboratoriq"
 }, {
-    id: 3,
+    id: 12,
     src: "./pictures/galleryPictures/rabotilnica3.webp",
     alt: "laboratoriq"
 }, {
-    id: 4,
+    id: 13,
     src: "./pictures/galleryPictures/rabotilnica4.webp",
     alt: "laboratoriq"
 }, {
-    id: 5,
+    id: 14,
     src: "./pictures/galleryPictures/d3Kolej2017-1.webp",
     alt: "sus stydenti"
 }, {
-    id: 6,
+    id: 15,
     src: "./pictures/galleryPictures/d3Kolej2017-2.webp",
     alt: "sus stydenti"
 }, {
-    id: 7,
+    id: 16,
     src: "./pictures/galleryPictures/d3Kolej2022.webp",
     alt: "sus stydenti"
 }, {
-    id: 8,
+    id: 17,
     src: "./pictures/galleryPictures/d3magistri2021.webp",
     alt: "sus stydenti"
 }, {
-    id: 9,
+    id: 18,
     src: "./pictures/galleryPictures/d3magistri2022.webp",
     alt: "sus stydenti"
 }, {
-    id: 10,
+    id: 19,
     src: "./pictures/galleryPictures/diplomniZashtiti2020-1.webp",
     alt: "diplomni zashtiti"
 }, {
-    id: 11,
+    id: 20,
     src: "./pictures/galleryPictures/diplomniZashtiti2020-2.webp",
     alt: "diplomni zashtiti"
 }, {
-    id: 12,
+    id: 21,
     src: "./pictures/galleryPictures/diplomniZashtiti2020-3.webp",
     alt: "diplomni zashtiti"
 }, {
-    id: 13,
+    id: 22,
     src: "./pictures/galleryPictures/diplomniZashtiti2020-4.webp",
     alt: "diplomni zashtiti"
 }, {
-    id: 14,
+    id: 23,
     src: "./pictures/galleryPictures/diplomniZashtiti2020-5.webp",
     alt: "diplomni zashtiti"
 }, {
-    id: 15,
+    id: 24,
     src: "./pictures/galleryPictures/kurs2004.webp",
     alt: "diplomni zashtiti"
 }];
@@ -114,92 +150,72 @@ export const imageData = [{
 export const bachelorSubjectsData = [{
     id: 1,
     semester: "Семестър I",
-    url: "./pictures/gromp.webp",
-    subjects: [
-        "Физика", "Информатика", "Висша математика I", "Моден дизайн и цветознание",
-        "Основи на конструирането и CAD", "Проектиране и дизайн на трикотажни изделия", "Чужд език", "Спорт"
-    ]
+    url: "http://tu-sliven.com/",  //! smeni url adresite na snimkite da vodqt kum tekyshtata programa za BAKALAVUR I MAGISTUR, a ne kum jabata :skull:
+    subjects: ["Физика", "Информатика", "Висша математика I", "Моден дизайн и цветознание",
+        "Основи на конструирането и CAD", "Проектиране и дизайн на трикотажни изделия", "Чужд език", "Спорт"]
 }, {
     id: 2,
     semester: "Семестър II",
-    url: "./pictures/gromp.webp",
-    subjects: [
-        "Техническа механика", "Приложна математика", "Технология на облеклото I", "Проектиране на  облеклото",
-        "Текстилно материалознание I", "Технологични системи за облекло", "Чужд език", "Спорт"
-    ]
+    url: "http://tu-sliven.com/",
+    subjects: ["Техническа механика", "Приложна математика", "Технология на облеклото I", "Проектиране на  облеклото",
+        "Текстилно материалознание I", "Технологични системи за облекло", "Чужд език", "Спорт"]
 }, {
     id: 3,
     semester: "Семестър III",
-    url: "./pictures/gromp.webp",
-    subjects: [
-        "Текстилни изпитвания", "Технологии на облеклото II", "Конструиране на облекло I",
-        "Текстилно материалознание II", "Технологии в текстилното производство I", "Спорт"
-    ]
+    url: "http://tu-sliven.com/",
+    subjects: ["Текстилни изпитвания", "Технологии на облеклото II", "Конструиране на облекло I",
+        "Текстилно материалознание II", "Технологии в текстилното производство I", "Спорт"]
 }, {
     id: 4,
     semester: "Семестър IV",
-    url: "./pictures/gromp.webp",
-    subjects: [
-        "Проектиране на тъкани", "Конструктивно моделиране на облекло", "Технологии в текстилното производство II",
+    url: "http://tu-sliven.com/",
+    subjects: ["Проектиране на тъкани", "Конструктивно моделиране на облекло", "Технологии в текстилното производство II",
         "Анализ и проектиране на плетачни структури", "Машини и съоражения в шевното производство",
-        "Разработка и представяне на дизайнерски проекти по облекло - модул Конструиране", "Спорт"
-    ]
+        "Разработка и представяне на дизайнерски проекти по облекло - модул Конструиране", "Спорт"]
 }, {
     id: 5,
     semester: "Семестър V",
     url: "./pictures/gromp.webp",
-    subjects: [
-        "Електротехника и електроника", "Проектиране на технологични линии в шевното производство",
+    subjects: ["Електротехника и електроника", "Проектиране на технологични линии в шевното производство",
         "Технологии в текстилното производство III", "Конструиране на облекло II",
         "Разработка и представяне на дизайнерски проекти по облекло - модул Технология",
-        "Избираема дисциплина - списък I", "Спорт"
-    ]
+        "Избираема дисциплина - списък I", "Спорт"]
 }, {
     id: 6,
     semester: "Семестър VI",
     url: "./pictures/gromp.webp",
-    subjects: [
-        "Технологии в текстилното облагородяване", "Организация и управление на текстилното производство",
+    subjects: ["Технологии в текстилното облагородяване", "Организация и управление на текстилното производство",
         "Конструиране и моделиране на облекло с CAD системи",
         "Избираема дисциплина - списък II",
-        "Подготовка за държавен изпит или дипломна работа"
-    ]
+        "Подготовка за държавен изпит или дипломна работа"]
 }];
 
 export const mastersSubjectData = [{
     id: 1,
     semester: "Семестър I",
     url: "./pictures/gromp.webp",
-    subjects: [
-        "Механика", "Материалознание", "Висша математика",
-        "Машинни елементи", "Дизайн на облекло и текстил", "Съпротивление на материалите",
-    ]
+    subjects: ["Механика", "Материалознание", "Висша математика",
+        "Машинни елементи", "Дизайн на облекло и текстил", "Съпротивление на материалите"]
 }, {
     id: 2,
     semester: "Семестър II",
     url: "./pictures/gromp.webp",
-    subjects: [
-        "Колористика и облагородяване", "Теория на механизмите в машините",
+    subjects: ["Колористика и облагородяване", "Теория на механизмите в машините",
         "Проктиране и технологии за облекла", "Проектиране и технологии за тъкачни изделия",
-        "Проктиране и технологии за предачни изделия", "Проктиране и технологии за трикотажни изделия",
-    ]
+        "Проктиране и технологии за предачни изделия", "Проктиране и технологии за трикотажни изделия"]
 }, {
     id: 3,
     semester: "Семестър III",
     url: "./pictures/gromp.webp",
-    subjects: [
-        "Моделираци системи за облекла", "Дизай и технологии на облеклата",
+    subjects: ["Моделираци системи за облекла", "Дизай и технологии на облеклата",
         "Маркетинг на облеклото и текстира", "Дизайн на площни текстилни изделия",
-        "Текстилно материалознание и изпитвания", "Механични технологии на влакнестите материали",
-    ]
+        "Текстилно материалознание и изпитвания", "Механични технологии на влакнестите материали"]
 }, {
     id: 4,
     semester: "Семестър IV",
     url: "./pictures/gromp.webp",
-    subjects: [
-        "Дипломно проектиране", "Управление на качеството", "Избираема дисциплина от списък 1",
-        "Избираема дисциплина от списък 3", "Избираема дисциплина от списък 3"
-    ]
+    subjects: ["Дипломно проектиране", "Управление на качеството", "Избираема дисциплина от списък 1",
+        "Избираема дисциплина от списък 3", "Избираема дисциплина от списък 3"]
 }];
 
 //!-------------FORMER-GRADUATES-------------!//
