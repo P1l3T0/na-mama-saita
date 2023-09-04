@@ -39,7 +39,11 @@ export function Footer() {
                     </div>
                 </div>
                 <div className="copyright">
-                    <h1>Copyright© Pileshkiq &amp; TU Sofia, College Sliven, All rights recieved</h1>
+                    <h1>Copyright©
+                        <a style={{ textDecoration: "none" }}
+                            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                            target="_blank"> Pileshkiq
+                        </a> &amp; TU Sofia, College Sliven, All rights recieved</h1>
                 </div>
             </footer>
         </>

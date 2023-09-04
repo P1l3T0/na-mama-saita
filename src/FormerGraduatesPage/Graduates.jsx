@@ -14,7 +14,9 @@ export function Graduates() {
                     <div className="about-text">
                         <h2 className='about-teacher'>{student.name}</h2>
                         <p>{student.about}</p>
-                        <h2>Водени дисциплини:</h2>
+                        <h2 style={{
+                            fontSize: "2.25rem"
+                        }}>Разработвани проекти:</h2>
                         <ul>
                             {student.projects.map((projects, index) =>
                                 <li key={index}> {projects}</li>

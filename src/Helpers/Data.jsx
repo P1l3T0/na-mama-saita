@@ -16,7 +16,7 @@ export const cardData = [{
     date: "15.5.2023"
 }, {
     id: 3,
-    picture: "/pictures/cardPictures/shiene.webp",
+    picture: "./pictures/cardPictures/shiene.webp",
     src: "https://youtu.be/h0Mn6p5L_hs",
     heading: "Клас \"Тихият лукс\"",
     paragraph: "Изработка на облеклото от наш студент",
@@ -221,10 +221,25 @@ export const mastersSubjectData = [{
 //!-------------FORMER-GRADUATES-------------!//
 
 export const formerGraduates = [{
-    id: 0,
-    picture: "./pictures/docent-Sivova.webp",
-    title: "доцент д-р инж.",
-    name: "Маргарет Сивова",
+    id: 1,
+    picture: "./pictures/gromp.webp",
+    name: "Студент на мама 1",
+    about: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quisquam commod" +
+        "maiores quia quibusdam quidem cumque aspernatur enim magnam consequuntur, ullam,",
+    projects: ["Проектиране на облекло", "Конструиране на облекло", "Моден дизайн и цветознание", "Конструктивно моделиране на облекло",
+        "Конструиране и моделиране на облекло с CAD системи", "Разработка и представяне на дизайнерски проекти по облекло"]
+}, {
+    id: 2,
+    picture: "./pictures/gromp.webp",
+    name: "Студент на мама 2",
+    about: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quisquam commod" +
+        "maiores quia quibusdam quidem cumque aspernatur enim magnam consequuntur, ullam,",
+    projects: ["Проектиране на облекло", "Конструиране на облекло", "Моден дизайн и цветознание", "Конструктивно моделиране на облекло",
+        "Конструиране и моделиране на облекло с CAD системи", "Разработка и представяне на дизайнерски проекти по облекло"]
+}, {
+    id: 3,
+    picture: "./pictures/gromp.webp",
+    name: "Студент на мама 3",
     about: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quisquam commod" +
         "maiores quia quibusdam quidem cumque aspernatur enim magnam consequuntur, ullam,",
     projects: ["Проектиране на облекло", "Конструиране на облекло", "Моден дизайн и цветознание", "Конструктивно моделиране на облекло",
