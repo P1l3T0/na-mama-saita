@@ -49,100 +49,112 @@ export const teachersData = [{
 
 export const imageData = [{
     id: 1,
-    src: "./pictures/galleryPictures/noshtNaMyzeite1.webp",
-    alt: "myzei"
-}, {
-    id: 2,
-    src: "./pictures/galleryPictures/noshtNaMyzeite2.webp",
-    alt: "myzei"
-}, {
-    id: 3,
-    src: "./pictures/galleryPictures/noshtNaMyzeite3.webp",
-    alt: "myzei"
-}, {
-    id: 4,
-    src: "./pictures/galleryPictures/noshtNaMyzeite4.webp",
-    alt: "myzei"
-}, {
-    id: 5,
-    src: "./pictures/galleryPictures/noshtNaMyzeite5.webp",
-    alt: "myzei"
-}, {
-    id: 6,
-    src: "./pictures/galleryPictures/noshtNaMyzeite6.webp",
-    alt: "myzei"
-}, {
-    id: 7,
-    src: "./pictures/galleryPictures/noshtNaMyzeite7.webp",
-    alt: "myzei"
-}, {
-    id: 8,
-    src: "./pictures/galleryPictures/noshtNaMyzeite8.webp",
-    alt: "myzei"
-}, {
-    id: 9,
-    src: "./pictures/galleryPictures/noshtNaMyzeite9.webp",
-    alt: "myzei"
-}, {
-    id: 10,
     src: "./pictures/galleryPictures/rabotilnica1.webp",
     alt: "laboratoriq"
 }, {
-    id: 11,
+    id: 2,
     src: "./pictures/galleryPictures/rabotilnica2.webp",
     alt: "laboratoriq"
 }, {
-    id: 12,
+    id: 3,
     src: "./pictures/galleryPictures/rabotilnica3.webp",
     alt: "laboratoriq"
 }, {
-    id: 13,
+    id: 4,
     src: "./pictures/galleryPictures/rabotilnica4.webp",
     alt: "laboratoriq"
 }, {
-    id: 14,
+    id: 5,
     src: "./pictures/galleryPictures/d3Kolej2017-1.webp",
     alt: "sus stydenti"
 }, {
-    id: 15,
+    id: 6,
     src: "./pictures/galleryPictures/d3Kolej2017-2.webp",
     alt: "sus stydenti"
 }, {
-    id: 16,
+    id: 7,
     src: "./pictures/galleryPictures/d3Kolej2022.webp",
     alt: "sus stydenti"
 }, {
-    id: 17,
+    id: 8,
     src: "./pictures/galleryPictures/d3magistri2021.webp",
     alt: "sus stydenti"
 }, {
-    id: 18,
+    id: 9,
     src: "./pictures/galleryPictures/d3magistri2022.webp",
     alt: "sus stydenti"
 }, {
-    id: 19,
+    id: 10,
     src: "./pictures/galleryPictures/diplomniZashtiti2020-1.webp",
     alt: "diplomni zashtiti"
 }, {
-    id: 20,
+    id: 11,
     src: "./pictures/galleryPictures/diplomniZashtiti2020-2.webp",
     alt: "diplomni zashtiti"
 }, {
-    id: 21,
+    id: 12,
     src: "./pictures/galleryPictures/diplomniZashtiti2020-3.webp",
     alt: "diplomni zashtiti"
 }, {
-    id: 22,
+    id: 13,
     src: "./pictures/galleryPictures/diplomniZashtiti2020-4.webp",
     alt: "diplomni zashtiti"
 }, {
-    id: 23,
+    id: 14,
     src: "./pictures/galleryPictures/diplomniZashtiti2020-5.webp",
     alt: "diplomni zashtiti"
 }, {
-    id: 24,
+    id: 15,
     src: "./pictures/galleryPictures/kurs2004.webp",
     alt: "diplomni zashtiti"
+}, {
+    id: 16,
+    src: "./pictures/galleryPictures/noshtNaMyzeite1.webp",
+    alt: "myzei"
+}, {
+    id: 17,
+    src: "./pictures/galleryPictures/noshtNaMyzeite2.webp",
+    alt: "myzei"
+}, {
+    id: 18,
+    src: "./pictures/galleryPictures/noshtNaMyzeite3.webp",
+    alt: "myzei"
+}, {
+    id: 19,
+    src: "./pictures/galleryPictures/noshtNaMyzeite4.webp",
+    alt: "myzei"
+}, {
+    id: 20,
+    src: "./pictures/galleryPictures/noshtNaMyzeite5.webp",
+    alt: "myzei"
+}, {
+    id: 21,
+    src: "./pictures/galleryPictures/noshtNaMyzeite6.webp",
+    alt: "myzei"
+}, {
+    id: 22,
+    src: "./pictures/galleryPictures/noshtNaMyzeite7.webp",
+    alt: "myzei"
+}, {
+    id: 23,
+    src: "./pictures/galleryPictures/noshtNaMyzeite8.webp",
+    alt: "myzei"
+}, {
+    id: 24,
+    src: "./pictures/galleryPictures/noshtNaMyzeite9.webp",
+    alt: "myzei"
+}, {
+    id: 25,
+    src: "./pictures/galleryPictures/noshtNaMyzeite10.webp",
+    alt: "myzei"
+}, {
+    id: 26,
+    src: "./pictures/galleryPictures/noshtNaMyzeite11.webp",
+    alt: "myzei"
+}, {
+    id: 27,
+    src: "./pictures/galleryPictures/noshtNaMyzeite12.webp",
+    alt: "myzei"
 }];
 
 //!-------------STUDENTS-SUBJECTS-------------!//

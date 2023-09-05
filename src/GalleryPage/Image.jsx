@@ -3,10 +3,12 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { imageData } from '../Helpers/Data';
 
 export function Image({ handleImageClick }) {
+    var reverseImageArr = [...imageData].reverse();
+
     return (
         <>
             <div className="image-container">
-                {imageData.map(image =>
+                {reverseImageArr.map(image =>
                     <div className="image" key={image.id}>
                         <LazyLoadImage
                             src={image.src}
