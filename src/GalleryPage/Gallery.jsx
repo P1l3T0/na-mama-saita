@@ -24,10 +24,7 @@ export function Gallery() {
             </div>
 
             <div className="whole-div" onClick={() => handleCloseClick(event)}>
-                <div
-                    className="popup-image"
-                    style={{ display: showPopup ? "block" : "none" }}
-                >
+                <div className="popup-image" style={{ display: showPopup ? "block" : "none" }}>
                     <LazyLoadImage src={popupImageSrc} />
                 </div>
             </div>

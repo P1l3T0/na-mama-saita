@@ -7,10 +7,7 @@ export function Teachers() {
             {teachersData.map(teacher =>
                 <div key={teacher.id} className="about-section">
                     <div className="about-img">
-                        <img
-                            src={teacher.picture}
-                            alt={teacher.title + teacher.name}
-                        />
+                        <img src={teacher.picture} alt={teacher.title + teacher.name} />
                     </div>
                     <div className="about-text">
                         <h2 className='about-teacher'>{teacher.title + " " + teacher.name}</h2>
