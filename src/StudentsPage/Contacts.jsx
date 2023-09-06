@@ -11,10 +11,7 @@ export function Contatcs() {
                 </p>
             </div>
             <div className="contacts-form">
-                <form
-                    action="https://formsubmit.co/vgan3v@gmail.com"
-                    method="POST"
-                >
+                <form action="https://formsubmit.co/vgan3v@gmail.com" method="POST">
                     <select name="Курс" id="person-type" required>
                         <option value="">--Аз съм--</option>
                         <option value="първи курс">Първи курс</option>
@@ -25,7 +22,7 @@ export function Contatcs() {
                         <option value="кандидат-сТУдент">Кандидат-сТУдент</option>
                     </select>
                     <input name="Име" type="text" placeholder="Име" required />
-                    <input name="Имейл" type="email" placeholder="Имейл" required />
+                    <input name="E-mail" type="email" placeholder="Имейл" required />
                     <textarea name="Съобщение" placeholder="Съобщение" required />
                     <button>Изпрати</button>
                 </form>

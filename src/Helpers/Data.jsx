@@ -256,4 +256,12 @@ export const formerGraduates = [{
         "maiores quia quibusdam quidem cumque aspernatur enim magnam consequuntur, ullam,",
     projects: ["Проектиране на облекло", "Конструиране на облекло", "Моден дизайн и цветознание", "Конструктивно моделиране на облекло",
         "Конструиране и моделиране на облекло с CAD системи", "Разработка и представяне на дизайнерски проекти по облекло"]
+}, {
+    id: 4,
+    picture: "./pictures/gromp.webp",
+    name: "Студент на мама 4",
+    about: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quisquam commod" +
+        "maiores quia quibusdam quidem cumque aspernatur enim magnam consequuntur, ullam,",
+    projects: ["Проектиране на облекло", "Конструиране на облекло", "Моден дизайн и цветознание", "Конструктивно моделиране на облекло",
+        "Конструиране и моделиране на облекло с CAD системи", "Разработка и представяне на дизайнерски проекти по облекло"]
 }];     
