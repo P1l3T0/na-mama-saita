@@ -31,26 +31,15 @@ export function Header() {
                 top: isBlur ? "0" : "static",
                 position: isBlur ? "sticky" : "relative",
                 zIndex: "10000",
-                backgroundColor: isBlur ? "transparent" : "none"
+                backgroundColor: isBlur ? "transparent" : "none",
+                backdropFilter: isBlur ? 'blur(7px)' : 'blur(0)'
             }}>
-                <div
-                    className='header-div'
-                    style={{
-                        backdropFilter: isBlur ? 'blur(10px)' : 'blur(0)',
-                        padding: isBlur ? "0" : ".5rem 0",
-                    }}
-                >
+                <div className='header-div' style={{ padding: isBlur ? "0" : ".5rem 0" }}>
                     <div className="logo">
                         <CustomLink to="/"><img src="./pictures/logo.webp" alt="Logo" /></CustomLink>
                     </div>
                     <nav>
-                        <ul
-                            id="side-menu"
-                            style={{
-                                top: isMenuOpen ? '0' : '-90rem',
-                                transition: '1.5s ease',
-                            }}
-                        >
+                        <ul id="side-menu" style={{ top: isMenuOpen ? '0' : '-90rem', transition: '1.5s ease' }}>
                             <div className="burger-div">
                                 <CustomLink to="/about">За нас</CustomLink>
                                 <CustomLink to="/gallery">Галерия</CustomLink>
@@ -60,17 +49,9 @@ export function Header() {
                                     <img src="/pictures/tu-sofia.webp" className='tu-logo' />
                                 </div>
                             </div>
-                            <FontAwesomeIcon
-                                icon={faXmarkSquare}
-                                onClick={setMenu}
-                                className='icon'
-                            />
+                            <FontAwesomeIcon icon={faXmarkSquare} onClick={setMenu} className='icon' />
                         </ul>
-                        <FontAwesomeIcon
-                            icon={faBars}
-                            onClick={setMenu}
-                            className='icon'
-                        />
+                        <FontAwesomeIcon icon={faBars} onClick={setMenu} className='icon' />
                     </nav>
                 </div>
             </header>
@@ -78,8 +59,8 @@ export function Header() {
     );
 }
 
-function CustomLink({ to, children, ...props }) {
-    const resolvedPath = useResolvedPath(to);
+function CustomLink({ to, children, ...props }) { //! Tazi fynkciq trqbva da e sled returnatiq html shototo 
+    const resolvedPath = useResolvedPath(to);     //! kara logoto da flickerva (nqmam si ideq kak e related dori)
     const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
     return (

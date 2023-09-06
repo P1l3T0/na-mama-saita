@@ -14,7 +14,7 @@ export function Footer() {
                         <p>Технологии, дизайн и мениджмънт на модната индустрия</p>
                     </div>
                     <div className="column2">
-                        <h1>Полезни линкове</h1>
+                        <h1>"Полезни" линкове</h1>
                         <ul>
                             <li><a href="http://tu-sliven.com/" target="_blank">ТУ София, Колеж Сливен</a></li>
                             <li><a href="https://www.tu-sofia.bg/" target="_blank">ТУ София</a></li>
@@ -39,11 +39,9 @@ export function Footer() {
                     </div>
                 </div>
                 <div className="copyright">
-                    <h1>Copyright©
-                        <a style={{ textDecoration: "none" }}
-                            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                            target="_blank"> Pileshkiq
-                        </a> &amp; TU Sofia, College Sliven, All rights recieved</h1>
+                    <h1>Copyright© 2023
+                        <a style={{ textDecoration: "none" }} href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> Pileshkiq </a>&amp; TU Sofia
+                    </h1>
                 </div>
             </footer>
         </>

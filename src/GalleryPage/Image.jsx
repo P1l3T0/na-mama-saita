@@ -10,11 +10,7 @@ export function Image({ handleImageClick }) {
             <div className="image-container">
                 {reverseImageArr.map(image =>
                     <div className="image" key={image.id}>
-                        <LazyLoadImage
-                            src={image.src}
-                            alt={image.alt}
-                            effect="blur"
-                            onClick={() => handleImageClick(image.src)}
+                        <LazyLoadImage src={image.src} alt={image.alt} effect="blur" onClick={() => handleImageClick(image.src)}
                             style={{
                                 transition: "350ms ease-in-out",
                                 objectFit: "cover",
