@@ -15,4 +15,4 @@ Former graduates page - Information about former graduates and their current wor
 
 ## Credits
 
-This website was created by P1l3T0 with the help of my mom and her friend from work
+This website was created by P1l3T0 with the help of my mom

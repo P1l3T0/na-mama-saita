@@ -1,10 +1,10 @@
-import { teachersData } from '../Helpers/Data';
+import data from "../Helpers/Data.json";
 
 export function Teachers() {
     return (
         <>
             <h2 className="teachers-h2">Ръководители</h2>
-            {teachersData.map(teacher =>
+            {data.teachers.map(teacher =>
                 <div key={teacher.id} className="about-section">
                     <div className="about-img">
                         <img src={teacher.picture} alt={teacher.title + teacher.name} />

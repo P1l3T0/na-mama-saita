@@ -548,7 +548,7 @@ footer {
 }
 
 .icons li:nth-child(1) .icon:hover > path {
-    color: blue;
+    color: cyan;
 }
 
 .icons li:nth-child(2) .icon:hover > path {
@@ -628,7 +628,6 @@ nav .icon,
     }
 
     nav ul {
-        background: #1C2B49;
         position: fixed;
         top: -100rem;
         right: 0;

@@ -1,14 +1,14 @@
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { imageData } from '../Helpers/Data';
+import data from "../Helpers/Data.json";
 
 export function Image({ handleImageClick }) {
-    var reverseImageArr = [...imageData].reverse();
+    var reverseImage = [...data.images].reverse();
 
     return (
         <>
             <div className="image-container">
-                {reverseImageArr.map(image =>
+                {reverseImage.map(image =>
                     <div className="image" key={image.id}>
                         <LazyLoadImage src={image.src} alt={image.alt} effect="blur" onClick={() => handleImageClick(image.src)}
                             style={{

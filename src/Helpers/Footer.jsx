@@ -28,11 +28,13 @@ export function Footer() {
                             <div className="icons">
                                 <li>
                                     <a href="https://www.facebook.com/TDMMI.PTOT" alt="facebook" target="_blank">
-                                        <FontAwesomeIcon icon={faFacebook} className='icon' /></a>
+                                        <FontAwesomeIcon icon={faFacebook} className='icon' />
+                                    </a>
                                 </li>
                                 <li>
                                     <a href="https://www.youtube.com/@-tdmmi/featured" alt="youtube" target="_blank">
-                                        <FontAwesomeIcon icon={faYoutube} className='icon' /></a>
+                                        <FontAwesomeIcon icon={faYoutube} className='icon' />
+                                    </a>
                                 </li>
                             </div>
                         </ul>

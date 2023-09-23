@@ -1,9 +1,9 @@
-import { formerGraduates } from "../Helpers/Data";
+import data from "../Helpers/Data.json";
 
 export function Graduates() {
     return (
         <>
-            {formerGraduates.map(student =>
+            {data.formerGraduates.map(student =>
                 <div key={student.id} className="about-section">
                     <div className="about-img">
                         <img src={student.picture} alt={student.name} />

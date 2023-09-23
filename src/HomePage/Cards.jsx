@@ -1,14 +1,14 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { cardData } from '../Helpers/Data';
+import data from "../Helpers/Data.json";
 
 export function Cards() {
-    const reversedCardData = [...cardData].reverse();
+    const cardsData = [...data.cards].reverse();
 
     return (
         <>
             <h2>Актуални новини</h2>
             <div className="home-cards">
-                {reversedCardData.map(card =>
+                {cardsData.map(card =>
                     <div className="card" key={card.id}>
                         <a href={card.src} target="_blank">
                             <div className="card-info">
