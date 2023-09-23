@@ -625,6 +625,7 @@ nav .icon,
         display: flex;
         flex-direction: column;
         justify-content: center;
+        background-color: rgb(28,43,73);
     }
 
     nav ul {

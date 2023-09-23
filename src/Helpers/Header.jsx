@@ -28,9 +28,9 @@ export function Header() {
     return (
         <>
             <header style={{
+                zIndex: "10000",
                 top: isBlur ? "0" : "static",
                 position: isBlur ? "sticky" : "relative",
-                zIndex: "10000",
                 backgroundColor: isBlur ? "transparent" : "none",
                 backdropFilter: isBlur ? 'blur(7px)' : 'blur(0)'
             }}>
@@ -41,7 +41,6 @@ export function Header() {
                     <nav>
                         <ul id="side-menu" style={{
                             top: isMenuOpen ? '0' : '-90rem',
-                            backgroundColor: isMenuOpen ? 'rgb(28,43,73)' : "transparent",
                             transition: '1.5s ease'
                         }}>
                             <div className="burger-div">
