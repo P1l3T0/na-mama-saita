@@ -604,7 +604,7 @@ nav .icon,
     }
 }
 
-@media (width <=1050px) {
+@media (width <= 1050px) {
     .preloader {
         display: none;
         z-index: 0;
@@ -645,8 +645,7 @@ nav .icon,
     }
 
     nav ul li a {
-        font-size: 4rem
-            /* !ZA TABLETI */
+        font-size: 4rem /* !ZA TABLETI */
     }
 
     nav ul .icon {

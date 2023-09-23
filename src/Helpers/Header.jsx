@@ -39,7 +39,11 @@ export function Header() {
                         <CustomLink to="/"><img src="./pictures/logo.webp" alt="Logo" /></CustomLink>
                     </div>
                     <nav>
-                        <ul id="side-menu" style={{ top: isMenuOpen ? '0' : '-90rem', transition: '1.5s ease' }}>
+                        <ul id="side-menu" style={{
+                            top: isMenuOpen ? '0' : '-90rem',
+                            backgroundColor: isMenuOpen ? 'rgb(28,43,73)' : "transparent",
+                            transition: '1.5s ease'
+                        }}>
                             <div className="burger-div">
                                 <CustomLink to="/about">За нас</CustomLink>
                                 <CustomLink to="/gallery">Галерия</CustomLink>

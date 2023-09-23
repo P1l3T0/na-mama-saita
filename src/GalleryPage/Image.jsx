@@ -3,7 +3,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import data from "../Helpers/Data.json";
 
 export function Image({ handleImageClick }) {
-    var reverseImage = [...data.images].reverse();
+    const reverseImage = [...data.images].reverse();
 
     return (
         <>
