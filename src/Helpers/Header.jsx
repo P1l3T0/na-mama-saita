@@ -1,5 +1,5 @@
+import { CustomLink } from './CustomLink';
 import { useState, useEffect } from 'react';
-import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmarkSquare } from "@fortawesome/free-solid-svg-icons";
 
@@ -58,19 +58,6 @@ export function Header() {
                     </nav>
                 </div>
             </header>
-        </>
-    );
-}
-
-function CustomLink({ to, children, ...props }) { //! Tazi fynkciq trqbva da e sled returnatiq html shototo 
-    const resolvedPath = useResolvedPath(to);     //! kara logoto da flickerva (nqmam si ideq kak e related dori)
-    const isActive = useMatch({ path: resolvedPath.pathname, end: true });
-
-    return (
-        <>
-            <li className={isActive ? "active" : ""}>
-                <Link to={to} {...props}>{children}</Link>
-            </li>
         </>
     );
 }
