@@ -8,9 +8,13 @@ export function Image({ handleImageClick }) {
     return (
         <>
             <div className="image-container">
-                {reverseImage.map(image =>
-                    <div className="image" key={image.id}>
-                        <LazyLoadImage src={image.src} alt={image.alt} effect="blur" onClick={() => handleImageClick(image.src)}
+                {reverseImage.map((image, index) => (
+                    <div className="image" key={index}>
+                        <LazyLoadImage
+                            src={image.src}
+                            alt={image.alt}
+                            effect="blur"
+                            onClick={() => handleImageClick(image.src)}
                             style={{
                                 transition: "350ms ease-in-out",
                                 objectFit: "cover",
@@ -20,7 +24,7 @@ export function Image({ handleImageClick }) {
                             }}
                         />
                     </div>
-                )}
+                ))}
             </div>
         </>
     );

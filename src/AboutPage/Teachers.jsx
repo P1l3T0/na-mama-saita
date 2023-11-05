@@ -4,8 +4,8 @@ export function Teachers() {
     return (
         <>
             <h2 className="teachers-h2">Ръководители</h2>
-            {data.teachers.map(teacher =>
-                <div key={teacher.id} className="about-section">
+            {data.teachers.map((teacher, index) => (
+                <div key={index} className="about-section">
                     <div className="about-img">
                         <img src={teacher.picture} alt={teacher.title + teacher.name} />
                     </div>
@@ -20,7 +20,7 @@ export function Teachers() {
                         </ul>
                     </div>
                 </div>
-            )}
+            ))}
         </>
     );
 };

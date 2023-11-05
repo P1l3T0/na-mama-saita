@@ -8,8 +8,8 @@ export function Cards() {
         <>
             <h2>Актуални новини</h2>
             <div className="home-cards">
-                {cardsData.map(card =>
-                    <div className="card" key={card.id}>
+                {cardsData.map((card, index) => (
+                    <div className="card" key={index}>
                         <a href={card.src} target="_blank">
                             <div className="card-info">
                                 <LazyLoadImage src={card.picture} />
@@ -20,7 +20,8 @@ export function Cards() {
                                 </div>
                             </div>
                         </a>
-                    </div>)}
+                    </div>
+                ))}
             </div>
         </>
     );

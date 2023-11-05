@@ -3,8 +3,8 @@ import data from "../Helpers/Data.json";
 export function Graduates() {
     return (
         <>
-            {data.formerGraduates.map(student =>
-                <div key={student.id} className="about-section">
+            {data.formerGraduates.map((student, index) => (
+                <div key={index} className="about-section">
                     <div className="about-img">
                         <img src={student.picture} alt={student.name} />
                     </div>
@@ -19,7 +19,7 @@ export function Graduates() {
                         </ul>
                     </div>
                 </div>
-            )}
+            ))}
         </>
     );
 }

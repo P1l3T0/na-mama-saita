@@ -6,8 +6,8 @@ export function BachelorSemesters() {
             <div className="students-semesters">
                 <h2>Учебен план - ОКС "Бакалавър"</h2>
                 <div className="semesters">
-                    {data.bachelorSubjects.map(subject =>
-                        <div key={subject.id}>
+                    {data.bachelorSubjects.map((subject, index) => (
+                        <div key={index}>
                             <a href={subject.url} target='_blank'>
                                 <h3>{subject.semester}</h3>
                                 <ul>
@@ -17,7 +17,7 @@ export function BachelorSemesters() {
                                 </ul>
                             </a>
                         </div>
-                    )}
+                    ))}
                 </div>
             </div>
         </>
