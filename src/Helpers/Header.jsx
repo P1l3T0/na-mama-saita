@@ -1,9 +1,9 @@
-import { CustomLink } from './CustomLink';
+import CustomLink from './CustomLink';
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmarkSquare } from "@fortawesome/free-solid-svg-icons";
 
-export function Header() {
+const Header = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
     const [isBlur, setBlur] = useState(false);
 
@@ -60,4 +60,6 @@ export function Header() {
             </header>
         </>
     );
-}
+};
+
+export default Header;

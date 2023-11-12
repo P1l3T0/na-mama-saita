@@ -1,6 +1,6 @@
 import data from "../Helpers/Data.json";
 
-export function Teachers() {
+const Teachers = () => {
     return (
         <>
             <h2 className="teachers-h2">Ръководители</h2>
@@ -24,3 +24,5 @@ export function Teachers() {
         </>
     );
 };
+
+export default Teachers;

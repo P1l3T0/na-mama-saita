@@ -1,6 +1,6 @@
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
-export function CustomLink({ to, children, ...props }) {
+const CustomLink = ({ to, children, ...props }) => {
     const resolvedPath = useResolvedPath(to);
     const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
@@ -11,4 +11,6 @@ export function CustomLink({ to, children, ...props }) {
             </li>
         </>
     );
-}
+};
+
+export default CustomLink;

@@ -1,23 +1,15 @@
-import { Graduates } from "./Graduates";
+import Information from "./Information";
+import Graduates from "./Graduates";
 
-export function FormerGraduates() {
+const FormerGraduates = () => {
     return (
         <>
             <div className="about-main">
-                <h1 className="title">Възпитаници</h1>
-                <div>
-                    <p className="paragraph">
-                        Страницата представя успешните завършили студенти, които
-                        са се насочили към професионална кариера в модната индустрия.
-                        Тук може да намерите информация за професионалната пътека, постиженията
-                        и наградите на вече завършилите ни студенти. Също така страницата служи за вдъхновение и
-                        пример за настоящите и бъдещи студенти, показвайки им възможностите и потенциала след завършване
-                        на специалността. Възпитаниците са доказателство за успешната комбинация от академична подготовка
-                        и реални предизвикателства в модния бизнес.
-                    </p>
-                </div>
+                <Information />
                 <Graduates />
             </div>
         </>
     );
-}
+};
+
+export default FormerGraduates;

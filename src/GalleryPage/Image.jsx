@@ -1,8 +1,8 @@
+import data from "../Helpers/Data.json";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import data from "../Helpers/Data.json";
 
-export function Image({ handleImageClick }) {
+const Image = ({ handleImageClick }) => {
     const reverseImage = [...data.images].reverse();
 
     return (
@@ -28,4 +28,6 @@ export function Image({ handleImageClick }) {
             </div>
         </>
     );
-}
+};
+
+export default Image;

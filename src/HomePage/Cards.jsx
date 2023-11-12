@@ -1,7 +1,7 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import data from "../Helpers/Data.json";
 
-export function Cards() {
+const Cards = () => {
     const cardsData = [...data.cards].reverse();
 
     return (
@@ -25,4 +25,6 @@ export function Cards() {
             </div>
         </>
     );
-}
+};
+
+export default Cards;

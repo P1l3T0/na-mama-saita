@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-export function Video() {
+const Video = () => {
     const [width, setWidth] = useState(1000);
     const [height, setHeight] = useState(500);
     const [muted, setMuted] = useState(true);
@@ -35,5 +35,6 @@ export function Video() {
             </div>
         </>
     );
-}
+};
 
+export default Video;

@@ -1,6 +1,6 @@
 import data from "../Helpers/Data.json";
 
-export function MastersSemesters() {
+const MastersSemesters = () => {
     return (
         <>
             <div className="students-semesters">
@@ -22,4 +22,6 @@ export function MastersSemesters() {
             </div>
         </>
     );
-}
+};
+
+export default MastersSemesters;

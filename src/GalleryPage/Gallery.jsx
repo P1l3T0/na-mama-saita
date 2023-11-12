@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Image } from "./Image";
+import Image from "./Image";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-export function Gallery() {
+const Gallery = () => {
     const [showPopup, setShowPopup] = useState(false);
     const [popupImageSrc, setPopupImageSrc] = useState("");
 
@@ -12,9 +12,12 @@ export function Gallery() {
     }
 
     function handleCloseClick(event) {
-        if (event.target.classList.contains("popup-image"))
+        if (event.target.classList.contains("popup-image") || event.key == "Escape") {
             setShowPopup(false);
+        }
     }
+
+    document.addEventListener('keydown', handleCloseClick);
 
     return (
         <>
@@ -30,6 +33,6 @@ export function Gallery() {
             </div>
         </>
     );
-}
+};
 
-
+export default Gallery;

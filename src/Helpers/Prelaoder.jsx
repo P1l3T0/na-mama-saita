@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export function Preloader() {
+const Preloader = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -14,4 +14,6 @@ export function Preloader() {
             {isLoading && <div className="preloader"></div>}
         </div>
     );
-}
+};
+
+export default Preloader;

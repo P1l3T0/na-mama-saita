@@ -1,6 +1,6 @@
 import data from "../Helpers/Data.json";
 
-export function Graduates() {
+const Graduates = () => {
     return (
         <>
             {data.formerGraduates.map((student, index) => (
@@ -22,4 +22,6 @@ export function Graduates() {
             ))}
         </>
     );
-}
+};
+
+export default Graduates;

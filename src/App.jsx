@@ -1,14 +1,14 @@
-import { Header } from "./Helpers/Header";
-import { Footer } from "./Helpers/Footer";
-import { Home } from "./HomePage/Home";
-import { About } from './AboutPage/About';
-import { Gallery } from "./GalleryPage/Gallery";
-import { Students } from "./StudentsPage/Students";
-import { FormerGraduates } from "./FormerGraduatesPage/FormerGraduates";
-import { Preloader } from "./Helpers/Prelaoder";
+import Header from "./Helpers/Header";
+import Footer from "./Helpers/Footer";
+import Home from "./HomePage/Home";
+import About from './AboutPage/About';
+import Gallery from "./GalleryPage/Gallery";
+import Students from "./StudentsPage/Students";
+import FormerGraduates from "./FormerGraduatesPage/FormerGraduates";
+import Preloader from "./Helpers/Prelaoder";
 import { Routes, Route } from 'react-router-dom';
 
-export default function App() {
+const App = () => {
     return (
         <>
             <Preloader />
@@ -23,5 +23,6 @@ export default function App() {
             <Footer />
         </>
     );
-}
+};
 
+export default App;
