@@ -19,7 +19,7 @@ const Image = ({ handleImageClick }) => {
                 transition: "350ms ease-in-out",
                 objectFit: "cover",
                 maxWidth: "100%",
-                cursor: "pointer",
+                cursor: "zoom-in",
                 display: "flex",
               }}
             />

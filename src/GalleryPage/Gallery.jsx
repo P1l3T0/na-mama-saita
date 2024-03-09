@@ -6,16 +6,16 @@ const Gallery = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [popupImageSrc, setPopupImageSrc] = useState("");
 
-  function handleImageClick(src) {
+  const handleImageClick = async (src) => {
     setShowPopup(true);
     setPopupImageSrc(src);
-  }
+  };
 
-  function handleCloseClick(e) {
+  const handleCloseClick = async (e) => {
     if (e.target.classList.contains("popup-image") || e.key == "Escape") {
       setShowPopup(false);
     }
-  }
+  };
 
   document.addEventListener('keydown', handleCloseClick);
 
