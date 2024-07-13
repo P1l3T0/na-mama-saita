@@ -12,7 +12,7 @@ const Gallery = () => {
   };
 
   const handleCloseClick = async (e) => {
-    if (e.target.classList.contains("popup-image") || e.key == "Escape") {
+    if (e.target.classList.contains("popup-image") || e.code == "Escape") {
       setShowPopup(false);
     }
   };
@@ -26,7 +26,7 @@ const Gallery = () => {
         <Image handleImageClick={handleImageClick} />
       </div>
 
-      <div className="whole-div" onClick={() => handleCloseClick(event)}>
+      <div className="whole-div" onClick={(e) => handleCloseClick(e)}>
         <div className="popup-image" style={{ display: showPopup ? "block" : "none" }}>
           <LazyLoadImage src={popupImageSrc} />
         </div>
