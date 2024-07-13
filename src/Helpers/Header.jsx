@@ -32,7 +32,8 @@ const Header = () => {
         top: isBlur ? "0" : "static",
         position: isBlur ? "sticky" : "relative",
         backgroundColor: isBlur ? "transparent" : "none",
-        backdropFilter: isBlur ? 'blur(7px)' : 'blur(0)'
+        backdropFilter: isBlur ? 'blur(7px)' : 'blur(0)',
+        WebkitBackdropFilter: isBlur ? 'blur(7px)' : 'blur(0)' //! Used to enable blur on iOS devices
       }}>
         <div className='header-div' style={{ padding: isBlur ? "0" : ".5rem 0" }}>
           <div className="logo">
