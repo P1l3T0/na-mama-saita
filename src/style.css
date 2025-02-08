@@ -89,7 +89,6 @@ nav ul li {
 nav ul li a {
   font-size: 2rem;
   font-weight: var(--font-weight-medium);
-  ;
   text-decoration: none;
   text-shadow: 3px 3px 1px black;
 }
@@ -305,6 +304,23 @@ nav ul li:hover {
 
 .whole-div:not(.popup-image) {
   cursor: pointer;
+}
+
+.floating-button {
+  position: relative;
+  border-radius: 50%;
+  background-color: #2a4a8a;
+  width: 50px;
+  height: 50px;
+  float: right;
+  cursor: pointer;
+}
+
+.floating-button .icon {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  font-size: 2.5rem;
 }
 
 /*?-------------POPUP-IMAGE-------------*/

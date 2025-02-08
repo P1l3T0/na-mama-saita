@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Image from "./Image";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUpLong } from '@fortawesome/free-solid-svg-icons';
 
 const Gallery = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -17,6 +19,13 @@ const Gallery = () => {
     }
   };
 
+  const handleButtonClick = async () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   document.addEventListener('keydown', handleCloseClick);
 
   return (
@@ -30,6 +39,10 @@ const Gallery = () => {
         <div className="popup-image" style={{ display: showPopup ? "block" : "none" }}>
           <LazyLoadImage src={popupImageSrc} />
         </div>
+      </div>
+
+      <div className="floating-button" onClick={() => handleButtonClick()}>
+        <FontAwesomeIcon icon={faArrowUpLong} className="icon" />
       </div>
     </>
   );
